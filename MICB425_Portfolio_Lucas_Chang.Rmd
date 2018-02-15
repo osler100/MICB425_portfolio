@@ -213,9 +213,122 @@ Note (365/16 days generation time  = 22.8 turnovers /year)
 
 Paper says a result 0.4  hours / mutation
 
+
 * Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
 
+Due to high mutations and large populations sizes, it may be implied that prokarytotic cells have the potential to adapt and evolve relatively quickly. This can be observed in situations such as in antibiotic resistance. Because prokaryotic organisms can perform horizontal genes transfer, they can share desired genes, allowing the prokaryotic community to diversify and adapt with the changing environment.
+Point mutations are not the only way microbial genomes can diversify and adapt. Other methods may include horizontal gene transfer to acquire new genes or epigenetic changes that may occur in certain environments (epigenetics aids more in adaptive potential).
+
 * What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text? 
+
+Prokaryotic abundancy seems to be correlated more with the magnitude of metabolic potential, while prokaryotic diversity correlates with the diversity of metabolic characteristics. 
+
+Looking at Fig 3 (Falkowski et al.) we can see that the number of newly discover protein clusters is positively correlated with the number of sequences anaylzed. However, the rate of new protein discoveries decreases as more sequences are sampled, such as in a logarithmic relationship. Proteins are important in metabolic pathways, thus metabolic diversity may show a similar trend in discovery as more varying sequences are analyzed. It is then implied that with increased prokaryotic diversity, we may see increased metabolic diversity. This may occur up to a point until which further prokaryotic diversity has minimal impact on new metabolic genes observed.
+
+--------------------------
+### Evidence worksheet 02 
+#### General Questions:
+* Question 1) Comment on the emergence of microbial life and the evolution of Earth systems
+
+Life is thought to have emerged only once in Earth’s history, over 4,500 million years old and had survived many extinction periods such as massive meteorite bombardment, super hot temperatures, and world-wide glaciation. Organisms had to survive very harsh environments during these times, where only organisms such as hyperthermophiles could survive, or lithotrophs present in the deep Earth crust.  Early life may have diversified near hydrothermal vents,  or possibly came from outer space (maybe from Mars).  Life began with non-photosynthetic organisms, and eventually evolved into anoxygenic and oxygenic photosynthetic organisms, allowing for life to expand to new environments. 
+
+* Question 2) Indicate the key events in the evolution of Earth systems at tic marks on the time series:
+
+Hadean
+4.6 GA: Solar system formed, inner planets received water vapor and carbon
+4.5 GA: Moon formed and gave Earth spin and tilt, day/night cycle, and seasons
+4.5 GA – 4.1 GA: High levels of CO2 increased temperature during times of the weak early sun.
+4.4 GA: Zircon formation: oldest mineral
+4.4 GA – 4,1 GA: meteorite impacts
+4.1 GA: Evidence of life in zircon and from carbon isotopes
+4 GA: Oldest rock: Acasta gneiss and evidence of plate subduction
+
+Archaean
+3.8 GA: Existence of life: from sedimentary rocks and methanogenesis
+3.5 GA: Microfossils and stromatolites present
+3.5 GA – 2.7GA: Cyanobacteria photosynthesize
+2.7 GA: Great oxidation event: responsible for glaciation
+
+Proterozoic
+2.5 GA – 1.5 GA: red rock beds observed: evidence of oxidation
+1.7 GA: Eukaryotes appear
+1.1 GA: Snowball Earth occurs
+
+Phanerozoic
+540 MA: Cambrian explosion: increased diversity of life and larger organisms
+Land plants observed
+250 MA: Permian extinction: 95% species extinct
+Gigantism of organisms
+65 MA: Cretaceous/Paleogene Extinction
+
+Question 3) Describe the dominant physical and chemical characteristics of Earth systems at waypoints
+
+Hadean
+There was a lot of CO2 to keep the Earth warm, as the sun was weak back then.
+Earth was mostly molten rock and very hot
+
+Archaean
+Atmosphere was filled with CH4 to keep the Earth warm still.
+As photosynthesis evolved, some O2 was present
+
+Proterozoic
+O2 reacted with atmospheric methane to produce CO2
+This caused a net decrease in greenhouse gas effects, making earth cold and leading to glaciation. Oxygen on Earth started oxidizing iron into banded iron formations, seen in sedimentary rock.
+
+Phanerozoic
+Plants started to evolve and can be seen on Earth. 
+Coal deposits developed as organisms died in extinctions and were stored in sediments
+There was the occasional glaciation periods
+
+--------------------------
+### Problem set_02 “Microbial Engines”
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
+
+#### Specific Questions:
+
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?  
+
+Geophysical: Tectonics and atmospheric photochemical processes continuously supply substrates and remove products, creating geochemical cycles. These processes allow molecules to interact with each other and let chemical bonds form and in break. 
+Biogeochemical: geochemical reactions are based on acid/base chemistry. Rock weathering also drives nutrient cycles on earth, to remove CO2 and allow further biological processes to occur, such as cellular respiration. Volcanism and microbial-catalyzed redox reactions are also important for the fluxes of the major bioelements: C, H, O, N, S, and P.
+Abiotic processes, such as rock weathering and volcanism create biogeochemical cycles in a planetary scale and geological time-scales. These processes affect C, S, and P levels. Biotic processes are driven by redox reactions and are responsible for more of the major elements C, H, O, N, and S. Feedbacks between microbial metabolism and geochemical processes have created the average redox condition of oceans and atmosphere. “The biogeochemical cycles have evolved to form a set of abiotically driven acid-base and biologically driven redox reactions that set lower limits on external energy requires to sustain the cycles.”
+
+* Why is Earth’s redox state considered an emergent property?
+
+Feedbacks between the evolution of microbial metabolic and geochemical processes creates the average redox condition of the oceans and atmosphere on Earth. 
+
+An emergent property may be descibed as a "whole that is greater than the sum of its parts". In this paper, it talks about the ability of different organisms to perform varying redox reactions that make up a single metabolic pathway. These microorgansism work together with other organisms to complete a pathway and allow for the production of cycles, such as the nutrient cycles for carbon or nitrogen. 
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?  
+
+Electrons are passed between different taxonomic groups, and shared via metabolites. Because varying organisms live together in communities or populations, they can exchange metabolites, nutreints, and wastes which allow for the transfer of electrons though different molecules and organisms. This gives rise to the nutrient cycles. 
+
+The thermodynamic properties of a reaction depends on reaction conditions; organisms that contain metabolic pathways which are favored in these conditions can thrive. However, in situations where thermodynamic conditions are unfavorable, the overall metabolic pathways may still be present, but in a different scale. 
+
+Reverse reactions can become possible if substrates become very low in concentrations. Reactions like to maintain equilibrium, thus by having low substrates levels, reactions may favor substrates.  As well, organisms can work together, where one provides energy or products, which can then be used by another organism to perform the opposite reaction; or it may create an environment where the reverse reaction is favorable. 
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox “niches” and microbial groups. Is there a relationship between the nitrogen cycle and climate change?   
+
+For N2 to become accessible for synthesis of proteins and nucleic acids in organisms, is via nitrogen fixation that changes N2 into NH4. However the enzymes responsible for this fixation is inhibited by O2. 
+
+In the presence of O2, NH4 is oxidized to nitrite (NO2) by a specific group of bacteria, and further oxidized into nitrate (NO3) by a different set of nitrifying organisms. These nitrifiers perform these reactions to reduce CO2 into organic matter.
+In the absence of O2, microbes may use  NO2 and NO3 as electron acceptors in anaerobic oxidation leading to N2 production. This closes the N-cycle.
+The N-cycle forms an interdependent electron pool that is influenced by photosynthetic production of oxygen and the availability of organic matter. Climate change affects sunlight availability, and as we know, photosynthesis requires sunlight. Changes in sunlight can affect the N-cycle via photosynthetic organisms that require nitrogen oxides as terminal electron acceptors. The N-cycle may also influence climate change, as nitrifying organisms may use NH4 or NO2 to reduce CO2 into organic matter, thus reducing the green house effect by decreasing CO2 levels
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?  
+
+Metabolic pathways evolved to utilize available substrates produced as end products of other types of microbial metabolism. Reduction and oxidation reactions of a given element cycle are segregated in different organisms. This allows different organisms to have different roles in a community with specialized jobs. With more metabolic diversity, we get organisms specializing in different pathways that require the help of other organisms, thus leading to microbial diversity.
+Due to horizontal gene transfer, microbes of different species have the ability to transfer genes, but also entire metabolic pathways, to other species. Selective pressures have allowed retention of transferred genes, facilitating radiation of diverse biogeochemical reactions among different organisms and environmental contexts.
+These genes can then be identified if they are found in many species. Studies have found that the number of protein families within individual Bacterial and Archaeal genomes depends linearly on the number of genes per genome. Genome size appears to correlate with evolutionary rate, but not metabolic processes.
+Different diverse organisms have different environments, which all lead to different genes that produce proteins required to survive in these specific conditions. Thus with more microbial diversity, there are different metabolic pathways required for organisms to live in their niche (or environment), and therefore different proteins produced from their genomes. Many of the unexplored genomic sequences include those for environment-specific genes, which are turned on in particular habitats with their specific organisms
+
+* On what basis do the authors consider microbes the guardians of metabolism?  
+
+Environmental selection allows for the retention of transferred genes in microbes, specifically boutique genes that protect the metabolic pathways. Microbes can be seen as vessels that ferry metabolic machines through strong environmental perturbations, into various geological landscapes, and through long periods of time. As well, these microbes spread genes and whole metabolic pathways to other organisms, thus many organisms may share similar metabolic characteristics. Individual taxonomic groups may go extinct but generally the core metabolic machines continue to survive. As a community, different organisms can provide different reactions that make-up a whole metabolic pathway. 
+
+(Boutique genes are genes that a positively selected in certain environmental conditions and are tuned to certain habitats and organisms)
+
+
 --------------------------
 Assignment #1
 
@@ -226,7 +339,17 @@ Figure 2.
 Figure 3.
 ![Github](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_3.png)
 ---------------------------
-Assignment #2 
+Assignment #2
+
+git add .
+
+git commit -m
+
+git status
+
+git push
+---------------------------
+Assignment #3 
 ---
 title: "pretty_html"
 author: "Lucas Chang (34271149)"
@@ -352,7 +475,7 @@ plot_bar(physeq_percent, fill="Genus") +
 
 ```
 
-Excercise 4
+Faceting
 
 ```{r plot_bar}
 library(tidyverse)
@@ -369,7 +492,7 @@ plot_bar(physeq_percent, fill="Phylum") +
 
 ```
 
-Excercise 5
+Excercise 4
 
 ```{r ggplot}
 library(dplyr)
@@ -384,6 +507,7 @@ ggplot(table_5_2, aes(x=Depth_m, y=Concentration)) +
   geom_point() + geom_line()+ facet_wrap(~Nutrients, scales="free_y") +
   theme(legend.position="none")
 
+#Update: Concentrations are in "nM" in the assignment page. Professor later changed desired concentration to "uM"
 
 ```
 
