@@ -52,17 +52,40 @@ The remaining second level headers (##) are for separating data science Friday, 
 Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
 
 Use this space to include your installation screenshots.
+----------------
+Assignment #1
 
+Figure 1.
 
+![Terminal](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_1.png)
+
+Figure 2.
+
+![Rstudio](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_2.png)
+
+Figure 3.
+
+![Github](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_3.png)
+----------------
 
 ### Portfolio repo setup
 Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
 
 
+Assignment #2
+
+git add .
+
+git commit -m
+
+git status
+
+git push
 
 ### RMarkdown pretty html challenge
 Paste your code from the in-class activity of recreating the example html.
 
+Look below near bottom for "Assignment #3"
 
 
 ## Origins and Earth Systems
@@ -329,25 +352,6 @@ Environmental selection allows for the retention of transferred genes in microbe
 (Boutique genes are genes that a positively selected in certain environmental conditions and are tuned to certain habitats and organisms)
 
 
---------------------------
-Assignment #1
-
-Figure 1.
-![Terminal](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_1.png)
-Figure 2.
-![Rstudio](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_2.png)
-Figure 3.
-![Github](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_3.png)
----------------------------
-Assignment #2
-
-git add .
-
-git commit -m
-
-git status
-
-git push
 ---------------------------
 Assignment #3 
 ---
