@@ -126,14 +126,21 @@ Earth's prokaryotes contain 85-130 Pg of N and 9-14 Pg of P
 
 Number or Prokaryote Cells in...
 Earth: 12*10^29
+
 Ocean: 2.6*10^29
+
 Soil: 2.5*10^30
+
 Oceanic + Terrestrial subsurfaces:0.25-2.5 * 10^30 
 
 Prokaryotic Turnover times:
+
 200m upper ocean: 6-25 days
+
 Ocean below 200m: 0.8 years
+
 Soil 2.5 years
+
 Subsurfaces is from 1-2 * 10^3 years
 
 Cellular production rate ~ 1.7*10^30 cells/year, and highest in open oceans
@@ -258,30 +265,46 @@ Life is thought to have emerged only once in Earth’s history, over 4,500 milli
 * Question 2) Indicate the key events in the evolution of Earth systems at tic marks on the time series:
 
 Hadean
+
 4.6 GA: Solar system formed, inner planets received water vapor and carbon
+
 4.5 GA: Moon formed and gave Earth spin and tilt, day/night cycle, and seasons
+
 4.5 GA – 4.1 GA: High levels of CO2 increased temperature during times of the weak early sun.
+
 4.4 GA: Zircon formation: oldest mineral
+
 4.4 GA – 4,1 GA: meteorite impacts
+
 4.1 GA: Evidence of life in zircon and from carbon isotopes
+
 4 GA: Oldest rock: Acasta gneiss and evidence of plate subduction
 
 Archaean
+
 3.8 GA: Existence of life: from sedimentary rocks and methanogenesis
+
 3.5 GA: Microfossils and stromatolites present
+
 3.5 GA – 2.7GA: Cyanobacteria photosynthesize
+
 2.7 GA: Great oxidation event: responsible for glaciation
 
 Proterozoic
 2.5 GA – 1.5 GA: red rock beds observed: evidence of oxidation
+
 1.7 GA: Eukaryotes appear
+
 1.1 GA: Snowball Earth occurs
 
 Phanerozoic
+
 540 MA: Cambrian explosion: increased diversity of life and larger organisms
 Land plants observed
-250 MA: Permian extinction: 95% species extinct
+
+250 MA: Permian extinction: 95% species extinct,
 Gigantism of organisms
+
 65 MA: Cretaceous/Paleogene Extinction
 
 Question 3) Describe the dominant physical and chemical characteristics of Earth systems at waypoints
@@ -292,16 +315,16 @@ Earth was mostly molten rock and very hot
 
 Archaean
 Atmosphere was filled with CH4 to keep the Earth warm still.
-As photosynthesis evolved, some O2 was present
+As photosynthesis evolved, some O2 was present.
 
 Proterozoic
-O2 reacted with atmospheric methane to produce CO2
+O2 reacted with atmospheric methane to produce CO2.
 This caused a net decrease in greenhouse gas effects, making earth cold and leading to glaciation. Oxygen on Earth started oxidizing iron into banded iron formations, seen in sedimentary rock.
 
 Phanerozoic
 Plants started to evolve and can be seen on Earth. 
 Coal deposits developed as organisms died in extinctions and were stored in sediments
-There was the occasional glaciation periods
+There was the occasional glaciation periods.
 
 --------------------------
 ### Problem set_02 “Microbial Engines”
