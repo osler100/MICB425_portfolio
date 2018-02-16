@@ -1,0 +1,85 @@
+---
+title: "ggplot_Lucas_Chang"
+author: "Lucas Chang (34271149)"
+date: "February 16, 2018"
+output: html_document
+---
+Assignment 5 Plotting Data in R
+
+Exercise 1
+```{r geompoint}
+metadata <- read.table(file="Saanich_metadata.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+OTU <- read.table(file="Saanich_OTU.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+
+library(tidyverse)
+library(phyloseq)
+
+ggplot(metadata, aes(x=SiO2_uM, y=Depth_m)) +
+  geom_point(shape=17, color="purple")
+
+```
+
+Excersize 2
+
+```{r tempt_mutate}
+library(dplyr)
+
+table_2= metadata %>% select(Temperature_C, Depth_m) %>% mutate(Temperature_F = Temperature_C*(9/5)+(32))
+
+library(tidyverse)
+library(phyloseq)
+
+ggplot(table_2, aes(x=Temperature_F, y=Depth_m)) +
+  geom_point()
+
+```
+
+Excercise 3
+```{r title_labels}
+library(tidyverse)
+library(phyloseq)
+
+load("phyloseq_object.RData")
+
+physeq_percent = transform_sample_counts(physeq, function(x) 100* x/sum(x)) 
+
+plot_bar(physeq_percent, fill="Genus") + 
+  geom_bar(aes(fill=Genus), stat="identity") + ggtitle("Genus Percentages") + xlab("Sample Depth") + ylab("Percent Relative Abundance")
+
+```
+
+Faceting
+
+```{r plot_bar}
+library(tidyverse)
+library(phyloseq)
+
+plot_bar(physeq_percent, fill="Phylum") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  facet_wrap(~Phylum)
+
+plot_bar(physeq_percent, fill="Phylum") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  facet_wrap(~Phylum, scales="free_y") +
+  theme(legend.position="none")
+
+```
+
+Excercise 4
+
+```{r ggplot}
+library(dplyr)
+table_5_1= metadata %>% mutate(O2_nM = O2_uM*(1000)) %>% mutate(PO4_nM = PO4_uM*(1000)) %>% mutate(SiO2_nM = SiO2_uM*(1000)) %>% mutate(NO3_nM = NO3_uM*(1000)) %>% mutate(NH4_nM = NH4_uM*(1000)) %>% mutate(NO2_nM = NO2_uM*(1000)) %>% select(Depth_m, O2_nM, PO4_nM, SiO2_nM, NO3_nM, NH4_nM, NO2_nM)
+
+table_5_2= table_5_1 %>% gather (Nutrients, Concentration, O2_nM, PO4_nM, SiO2_nM, NO3_nM, NH4_nM, NO2_nM)
+
+library(tidyverse)
+library(phyloseq)
+
+ggplot(table_5_2, aes(x=Depth_m, y=Concentration)) +
+  geom_point() + geom_line()+ facet_wrap(~Nutrients, scales="free_y") +
+  theme(legend.position="none")
+
+#Update: Concentrations are in "nM" in the assignment page. Professor later changed desired concentration to "uM"
+
+```

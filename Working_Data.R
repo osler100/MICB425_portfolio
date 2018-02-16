@@ -4,8 +4,8 @@ library(tidyverse)
 #in terminal copy data
 
 #load data 
-metadata <- read.table(file="Saanich.metadata.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
-OTU <- read.table(file="Saanich.OTU.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+metadata <- read.table(file="Saanich_metadata.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+OTU <- read.table(file="Saanich_OTU.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
 
 library(dplyr)
 
