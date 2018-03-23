@@ -1,0 +1,14 @@
+```{r}
+library("tidyverse")
+library("phyloseq")
+library("magrittr")
+load("mothur_phyloseq.RData")
+set.seed(4832)
+m.norm = rarefy_even_depth(mothur, sample.size=100000)
+m.perc = transform_sample_counts(m.norm, function(x) 100 * x/sum(x))
+
+plot_bar(m.perc, fill="Phylum") + 
+  geom_bar(aes(fill=Genus), stat="identity") + ggtitle("Genus Percentages") + xlab("Sample Depth") + ylab("Percent Relative Abundance")
+```
+
+
