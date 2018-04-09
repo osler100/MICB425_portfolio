@@ -1,0 +1,857 @@
+---
+title: "MICB425 Portfolio - Microbial Ecological Genomics: From Genomes to Biomes, Spring 2018"
+author: "Student First Name, Preferred Name, Last Name, Student ID"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+---
+# Module 01
+Reserve the first level headings (#) for the start of a new Module. This will help to organize your portfolio in an intuitive fashion.  
+**Note: Please edit this template to your heart's content. This is meant to be the armature upon which you build your individual portfolio. You do not need to keep this instructive text in your final portfolio, although you do need to keep module and assignment names so we can identify what is what.**
+
+
+## Module 01 portfolio check
+The first of your second level headers (##) is to be used for the portfolio content checks. The Module 01 portfolio check has been built for you directly into this template, but will also be available as a stand-alone markdown document available on the MICB425 GitHub so that you know what is required in each module section in your portfolio. The completion status and comments will be filled in by the instructors during portfolio checks when your current portfolios are pulled from GitHub.
+
+* Installation check
+    + Completion status:
+    + Comments:
+* Portfolio repo setup
+    + Completion status: 
+    + Comments:
+* RMarkdown Pretty html Challenge
+    + Completion status:
+    + Comments:
+* Evidence worksheet_01
+    + Completion status:
+    + Comments:
+* Evidence worksheet_02
+    + Completion status:
+    + Comments:
+* Evidence worksheet_03
+    + Completion status:
+    + Comments:
+* Problem Set_01
+    + Completion status:
+    + Comments:
+* Problem Set_02
+    + Completion status:
+    + Comments:
+* Writing assessment_01
+    + Completion status:
+    + Comments:
+* Additional Readings
+    + Completion status:
+    + Comments  
+    
+## Data science Friday  
+The remaining second level headers (##) are for separating data science Friday, regular course, and project content. In this module, you will only need to include data science Friday and regular course content; projects will come later in the course.
+
+### Installation check
+Third level headers (###) should be used for links to assignments, evidence worksheets, problem sets, and readings, as seen here.  
+
+Use this space to include your installation screenshots.
+----------------
+Assignment #1
+
+Figure 1.
+
+![Terminal](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_1.png)
+
+Figure 2.
+
+![Rstudio](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_2.png)
+
+Figure 3.
+
+![Github](https://github.com/osler100/MICB425_portfolio/blob/master/Figure_3.png)
+----------------
+
+### Portfolio repo setup
+Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
+
+
+Assignment #2
+
+git add .
+
+git commit -m
+
+git status
+
+git push
+
+### RMarkdown pretty html challenge
+Paste your code from the in-class activity of recreating the example html.
+
+Look below near bottom for "Assignment #3"
+
+
+## Origins and Earth Systems
+### Evidence worksheet 01 
+The template for the first Evidence Worksheet has been included here. The first thing for any assignment should link(s) to any relevant literature (which should be included as full citations in a module references section below).
+
+You can copy-paste in the answers you recorded when working through the evidence worksheet into this portfolio template. 
+
+As you include Evidence worksheets and Problem sets in the future, ensure that you delineate Questions/Learning Objectives/etc. by using headers that are 4th level and greater. This will still create header markings when you render (knit) the document, but will exclude these levels from the Table of Contents. That's a good thing. You don't' want to clutter the Table of Contents too much.
+
+[Whitman *et al* 1998](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+#### Learning objectives
+Describe the numerical abundance of microbial life in relation to ecology and biogeochemistry of Earth systems. 
+
+#### General questions
+* What were the main questions being asked?  
+What is the number of prokaryotes on Earth and in different resevoirs? What are these resevoirs?
+
+What is the total nutrient content present in prokaryotes and how much carbon do these prokaryotes produce?
+
+* What were the primary methodological approaches used?  
+In aquatic environment, they looked at average cellular density and multiplied it with the estimated amount of marine and fresh water quantities
+
+In soil, they also looked at cellular density measured from direct counts from forest soil and past field studies. These values, along with previously estimated amounts of soil on Earth, were used to calculate soil prokaryotic numbers.
+
+For terrestrial subsurfaces, they estimated prokaryotic numbers from ground water based on values of several sites, and multiplied this using the estimated value of ground water on Earth. 
+
+They also looked at the average porosity of Earth's soil, and used known values of space occupied by prokaryotes in these pores.
+
+To measure carbon content and production in prokaryotes: They took cell number in soil and calculated its dry weight. They then assumed the amount of carbon in prokaryotes is equal to half their dry weight. They also assumed that the amount of carbon produced during each turnover is about four times their carbon content. Using this data, and information about prokaryotic turnover rates, they calculated the production of prokaryotic carbon.
+
+* Summarize the main results or findings.  
+
+The number of prokaryotes and total amount of cellular carbon on earth were estimated to be 4-6 * 10^ 30 cells, and 350-550 Pg of C
+Total amount of prokaryotic carbon is 60-100% of the estimated total carbon in plants
+Earth's prokaryotes contain 85-130 Pg of N and 9-14 Pg of P
+
+Number or Prokaryote Cells in...
+Earth: 12*10^29
+
+Ocean: 2.6*10^29
+
+Soil: 2.5*10^30
+
+Oceanic + Terrestrial subsurfaces:0.25-2.5 * 10^30 
+
+Prokaryotic Turnover times:
+
+200m upper ocean: 6-25 days
+
+Ocean below 200m: 0.8 years
+
+Soil 2.5 years
+
+Subsurfaces is from 1-2 * 10^3 years
+
+Cellular production rate ~ 1.7*10^30 cells/year, and highest in open oceans
+
+* Do new questions arise from the results?  
+
+How does the abundance of the prokaryotes in these environments play a role in the total metabolic potential of the ecosystem.
+What are some possible consequences/predictions we can make about events in the future, that involve prokaryotes, with this given data.
+What significance does this large number of prokaryotes play in on Earth?
+What factors and events do they cause or influence on Earth?
+
+* Were there any specific challenges or advantages in understanding the paper (*e.g.* did the authors provide sufficient background information to understand experimental logic, were methods explained adequately, were any specific assumptions made, were conclusions justified based on the evidence, were the figures or tables useful and easy to understand)?  
+
+Supplemental Figures were not provided, they would have helped to make things easier to understand, and possibly easier to see the magnitude of their results
+
+Enough detail was provided about the results, however we are more concerned about if the methods were valid in calculating their results. Many of the sources for certain statistics (like cell density in soil) may have not been reliable, as much of this info was obtained from other studies, their methods are not made clear in this paper. As well, this paper performed many estimates and extrapolations to obtain their results, thus their calculations and numbers could be improved.
+
+### Problem set 01
+#### Learning objectives: 
+Describe the numerical abundance of microbial life in relation to the ecology and biogeochemistry of Earth systems.
+
+#### Specific questions:
+* What are the primary prokaryotic habitats on Earth and how do they vary with respect to their capacity to support life? Provide a breakdown of total cell abundance for each primary habitat from the tables provided in the text.  
+
+Open ocean: 1.2 * 10^29 (prokaryotes mostly found in upper 200m of open ocean)
+
+Soil: 2.5 * 10^29
+
+Oceanic + Terrestrial subsurfaces: 3.8 *10^30
+
+* What is the estimated prokaryotic cell abundance in the upper 200 m of the ocean and what fraction of this biomass is represented by marine cyanobacterium including Prochlorococcus? What is the significance of this ratio with respect to carbon cycling in the ocean and the atmospheric composition of the Earth?  
+
+Upper 200m ocean density: 5 X 10^5  cells/mL
+
+Prochlorococcus:   density: 4*10^4 cells/mL
+
+Upper 200m of the ocean contains a total 3.6 x 10^28 cells
+
+Autotrophs = 2.9 x 10^27 cells
+
+8% of autotrophs are responsible for the amount of carbon being cycled through the Earth's oceans, which ultimately supports carbon availability for the rest of the heterotrophs present (92%)
+
+* What is the difference between an autotroph, heterotroph, and a lithotroph based on information provided in the text?  
+
+Autotroph:Carbon from inorganic sources: self-nourishing, fixes inorganic carbon into biomass
+
+Heterotroph: Carbon from organic sources: assimilates organic carbon
+
+Lithotroph: Obtain electrons from inorganic sources: assimilates & metabolizes inorganic substrates and releases energy
+
+* Based on information provided in the text and your knowledge of geography what is the deepest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this depth?  
+
+Mariana's Trench contains life at 10.9km deep. A further 4km deeper contains life as well. The main limiting factor for life at this depth is temperature.
+
+* Based on information provided in the text your knowledge of geography what is the highest habitat capable of supporting prokaryotic life? What is the primary limiting factor at this height?  
+
+Highest altitude that contains life is 8.8km above sea level at Mt Everest. Although life may exist higher than this, it is extremely rare due to ionizing radiation and lack of nutrients and moisture.
+
+* Based on estimates of prokaryotic habitat limitation, what is the vertical distance of the Earth’s biosphere measured in km?  
+
+An accurate range may be from be top of Mt Everest (8.8km high) to the bottom of Mariana's Trench ( 10.9km deep), with an additional 4km deeper.Thus the vertical range of the biosphere is ~ 24km
+
+* How was annual cellular production of prokaryotes described in Table 7 column four determined? (Provide an example of the calculation)  
+
+(Population) * (turnovers / year) =       cells/year
+
+In marine heterotrophs:
+
+2.6 x 10^28 cells x 365 days / 16 turnovers = 8.2*10^29 cells/year
+
+* What is the relationship between carbon content, carbon assimilation efficiency and turnover rates in the upper 200m of the ocean? Why does this vary with depth in the ocean and between terrestrial and marine habitats?  
+
+We assume carbon efficiency = 20% (which author's used)
+Assuming 5-20 femtograms of C / prokaryotic cell
+
+~20fg of Carbon in a prokaryotic cell = 20^-30 petagrams.
+
+Number of cells = 3.6 x 10^-30 cells
+
+3.6x10^28 cells x 20^-30petagrams/cell   = 0.72 petagrams of carbon in marine heterotrophs
+
+4 x 0 .72 (Authors used x4 for some reason)
+2.88 petagrams of C / year
+
+51 petagrams C / year  x 85% consumed ~43 petagrams of C consumed per year 
+
+(43 petagrams of carbon /year)  / (2.88 petagrams/year)    =   14.9 or one turnover every 24.5 days
+
+* How were the frequency numbers for four simultaneous mutations in shared genes determined for marine heterotrophs and marine autotrophs given an average mutation rate of 4 x 10^-7^ per DNA replication? (Provide an example of the calculation with units. Hint: cell and generation cancel out)  
+
+4 x 10^-7 mutations/ generation
+We want 4 simultaneous mutations
+4 x 10^-7 ^4 = 2.56 x 10^-26 mutations / generation
+
+3.6 x 10^ 28 cells x 22.8 = 8.2 x 10^29 cells / year 
+
+Note (365/16 days generation time  = 22.8 turnovers /year)
+
+8.2 x 10^29 cells / year  * mutation rate (2.56 x 10^-26 mutations/generation = 2.1 x 10^4 mutations / year
+
+Paper says a result 0.4  hours / mutation
+
+
+* Given the large population size and high mutation rate of prokaryotic cells, what are the implications with respect to genetic diversity and adaptive potential? Are point mutations the only way in which microbial genomes diversify and adapt?  
+
+Due to high mutations and large populations sizes, it may be implied that prokarytotic cells have the potential to adapt and evolve relatively quickly. This can be observed in situations such as in antibiotic resistance. Because prokaryotic organisms can perform horizontal genes transfer, they can share desired genes, allowing the prokaryotic community to diversify and adapt with the changing environment.
+Point mutations are not the only way microbial genomes can diversify and adapt. Other methods may include horizontal gene transfer to acquire new genes or epigenetic changes that may occur in certain environments (epigenetics aids more in adaptive potential).
+
+* What relationships can be inferred between prokaryotic abundance, diversity, and metabolic potential based on the information provided in the text? 
+
+Prokaryotic abundancy seems to be correlated more with the magnitude of metabolic potential, while prokaryotic diversity correlates with the diversity of metabolic characteristics. 
+
+Looking at Fig 3 (Falkowski et al.) we can see that the number of newly discover protein clusters is positively correlated with the number of sequences anaylzed. However, the rate of new protein discoveries decreases as more sequences are sampled, such as in a logarithmic relationship. Proteins are important in metabolic pathways, thus metabolic diversity may show a similar trend in discovery as more varying sequences are analyzed. It is then implied that with increased prokaryotic diversity, we may see increased metabolic diversity. This may occur up to a point until which further prokaryotic diversity has minimal impact on new metabolic genes observed.
+
+--------------------------
+### Evidence worksheet 02 
+#### General Questions:
+* Question 1) Comment on the emergence of microbial life and the evolution of Earth systems
+
+Life is thought to have emerged only once in Earth’s history, over 4,500 million years old and had survived many extinction periods such as massive meteorite bombardment, super hot temperatures, and world-wide glaciation. Organisms had to survive very harsh environments during these times, where only organisms such as hyperthermophiles could survive, or lithotrophs present in the deep Earth crust.  Early life may have diversified near hydrothermal vents,  or possibly came from outer space (maybe from Mars).  Life began with non-photosynthetic organisms, and eventually evolved into anoxygenic and oxygenic photosynthetic organisms, allowing for life to expand to new environments. 
+
+* Question 2) Indicate the key events in the evolution of Earth systems at tic marks on the time series:
+
+Hadean
+
+4.6 GA: Solar system formed, inner planets received water vapor and carbon
+
+4.5 GA: Moon formed and gave Earth spin and tilt, day/night cycle, and seasons
+
+4.5 GA – 4.1 GA: High levels of CO2 increased temperature during times of the weak early sun.
+
+4.4 GA: Zircon formation: oldest mineral
+
+4.4 GA – 4,1 GA: meteorite impacts
+
+4.1 GA: Evidence of life in zircon and from carbon isotopes
+
+4 GA: Oldest rock: Acasta gneiss and evidence of plate subduction
+
+Archaean
+
+3.8 GA: Existence of life: from sedimentary rocks and methanogenesis
+
+3.5 GA: Microfossils and stromatolites present
+
+3.5 GA – 2.7GA: Cyanobacteria photosynthesize
+
+2.7 GA: Great oxidation event: responsible for glaciation
+
+Proterozoic
+2.5 GA – 1.5 GA: red rock beds observed: evidence of oxidation
+
+1.7 GA: Eukaryotes appear
+
+1.1 GA: Snowball Earth occurs
+
+Phanerozoic
+
+540 MA: Cambrian explosion: increased diversity of life and larger organisms
+Land plants observed
+
+250 MA: Permian extinction: 95% species extinct,
+Gigantism of organisms
+
+65 MA: Cretaceous/Paleogene Extinction
+
+Question 3) Describe the dominant physical and chemical characteristics of Earth systems at waypoints
+
+Hadean
+There was a lot of CO2 to keep the Earth warm, as the sun was weak back then.
+Earth was mostly molten rock and very hot
+
+Archaean
+Atmosphere was filled with CH4 to keep the Earth warm still.
+As photosynthesis evolved, some O2 was present.
+
+Proterozoic
+O2 reacted with atmospheric methane to produce CO2.
+This caused a net decrease in greenhouse gas effects, making earth cold and leading to glaciation. Oxygen on Earth started oxidizing iron into banded iron formations, seen in sedimentary rock.
+
+Phanerozoic
+Plants started to evolve and can be seen on Earth. 
+Coal deposits developed as organisms died in extinctions and were stored in sediments
+There was the occasional glaciation periods.
+
+--------------------------
+### Problem set_02 “Microbial Engines”
+#### Learning objectives: 
+Discuss the role of microbial diversity and formation of coupled metabolism in driving global biogeochemical cycles.
+
+#### Specific Questions:
+
+* What are the primary geophysical and biogeochemical processes that create and sustain conditions for life on Earth? How do abiotic versus biotic processes vary with respect to matter and energy transformation and how are they interconnected?  
+
+Geophysical: Tectonics and atmospheric photochemical processes continuously supply substrates and remove products, creating geochemical cycles. These processes allow molecules to interact with each other and let chemical bonds form and in break. 
+Biogeochemical: geochemical reactions are based on acid/base chemistry. Rock weathering also drives nutrient cycles on earth, to remove CO2 and allow further biological processes to occur, such as cellular respiration. Volcanism and microbial-catalyzed redox reactions are also important for the fluxes of the major bioelements: C, H, O, N, S, and P.
+Abiotic processes, such as rock weathering and volcanism create biogeochemical cycles in a planetary scale and geological time-scales. These processes affect C, S, and P levels. Biotic processes are driven by redox reactions and are responsible for more of the major elements C, H, O, N, and S. Feedbacks between microbial metabolism and geochemical processes have created the average redox condition of oceans and atmosphere. “The biogeochemical cycles have evolved to form a set of abiotically driven acid-base and biologically driven redox reactions that set lower limits on external energy requires to sustain the cycles.”
+
+* Why is Earth’s redox state considered an emergent property?
+
+Feedbacks between the evolution of microbial metabolic and geochemical processes creates the average redox condition of the oceans and atmosphere on Earth. 
+
+An emergent property may be descibed as a "whole that is greater than the sum of its parts". In this paper, it talks about the ability of different organisms to perform varying redox reactions that make up a single metabolic pathway. These microorgansism work together with other organisms to complete a pathway and allow for the production of cycles, such as the nutrient cycles for carbon or nitrogen. 
+
+* How do reversible electron transfer reactions give rise to element and nutrient cycles at different ecological scales? What strategies do microbes use to overcome thermodynamic barriers to reversible electron flow?  
+
+Electrons are passed between different taxonomic groups, and shared via metabolites. Because varying organisms live together in communities or populations, they can exchange metabolites, nutreints, and wastes which allow for the transfer of electrons though different molecules and organisms. This gives rise to the nutrient cycles. 
+
+The thermodynamic properties of a reaction depends on reaction conditions; organisms that contain metabolic pathways which are favored in these conditions can thrive. However, in situations where thermodynamic conditions are unfavorable, the overall metabolic pathways may still be present, but in a different scale. 
+
+Reverse reactions can become possible if substrates become very low in concentrations. Reactions like to maintain equilibrium, thus by having low substrates levels, reactions may favor substrates.  As well, organisms can work together, where one provides energy or products, which can then be used by another organism to perform the opposite reaction; or it may create an environment where the reverse reaction is favorable. 
+
+* Using information provided in the text, describe how the nitrogen cycle partitions between different redox “niches” and microbial groups. Is there a relationship between the nitrogen cycle and climate change?   
+
+For N2 to become accessible for synthesis of proteins and nucleic acids in organisms, is via nitrogen fixation that changes N2 into NH4. However the enzymes responsible for this fixation is inhibited by O2. 
+
+In the presence of O2, NH4 is oxidized to nitrite (NO2) by a specific group of bacteria, and further oxidized into nitrate (NO3) by a different set of nitrifying organisms. These nitrifiers perform these reactions to reduce CO2 into organic matter.
+In the absence of O2, microbes may use  NO2 and NO3 as electron acceptors in anaerobic oxidation leading to N2 production. This closes the N-cycle.
+The N-cycle forms an interdependent electron pool that is influenced by photosynthetic production of oxygen and the availability of organic matter. Climate change affects sunlight availability, and as we know, photosynthesis requires sunlight. Changes in sunlight can affect the N-cycle via photosynthetic organisms that require nitrogen oxides as terminal electron acceptors. The N-cycle may also influence climate change, as nitrifying organisms may use NH4 or NO2 to reduce CO2 into organic matter, thus reducing the green house effect by decreasing CO2 levels
+
+* What is the relationship between microbial diversity and metabolic diversity and how does this relate to the discovery of new protein families from microbial community genomes?  
+
+Metabolic pathways evolved to utilize available substrates produced as end products of other types of microbial metabolism. Reduction and oxidation reactions of a given element cycle are segregated in different organisms. This allows different organisms to have different roles in a community with specialized jobs. With more metabolic diversity, we get organisms specializing in different pathways that require the help of other organisms, thus leading to microbial diversity.
+Due to horizontal gene transfer, microbes of different species have the ability to transfer genes, but also entire metabolic pathways, to other species. Selective pressures have allowed retention of transferred genes, facilitating radiation of diverse biogeochemical reactions among different organisms and environmental contexts.
+These genes can then be identified if they are found in many species. Studies have found that the number of protein families within individual Bacterial and Archaeal genomes depends linearly on the number of genes per genome. Genome size appears to correlate with evolutionary rate, but not metabolic processes.
+Different diverse organisms have different environments, which all lead to different genes that produce proteins required to survive in these specific conditions. Thus with more microbial diversity, there are different metabolic pathways required for organisms to live in their niche (or environment), and therefore different proteins produced from their genomes. Many of the unexplored genomic sequences include those for environment-specific genes, which are turned on in particular habitats with their specific organisms
+
+* On what basis do the authors consider microbes the guardians of metabolism?  
+
+Environmental selection allows for the retention of transferred genes in microbes, specifically boutique genes that protect the metabolic pathways. Microbes can be seen as vessels that ferry metabolic machines through strong environmental perturbations, into various geological landscapes, and through long periods of time. As well, these microbes spread genes and whole metabolic pathways to other organisms, thus many organisms may share similar metabolic characteristics. Individual taxonomic groups may go extinct but generally the core metabolic machines continue to survive. As a community, different organisms can provide different reactions that make-up a whole metabolic pathway. 
+
+(Boutique genes are genes that a positively selected in certain environmental conditions and are tuned to certain habitats and organisms)
+
+
+---------------------------
+Assignment #3 
+---
+title: "pretty_html"
+author: "Lucas Chang (34271149)"
+date: "January 19, 2018"
+output: 
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#R Markdown PDF Challenge
+
+
+The following assignment is an exercise for the reproduction of this .html document using the RStudio and RMarkdown tools we’ve shown you in class. Hopefully by the end of this, you won’t feel at all the way this poor PhD student does. We’re here to help, and when it comes to R, the internet is a really valuable resource. This open-source program has all kinds of tutorials online.
+
+![](http://www.phdcomics.com/comics/archive/phd011718s.gif)
+
+
+http://phdcomics.com/ Comic posted 1-17-2018
+
+##Challenge Goals
+
+
+The goal of this R Markdown html challenge is to give you an opportunity to play with a bunch of different RMarkdown formatting. Consider it a chance to flex your RMarkdown muscles. Your goal is to write your own RMarkdown that rebuilds this html document as close to the original as possible. So, yes, this means you get to copy my irreverant tone exactly in your own Markdowns. It’s a little window into my psyche. Enjoy =)
+
+**hint: go to the [PhD Comics website](http://phdcomics.com) to see if you can find the image above**
+
+*If you can’t find that exact image, just find a comparable image from the PhD Comics website and include it in your markdown*
+
+
+###Here’s a header!
+
+
+Let’s be honest, this header is a little arbitrary. But show me that you can reproduce headers with different levels please. This is a level 3 header, for your reference (you can most easily tell this from the table of contents).
+
+####Another header, now with maths
+
+Perhaps you’re already really confused by the whole markdown thing. Maybe you’re so confused that you’ve forgotton how to add. Never fear! A ~~calculator~~ R is here:
+
+```{r} 
+1231521+12341556280987
+```
+
+
+###Table Time
+
+Or maybe, after you’ve added those numbers, you feel like it’s about time for a table!
+I’m going to leave all the guts of the coding here so you can see how libraries (R packages) are loaded into R (more on that later). It’s not terribly pretty, but it hints at how R works and how you will use it in the future. The summary function used below is a nice data exploration function that you may use in the ^future^.
+
+
+```{r}
+library(knitr)
+kable(summary(cars),caption="I made this table with kable in the knitr package library")
+```
+
+And now you’ve almost finished your first RMarkdown! Feeling excited? We are! In fact, we’re so excited that maybe we need a big finale eh? Here’s ours! Include a fun gif of your choice!
+
+
+![](https://media.giphy.com/media/AHN0PfASlNy3S/giphy.gif)
+---------------------
+Assignment 4 
+
+Excercise 1
+```{r metadata}
+metadata = read.table(file="Saanich_metadata.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+OTU = read.table(file="Saanich_OTU.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+```
+
+Excercise 2 
+```{r filter}
+library(dplyr)
+
+select(metadata, starts_with("CH4"))
+filter(metadata, CH4_nM > 100 & Temperature_C < 10) %>% select(Depth_m)
+```
+
+Excercise 3 
+```{r }
+library(dplyr)
+select(metadata, ends_with("nM")) %>% 
+  mutate(N2O_uM = N2O_nM/1000) %>% mutate(Std_N2O_uM = Std_N2O_nM/1000) %>% mutate(CH4_uM = CH4_nM/1000) %>% mutate(Std_CH4_uM = Std_CH4_nM/1000)
+```
+
+---------------------
+Assignment 5 Plotting Data in R
+
+Exercise 1
+```{r geompoint}
+
+library(tidyverse)
+library(phyloseq)
+
+ggplot(metadata, aes(x=SiO2_uM, y=Depth_m)) +
+  geom_point(shape=17, color="purple")
+
+```
+
+Excersize 2
+
+```{r tempt_mutate}
+library(dplyr)
+
+table_2= metadata %>% select(Temperature_C, Depth_m) %>% mutate(Temperature_F = Temperature_C*(9/5)+(32))
+
+library(tidyverse)
+library(phyloseq)
+
+ggplot(table_2, aes(x=Temperature_F, y=Depth_m)) +
+  geom_point()
+
+```
+
+Excercise 3
+```{r title_labels}
+library(tidyverse)
+library(phyloseq)
+
+
+plot_bar(physeq_percent, fill="Genus") + 
+  geom_bar(aes(fill=Genus), stat="identity") + ggtitle("Genus Percentages") + xlab("Sample Depth") + ylab("Percent Relative Abundance")
+
+```
+
+Faceting
+
+```{r plot_bar}
+library(tidyverse)
+library(phyloseq)
+
+plot_bar(physeq_percent, fill="Phylum") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  facet_wrap(~Phylum)
+
+plot_bar(physeq_percent, fill="Phylum") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  facet_wrap(~Phylum, scales="free_y") +
+  theme(legend.position="none")
+
+```
+
+Excercise 4
+
+```{r ggplot}
+library(dplyr)
+table_5_1= metadata %>% mutate(O2_nM = O2_uM*(1000)) %>% mutate(PO4_nM = PO4_uM*(1000)) %>% mutate(SiO2_nM = SiO2_uM*(1000)) %>% mutate(NO3_nM = NO3_uM*(1000)) %>% mutate(NH4_nM = NH4_uM*(1000)) %>% mutate(NO2_nM = NO2_uM*(1000)) %>% select(Depth_m, O2_nM, PO4_nM, SiO2_nM, NO3_nM, NH4_nM, NO2_nM)
+
+table_5_2= table_5_1 %>% gather (Nutrients, Concentration, O2_nM, PO4_nM, SiO2_nM, NO3_nM, NH4_nM, NO2_nM)
+
+library(tidyverse)
+library(phyloseq)
+
+ggplot(table_5_2, aes(x=Depth_m, y=Concentration)) +
+  geom_point() + geom_line()+ facet_wrap(~Nutrients, scales="free_y") +
+  theme(legend.position="none")
+
+#Update: Concentrations are in "nM" in the assignment page. Professor later changed desired concentration to "uM"
+
+```
+
+### Module 01 references
+Utilize this space to include a bibliography of any literature you want associated with this module. We recommend keeping this as the final header under each module.
+
+An example for Whitman and Wiebe (1998) has been included below.
+
+Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578–6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)
+
+---
+title: "Problem Set_03"
+author: "Student Name (Student ID)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+### Problem set_03 “Metagenomics: Genomic Analysis of Microbial Communities”
+#### Learning objectives: 
+Specific emphasis should be placed on the process used to find the answer. Be as comprehensive as possible e.g. provide URLs for web sources, literature citations, etc.  
+*(Reminders for how to format links, etc in RMarkdown are in the RMarkdown Cheat Sheets)*
+
+#### Specific Questions:
+* How many prokaryotic divisions have been described and how many have no cultured representatives (microbial dark matter)?
+  
+Most life is unculturable. There are still a lot of unanswered questions in terms of metabolism.
+2016:
+89 bacterial phyla
+20 archaeal phyla
+But could bve up to 1500 bacterial phyla
+as there are microbes that live  on the "shadow biosphere"
+
+2003:
+26 of 52 major bacterial phyla
+
+
+* How many metagenome sequencing projects are currently available in the public domain and what types of environments are they sourced from?
+  
+110217 projects on EBI database
+
+
+* What types of on-line resources are available for warehousing and/or analyzing environmental sequence information (provide names, URLS and applications)? 
+
+Function - resource
+------------------------------
+*Shotgun Metagenomics*
+
+Assembly - EULER
+
+Binning - S-GSOM
+
+Annotation - KEGG
+
+Anaylsis Pipelines - Megan 5 
+------------------------------
+*Marker Gene Metagenomics
+
+Standalone Software - OTUbase
+
+Analysis Pipelines - SILVA
+
+Denoising - DADA
+
+Databases - Greengenes
+------------------------------
+MetaPathways: a modular pipeline designed for metabolic pathway reconstruction and comparative analysis of environmental sequence information 
+
+* What is the difference between phylogenetic and functional gene anchors and how can they be used in metagenome analysis?  
+
+Phylogenetic: 
+
+* Vertical gene transfer
+* Carry phylogenetic information allowing treereconstruction
+* Taxonomic
+* Ideally single-copy
+
+
+* What is metagenomic sequence binning? What types of algorithmic approaches are used to produce sequence bins? What are some risks and opportunities associated with using sequence bins for metabolic reconstruction of uncultivated microorganisms?  
+
+It is the process of grouping sequences that come from a single genome
+
+types of algorithms:
+1) align sequences to database
+2) Group to each other based on DNA characteristics: GC content, codon usage
+
+Risks & oppurtunities in binning
+Risks: incomplete coverage of genome sequence
+Contamination from different phylogeny
+
+
+* Is there an alternative to metagenomic shotgun sequencing that can be used to access the metabolic potential of uncultivated microorganisms? What are some risks and opportunities associated with this alternative?
+
+Functional screen such as biochemical assays: if they are metabolites and what they do
+
+3rd generation sequencing (nanopores) sequencing single chromosomes
+
+single cell sequencing: amplify the genome from single cells and sequence it
+
+FISH probe: 
+
+---
+title: "Problem Set_04"
+author: "Student Name (Student ID)"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+### Problem set_04 “Fine-scale phylogenetic architecture”
+#### Learning objectives: 
+
+* Gain experience estimating diversity within a hypothetical microbial community
+
+
+#### Outline:
+
+In class Day 1:
+
+1. Define and describe species within your group's "microbial" community.
+2. Count and record individuals within your defined species groups.
+3. Remix all species together to reform the original community.
+4. Each person in your group takes a random sample of the community (*i.e.* devide up the candy).
+
+Assignment:
+
+5. Individually, complete a collection curve for your sample.
+6. Calculate alpha-diversity based on your original total community and your individual sample.
+
+In class Day 2:
+
+7. Compare diversity between groups.
+
+#### Part 1: Description and enumeration
+Obtain a collection of "microbial" cells from "seawater". The cells were concentrated from different depth intervals by a marine microbiologist travelling along the Line-P transect in the northeast subarctic Pacific Ocean off the coast of Vancouver Island British Columbia. 
+
+Sort out and identify different microbial "species" based on shared properties or traits. Record your data in this Rmarkdown using the example data as a guide.
+
+Once you have defined your binning criteria, separate the cells using the sampling bags provided. These operational taxonomic units (OTUs) will be considered separate "species". This problem set is based on content available at [What is Biodiversity](http://cnx.org/content/m12179/latest/).
+
+For example, load in the packages you will use.
+```{r message=FALSE}
+#To make tables
+library(kableExtra)
+library(knitr)
+#To manipulate and plot data
+library(tidyverse)
+```
+
+For your community:
+
+* Construct a table listing each species, its distinguishing characteristics, the name you have given it, and the number of occurrences of the species in the collection.
+* Ask yourself if your collection of microbial cells from seawater represents the actual diversity of microorganisms inhabiting waters along the Line-P transect. Were the majority of different species sampled or were many missed? 
+ 
+```{r}
+example_data1 = data.frame(
+  number = c(1,2,3,4,5,6,7,8,9,10,11,12,13),
+  name = c("Strings", "Gummy bear", "Sugar gummy bear", "Wine gummy", "Sugar Swirl", "Sugar bottle", "Sugar Octopus", "Mike-Ike", "Sphere", "Skittles", "Hershey Kiss", "M&M", "Lego"),
+  characteristics = c("Red string", "Gummy bear", "Sugar-coated bear", "Wine gummy", "White swirl and sugar-coated", "sugar-coated bottle", "7-legged octopus and sugar-coated", "Ovoid chewy", "Spherical chewy", "Small fruit sugar chewy", "pyrimydal shape chocolate", "small chocolate coated with color", "lego-like hard sugar candy"),
+  occurences = c(7, 16, 1, 2, 1, 1, 4, 25, 6, 26, 1, 40, 1)
+)
+```
+ 
+```{r}
+example_data1 %>% 
+  kable("html") %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10, full_width = F)
+```
+ 
+#### Part 2: Collector's curve
+To help answer the questions raised in Part 1, you will conduct a simple but informative analysis that is a standard practice in biodiversity surveys. This analysis involves constructing a collector's curve that plots the cumulative number of species observed along the y-axis and the cumulative number of individuals classified along the x-axis. This curve is an increasing function with a slope that will decrease as more individuals are classified and as fewer species remain to be identified. If sampling stops while the curve is still rapidly increasing then this indicates that sampling is incomplete and many species remain undetected. Alternatively, if the slope of the curve reaches zero (flattens out), sampling is likely more than adequate.
+
+To construct the curve for your samples, choose a cell within the collection at random. This will be your first data point, such that X = 1 and Y = 1. Next, move consistently in any direction to a new cell and record whether it is different from the first. In this step X = 2, but Y may remain 1 or change to 2 if the individual represents a new species. Repeat this process until you have proceeded through all cells in your collection.
+
+My data: the whole community
+```{r}
+example_data2 = data.frame(
+  x = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,31,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131),
+  y = c(1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,4,4,5,6,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,13)
+)
+```
+
+And then create a plot. We will use a scatterplot (geom_point) to plot the raw data and then add a smoother to see the overall trend of the data.
+```{r}
+ggplot(example_data2, aes(x=x, y=y)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x="Cumulative number of individuals classified", y="Cumulative number of species observed")
+```
+
+For your sample:
+
+* Create a collector's curve for your sample (not the entire original community).
+```{r}
+example_data2 = data.frame(
+  x = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,31,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125),
+  y = c(1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,4,4,5,6,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12)
+)
+```
+
+```{r}
+ggplot(example_data2, aes(x=x, y=y)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x="Cumulative number of individuals classified", y="Cumulative number of species observed")
+```
+* Does the curve flatten out? If so, after how many individual cells have been collected?
+
+Around cell number 125/131.
+
+* What can you conclude from the shape of your collector's curve as to your depth of sampling?
+
+Not may species remain undetected. This sample is adequate enough to reveal that the majority of species were sampled from the original community.
+
+#### Part 3: Diversity estimates (alpha diversity)
+Using the table from Part 1, calculate species diversity using the following indices or metrics.
+
+##### Diversity: Simpson Reciprocal Index
+
+$\frac{1}{D}$ where $D = \sum p_i^2$
+
+$p_i$ = the fractional abundance of the $i^{th}$ species
+
+For example, using the example data 1 with 3 species with 2, 4, and 1 individuals each, D =
+
+```{r}
+species1 = 2/(2+4+1)
+species2 = 4/(2+4+1)
+species3 = 1/(2+4+1)
+
+1 / (species1^2 + species2^2 + species3^2)
+```
+
+The higher the value is, the greater the diversity. The maximum value is the number of species in the sample, which occurs when all species contain an equal number of individuals. Because the index reflects the number of species present (richness) and the relative proportions of each species with a community (evenness), this metric is a diveristy metric. Consider that a community can have the same number of species (equal richness) but manifest a skewed distribution in the proportion of each species (unequal evenness), which would result in different diveristy values.
+
+* What is the Simpson Reciprocal Index for your sample?
+
+```{r}
+species1 = 7/(131)
+species2 = 16/(131)
+species3 = 1/(131)
+species4 = 2/(131)
+species5 = 1/(131)
+species6 = 1/(131)
+species7 = 4/(131)
+species8 = 25/(131)
+species9 = 6/(131)
+species10 = 26/(131)
+species11 = 1/(131)
+species12 = 40/(131)
+species13 = 1/(131)
+
+1 / (species1^2 + species2^2 + species3^2 + species4^2 + species5^2 + species6^2 + species7^2 + species8^2 + species9^2 + species10^2 + species11^2 + species12^2 + species13^2)
+```
+
+* What is the Simpson Reciprocal Index for your original total community?
+
+
+##### Richness: Chao1 richness estimator
+Another way to calculate diversity is to estimate the number of species that are present in a sample based on the empirical data to give an upper boundary of the richness of a sample. Here, we use the Chao1 richness estimator. 
+
+$S_{chao1} = S_{obs} + \frac{a^2}{2b})$
+
+$S_{obs}$ = total number of species observed
+a = species observed once
+b = species observed twice or more
+
+So for our previous example community of 3 species with 2, 4, and 1 individuals each, $S_{chao1}$ =
+
+```{r}
+3 + 1^2/(2*2)
+```
+
+* What is the chao1 estimate for your sample?
+```{r}
+13 + 5^2/(2*8)
+```
+* What is the chao1 estimate for your original total community?
+
+
+#### Part 4: Alpha-diversity functions in R
+We've been doing the above calculations by hand, which is a very good exercise to aid in understanding the math behind these estimates. Not surprisingly, these same calculations can be done with R functions. Since we just have a species table, we will use the `vegan` package. You will need to install this package if you have not done so previously. 
+
+```{r message=FALSE}
+library(vegan)
+```
+
+First, we must remove the unnecesary data columns and transpose the data so that `vegan` reads it as a species table with species as columns and rows as samples (of which you only have 1).
+
+Then we can calculate the Simpson Reciprocal Index using the `diversity` function.
+
+And we can calculate the Chao1 richness estimator (and others by default) with the the `specpool` function for extrapolated species richness. This function rounds to the nearest whole number so the value will be slightly different that what you've calculated above.
+
+In Project 1, you will also see functions for calculating alpha-diversity in the `phyloseq` package since we will be working with data in that form.
+
+For your sample:
+
+* What are the Simpson Reciprocal Indices for your sample and community using the R function?
+```{r}
+example_data1_diversity = 
+  example_data1 %>% 
+  select(name, occurences) %>% 
+  spread(name, occurences)
+
+example_data1_diversity
+```
+
+```{r}
+diversity(example_data1_diversity, index="invsimpson")
+```
+* What are the chao1 estimates for your sample and community using the R function?
+    + Verify that these values match your previous calculations.
+```{r}
+specpool(example_data1_diversity)
+```
+
+#### Part 5: Concluding activity
+If you are stuck on some of these final questions, reading the [Kunin et al. 2010](https://www.ncbi.nlm.nih.gov/pubmed/19725865) and [Lundin et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/23760801) papers may provide helpful insights. 
+
+* How does the measure of diversity depend on the definition of species in your samples?
+* Can you think of alternative ways to cluster or bin your data that might change the observed number of species?
+* How might different sequencing technologies influence observed diversity in a sample?
