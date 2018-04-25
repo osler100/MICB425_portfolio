@@ -1,0 +1,167 @@
+LABELS
+SEPARATOR COMMA
+DATA
+#NODE_ID,LABEL
+1,Proteobacteria bacterium CAG:139 | CDA43154
+2,Acidobacteria bacterium Mor1 | ANM31379
+3,Thermoanaerobaculum aquaticum | KDA54266
+4,Hydrogenivirga sp. 128-5-R1-1 | EDP74437
+5,Thermosulfidibacter takaii ABI70S6 | BAT70885
+6,Persephonella marina EX-H1 | ACO04785
+7,Sulfurihydrogenibium sp. YO3AOP1 | ACD66081
+8,Calditerrivibrio nitroreducens DSM 19672 | ADR19776
+9,Deferribacter desulfuricans SSM1 | BAI81275
+10,Flexistipes sinusarabici DSM 4947 | AEI13972
+11,Mucispirillum schaedleri ASF457 | SIW08022
+12,Rhodothermus marinus SG0.5JP17-172 | AEN72356
+13,Flammeovirga sp. MY04 | ANQ49114
+14,Flammeovirgaceae bacterium 311 | AHM58400
+15,Aquimarina sp. 22II-S11-z7 | EZH74747
+16,Zhouia amylolytica AD3 | ETN95990
+17,Gemmatimonas sp. SG8_28 | KPK09519
+18,Nitrospina sp. SCGC_AAA799_A02 | KMP10636
+19,Nitrospira sp. ENR4 | CUQ67876
+20,Rhodopirellula sp. K833 | KLU07580
+21,Rhodopirellula maiorica SM1 | EMI19927
+22,Kiloniella sp. P1-1 | KKJ77425
+23,Magnetococcus marinus MC-1 | ABK44100
+24,Bradyrhizobium diazoefficiens SEMIA 5080 | KAK29675
+25,Microvirga vignae | KLK93974
+26,Rhizobium sp. AC44/96 | OCJ14409
+27,Aliiroseovarius crassostreae | KPN63413
+28,Labrenzia alba | CTQ64031
+29,Leisingera sp. JC1 | OBY25346
+30,Ponticoccus sp. SJ5A-1 | KUF09196
+31,Pseudovibrio sp. W64 | KZK86743
+32,Pseudovibrio sp. WM33 | KZL27424
+33,Rhodobacter sp. AKP1 | EKX59209
+34,Salipiger mucosus DSM 16094 | EPX77942
+35,Shimia sp. SK013 | KPA21942
+36,Azospirillum brasilense Sp245 | CCD03653
+37,Azospirillum lipoferum 4B | CBS89848
+38,Caenispirillum salinarum AK4 | EKV29471
+39,Caenispirillum salinarum AK4 | EKV31325
+40,Magnetospira sp. QH-2 | CCQ73122
+41,Magnetospirillum sp. SO-1 | EME71444
+42,Rhodospirillum centenum SW | ACI97896
+43,Thalassospira xiamenensis M-5 = DSM 17429 | AJD53401
+44,Sphingopyxis sp. H080 | KTE27683
+45,alpha proteobacterium AAP38 | KPF81453
+46,Achromobacter sp. 2789STDY5608628 | CUJ73828
+47,Bordetella bronchiseptica D993 | KDB91793
+48,Ralstonia pickettii | OCS50361
+49,Comamonas testosteroni | KGG95302
+50,Janthinobacterium sp. B9-8 | AMC34543
+51,Massilia sp. NR 4-1 | AKU21036
+52,Sutterella sp. CAG:397 | CDD72660
+53,Sutterella sp. CAG:351 | CDE47844
+54,Sutterella sp. KLE1602 | KXT32309
+55,Sutterella parvirubra YIT 11816 | EHY31605
+56,Sutterella wadsworthensis 3_1_45B | EFW01237
+57,Leptothrix cholodnii SP-6 | ACB33611
+58,Laribacter hongkongensis HLHK9 | ACO75065
+59,Sulfuricella denitrificans skB26 | GAB72181
+60,Dechloromonas aromatica RCB | AAZ48244
+61,Azoarcus sp. PA01 | KON81735
+62,Thauera phenylacetica B4P | ENO96804
+63,Candidatus Accumulibacter sp. BA-94 | EXI83783
+64,Betaproteobacteria bacterium SG8_39 | KPK08875
+65,Aeromonas hydrophila | KHE13455
+66,Catenovulum agarivorans DS-2 | EWH11964
+67,Marinobacter sp. HL-58 | KPP98061
+68,Thalassomonas actiniarum | KJE39172
+69,Ferrimonas balearica DSM 9799 | ADN77821
+70,Ferrimonas balearica DSM 9799 | ADN77828
+71,Moritella viscosa | SHO15317
+72,Psychromonas ingrahamii 37 | ABM03915
+73,Shewanella amazonensis SB2B | ABL99829
+74,Shewanella baltica OS155 | ABN62988
+75,Cellvibrio sp. BR | EIK44275
+76,Saccharophagus degradans 2-40 | ABD79348
+77,Simiduia agarivorans SA1 = DSM 21679 | AFU98332
+78,Thiocapsa sp. KS1 | CRI63872
+79,Thiocystis violascens DSM 198 | EGZ47324
+80,Thioalkalivibrio paradoxus ARh 1 | AHE98136
+81,Pragia fontium | AKJ42898
+82,Salmonella enterica subsp. enterica serovar Typhimurium str. DT104 | CQE26870
+83,Pantoea dispersa | KTR91232
+84,Methylomonas methanica | OAH99804
+85,Endozoicomonas numazuensis | KEQ16191
+86,Endozoicomonas numazuensis | KEQ17347
+87,Halomonas sp. GFAJ-1 | EHK61169
+88,Marinomonas sp. SBI22 | KZM42618
+89,Osedax symbiont Rs1 | EPJ46756
+90,Oleiphilus sp. HI0080 | KZZ16593
+91,Reinekea sp. MED297 | EAR08707
+92,Actinobacillus ureae ATCC 25976 | EFX90545
+93,Gallibacterium salpingitidis | OBX06481
+94,Haemophilus sp. CCUG 66565 | OBX86253
+95,Pasteurella dagmatis ATCC 43325 | EEX50592
+96,Pseudomonas sp. URMO17WK12:I11 | CRL48191
+97,Pseudomonas sp. 2_1_26 | EHF11675
+98,Pseudomonas flexibilis | KHO65273
+99,Pseudomonas stutzeri NF13 | EMD99130
+100,Beggiatoa sp. PS | EDN69880
+101,Candidatus Thiomargarita nelsonii | OAD23123
+102,Grimontia hollisae | AMG31975
+103,Photobacterium aphoticum | KLV00924
+104,Photobacterium profundum SS9 | CAG20433
+105,Vibrio cholerae | CSB87193
+106,Dyella japonica DSM 16301 | KLD65349
+107,Pseudoxanthomonas suwonensis | AKC86336
+108,Candidatus Thioglobus autotrophicus | ALE52945
+109,Sedimenticola thiotaurini | AKH19828
+110,Thiolapillus brandeum | BAO43832
+111,Thiolapillus brandeum | BAO44836
+112,endosymbiont of Ridgeia piscesae | KRT59364
+113,Gammaproteobacteria bacterium SG8_47 | KPK39222
+114,Desulfobulbus propionicus DSM 2032 | ADW17542
+115,Desulfobacterales bacterium SG8_35 | KPJ98142
+116,Bilophila sp. 4_1_30 | EGW42262
+117,Desulfovibrio sp. 6_1_46AFAA | EGW51707
+118,Geoalkalibacter subterraneus | AJF05543
+119,Geobacter sp. M18 | ADW11557
+120,Geobacter pickeringii | AJE02263
+121,Anaeromyxobacter sp. PSR-1 | GAO04628
+122,Cystobacter violaceus Cb vi76 | KFA92432
+123,Cystobacter fuscus DSM 2262 | EPX63321
+124,Sorangium cellulosum So ce56 | CAN94865
+125,Dissulfuribacter thermophilus | OCC14250
+126,Arcobacter thereius | OCL93939
+127,Campylobacter concisus UNSWCD | EIF07349
+128,Campylobacter fetus subsp. fetus | CUU75413
+129,Campylobacter fetus subsp. fetus | CZE51183
+130,Campylobacter gracilis RM3268 | EEV18947
+131,Campylobacter hominis ATCC BAA-381 | ABS51551
+132,Campylobacter jejuni subsp. jejuni 1928 | EIB83449
+133,Campylobacter showae CSUNSWCD | EKU12478
+134,Sulfurospirillum barnesii SES-3 | AAM21158
+135,Helicobacter sp. MIT 01-6242 | ANV98729
+136,Helicobacter pullorum | OCR16789
+137,Helicobacter cetorum MIT 99-5656 | AFI06128
+138,Helicobacter cinaedi CCUG 18818 = ATCC BAA-847 | BAM32505
+139,Helicobacter felis ATCC 49179 | CBY82397
+140,Helicobacter mustelae 12198 | CBG40364
+141,Sulfuricurvum kujiense DSM 16994 | ADR33357
+142,Sulfurimonas gotlandica GD1 | EHP29116
+143,Wolinella succinogenes | CAE10263
+144,Nautilia profundicola AmH | ACM93598
+145,Nitratiruptor sp. SB155-2 | BAF70913
+146,Sulfurovum sp. NBC37-1 | BAF71259
+147,Coriobacteriaceae bacterium CHKCI002 | CVH79892
+148,Denitrobacterium detoxificans | SEO37300
+149,Enterorhabdus caecimuris B7 | EOS53719
+150,Slackia sp. CM382 | EJU33744
+151,Ardenticatena maritima | KPL86585
+152,Marinithermus hydrothermalis DSM 14884 | AEB12539
+153,Oceanithermus profundus DSM 14977 | ADR36040
+154,Bacillus azotoformans LMG 9581 | EKN63995
+155,Desulfitobacterium hafniense | CDX04298
+156,Symbiobacterium thermophilum IAM 14863 | BAD39902
+157,Symbiobacterium thermophilum IAM 14863 | BAD41041
+158,Clostridiales bacterium PH28_bin88 | KKM09544
+159,Selenomonas ruminantium subsp. lactilytica TAM6421 | BAL84826
+160,Sporomusa ovata DSM 2662 | EQB28238
+161,Caldimicrobium thiodismutans | BAU23744
+162,Candidatus Methylomirabilis oxyfera | CBE69459
+163,hydrocarbon metagenome | KUG26824

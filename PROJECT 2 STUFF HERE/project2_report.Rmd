@@ -1,0 +1,711 @@
+---
+title: "Project2_Report"
+author: "Group 2: J. Atif, L. Chang, J. Gill, J. Huggins, L. Sonderegger, P. Suresh"
+date: "April 17, 2018"
+output:
+  word_document:
+    toc: yes
+  html_document:
+    df_print: paged
+    toc: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE)
+library(knitr)
+
+```
+#**Abstract**
+
+Oxygen minimum zones are important for understanding the nitrogen cycle and the role that the ocean plays with respect to atmospheric greenhouse gases. The nitrogen cycle consists of three processes: N2 fixation, nitrification, and denitrification, each of which have specific groups of microorganisms contributing to the overall pathways. Saanich Inlet, located on the coast of Vancouver Island, is a seasonally anoxic fjord and is a model ecosystem for monitoring biogeochemical responses to changing oxygen levels. The amount of nitrate increases (to a certain point) as oxygen decreases with depth in Saanich Inlet, which results in the production of the greenhouse gas N2O through denitrification. napA is the gene responsible for converting nitrate to nitrite, and is analyzed in this report. Using TreeSAPP to map the DNA and RNA reads to reference sequences, napA abundance data and phylogenetic relationships were inferred. The goal of this study is to understand the dynamics of the abunance of napA-bearing bacteria and napA expression by these bacteria down the water column in Sannich Inlet. To do this, we compared the DNA and RNA abundances and the taxonomic identities of these microbes at increasing depths. We found that increased napA expression was observed to be present at deeper depths, due to its known inhibition by oxygen. However, NapA expression was still observed at all depths, possibly due to its ability to catalyze the first step of assimilation of nitrate into organic compounds. Furthermore, we found that certain taxa closely mirrored their abundance to nitrate concentrations at different depths below the surface of the water. As expected, We also saw that RNA levels, at their peak, tend to be much higher than peak DNA levels. Different reaction steps of nutrient cycles are found distributed among different organisms due to early horizontal gene transfer followed by selection and amplification of traits that allow these species to adapt and thrive in their unique environments. Abundance of substrates and products played a role in influencing which reaction steps a species maintained. This specialization led to organisms taking up different specialized niches in their ecosystem, and interdependence between species developed.
+
+#**Introduction**
+Oxygen minimum zones (OMZs) are areas in the ocean in which oxygen concentrations are lower than 20 µM. They are important for understanding the nitrogen cycle and the role that the ocean plays with respect to atmospheric greenhouse gases (1). As a consequence of climate change and decreasing oxygen solubility, OMZs have become more widespread. Oxygen deficiency leads to decreased productivity of aerobic organisms and favors chemolithotrophs, which results in the production of several greenhouse gases (2). Saanich Inlet, located on the coast of Vancouver Island, is a seasonally anoxic fjord and is a model ecosystem for monitoring biogeochemical responses to changing oxygen levels (3). In spring and summer, a rise in primary productivity in surface waters combined with low levels of vertical mixing in the waters below results in anoxia and accumulation of methanol, ammonia, and hydrogen sulfide (3). During late summer and autumn, neap tidal flows bring in denser water from the Northeastern subarctic Pacific, which supplies the lower basin water with oxygen again. This pattern of anoxia followed by oxygen renewal is what makes Saanich Inlet a useful system in the study of biogeochemical shifts in response to changing oxygen (3). As oxygen levels decline in Saanich Inlet, the microorganisms present in the water column use alternative terminal electron acceptors, which allows denitrification to occur (4). The amount of nitrate increases (to a certain point) as oxygen decreases in Saanich Inlet, which results in the production of the greenhouse gas N2O through denitrification.  
+Nitrogen is one of the most abundant substances in the atmosphere, but in its natural form, is inaccessible to most organisms who need it as a building block for survival (5). The nitrogen cycle consists of three processes: N2 fixation, nitrification, and denitrification, each of which have specific groups of microorganisms contributing to the overall pathways (6). A diagram of the distribution of the nitrogen cycle can be seen in intro Figure 1 (7).  
+
+![Intro Figure 1: Nitrogen cycle in the marine environment, with different reactions for N2 fixation, nitrification, and denitrification (Gruber, 2008 (7))](c:/Users/Jawairia/Documents/MICB425_portfolio/Fig1.png)
+
+Denitrification is the process of anaerobic respiration resulting in the conversion of nitrate, NO3-, to nitrogen gas, N2 (Bernard, 2010). The intermediates of this reaction are nitrite (NO2-), nitric oxide (NO) and nitrous oxide (N2O) (6). The microorganisms who perform these reactions are deemed denitrifiers, but most of these organisms only possess genes to perform a select few steps of the pathway (6). The complete denitrification pathway is therefore distributed and comes from the cooperation of these microorganisms. A model of the genes involved in denitrification can be seen in intro Figure 2, taken from Julia Ansett's MICB 425 presentation (8).
+
+![Different genes involved in the denitrification pathway of the nitrogen cycle. Different organisms carry different genes, and their cooperation results in completion of the overall pathway.](c:/Users/Jawairia/Documents/MICB425_portfolio/Fig2.png)
+
+
+The fact that microorganisms perform different steps of the pathway means that the intermediate gases are released into the environment, which leads to a greenhouse effect. Denitrification is an essential pathway that removes fixed nitrogen (nitrate) from the ecosystem and returns it to its biologically stable form on N2 so that the cycle can repeat, and harmful intermediate products and reactive nitrogen don't accumulate (5).  
+In this analysis, napA, the gene responsible for converting nitrate to nitrite, was analyzed at 7 different depths from Saanich Inlet. Using TreeSAPP to map the DNA and RNA reads to reference sequences, abundance data and phylogenetic relationships were inferred. This data was used to determine how the DNA and RNA abundance differ with depth, the taxa that are mainly responsible for napA and which depth(s) they are active at, and the relationship between the abundance of napA and nitrogen species analyzed in Project 1.    
+
+#**Methods**
+
+##Sample collection, sequencing and processing 
+
+The sequence data was derived from Saanich Inlet Cruise 72. Specific target genes, specifically the V4-V5 region of small subunit (SSU) 16S rRNA, were amplified and sequenced in order to study microbial communities within a community. Samples for large volume SSU rRNA gene tags were collected from 6 major depths across the oxycline (4), while samples for high resolution SSU rRNA gene tag sequencing were taken from 16 depths across the oxycline. Genomic DNA was extracted from the collected samples and PCR amplification was used to generate SSU rRNA gene libraries (4). The samples were then sequenced using MiSeq system with Phred 33 quality scores. The Phred33 scores indicate the estimated probability of an sequencing error. The validity and quality of the SSU rRNA amplicons were determined at the Joint Genome Institute using the IMG/M pipeline (9). Gel electrophoresis was performed on SSU rRNA gene amplicons to check for molecular weight and possible degradation (4). Metagenomes were assembled and processed using MetaPathways 2.5 at UBC (10).
+
+##Bioinformatic analysis and tree generation
+
+In order to analyze the metagenomes, the TreeSAPP (11) (Tree-based Sensitive and Accurate Protein Profiler) pipeline was used to map reads to reference sequences, perform multiple sequence alignments, and create files that allowed for reconstruction of the nitrogen cycle along with determination of abundance of napA. TreeSAPP version Beta was used. A bash script using nano text editor was created to align the sequenced reads from all seven depths with metagenomic and metatranscriptomic assemblies. Example code is shown for the beginning of the bash script with 10m sequence data.
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, results="hide"}
+#!/bin/bash
+export WISECONFIGDIR=/home/connor/TreeSAPP//data//genewise_support_files//wisecfg
+
+time treesapp.py -T 8 --verbose --delete --pairing pe -t D0201 -i bucket/MetaG_assemblies/SI072_LV_10m_DNA.scaffolds.fasta --rpkm -r bucket/MetaG_reads/SI072_LV_10m.anqdp.fastq.gz -o treesapp_out_dir_depth10DNA
+
+rm treesapp_out_dir_depth10DNA/RPKM_outputs/*.sam
+
+time treesapp.py -T 8 --verbose --delete --pairing pe -t D0201 -i bucket/MetaG_assemblies/SI072_LV_10m_DNA.scaffolds.fasta --rpkm -r bucket/MetaT_reads/SI072_LV_10m.qtrim.3ptrim.artifact.rRNA.clean.fastq.gz -o treesapp_out_dir_depth10RNA
+
+rm treesapp_out_dir_depth10RNA/RPKM_outputs/*.sam
+
+```
+
+The script repeats, with the number 10 being substituted with the other 6 depths (100m, 120m, 135m, 150m, 165m, and 200m). SAM files are removed after every run due to their large size and limited space on the Google Cloud server. The bash script was run using screen and took about 2 days to complete. After the TreeSAPP processing was complete, the generated .jplace files were used to create phylogenetic trees on the integrative Tree of Life (iTOL) for both the DNA and RNA data (12). iTOL version 4.2 was used. the TreeSAPP processing also generated TSV files that had nucleotide type, depth, taxonomy and abundance information organized in a tab delimited spreadsheet.
+
+###Data cleaning
+
+Further manipulation of the TSV data generated above and plotting was completed in R v3.4.3 (13) using the following packages:
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE, results="hide"}
+library("tidyverse")
+library("phyloseq")
+library("cowplot")
+```
+
+After loading the TSV data into R, the depth, taxonomy, abundance and query data for both RNA and DNA at all depths were manipulated into a single data frame. For the extended code used to generate this data table for either DNA or RNA, see the folder in the repo called "iTol Outputs". Relative abundance for both RNA and DNA at each depth was also calculated and the code for this is also in the Appendix.
+
+```{r message=FALSE, warning=FALSE, include=FALSE, results="hide"}
+RNA_10<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.10 = Confident_Taxonomy, Abund.RNA.10 = Abundance, Query)
+RNA_100<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.100 = Confident_Taxonomy, Abund.RNA.100 = Abundance, Query)
+RNA_120 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.120 = Confident_Taxonomy, Abund.RNA.120 = Abundance, Query)
+RNA_135 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.135= Confident_Taxonomy, Abund.RNA.135= Abundance, Query)
+RNA_150 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.150= Confident_Taxonomy, Abund.RNA.150= Abundance, Query)
+RNA_165 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.165= Confident_Taxonomy, Abund.RNA.165= Abundance, Query)
+RNA_200 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.200= Confident_Taxonomy, Abund.RNA.200= Abundance, Query)
+
+
+
+
+
+DNA_10<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.10 = Confident_Taxonomy, Abund.DNA.10 = Abundance, Query)
+DNA_100<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.100 = Confident_Taxonomy, Abund.DNA.100 = Abundance, Query)
+DNA_120 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.120 = Confident_Taxonomy, Abund.DNA.120 = Abundance, Query)
+DNA_135 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.135= Confident_Taxonomy, Abund.DNA.135= Abundance, Query)
+DNA_150 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.150= Confident_Taxonomy, Abund.DNA.150= Abundance, Query)
+DNA_165 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.165= Confident_Taxonomy, Abund.DNA.165= Abundance, Query)
+DNA_200 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.200= Confident_Taxonomy, Abund.DNA.200= Abundance, Query)
+
+
+napA.all= DNA_10 %>%
+  full_join(RNA_10, by="Query") %>%
+  full_join(DNA_100, by="Query") %>%
+  full_join(RNA_100, by="Query") %>%
+  full_join(DNA_120, by="Query") %>%
+  full_join(RNA_120, by="Query") %>%
+  full_join(DNA_135, by="Query") %>%
+  full_join(RNA_135, by="Query") %>%
+  full_join(DNA_150, by="Query") %>%
+  full_join(RNA_150, by="Query") %>%
+  full_join(DNA_165, by="Query") %>%
+  full_join(RNA_165, by="Query") %>%
+  full_join(DNA_200, by="Query") %>%
+  full_join(RNA_200, by="Query")%>%
+
+  mutate(Taxonomy = ifelse(!is.na(Tax.RNA.10), Tax.RNA.10,
+                         ifelse(!is.na(Tax.DNA.10), Tax.DNA.10,
+                                ifelse(!is.na(Tax.RNA.100), Tax.RNA.100,
+                                       ifelse(!is.na(Tax.DNA.100), Tax.DNA.100,
+                                              ifelse(!is.na(Tax.RNA.120), Tax.RNA.120,
+                                                ifelse(!is.na(Tax.DNA.120), Tax.DNA.120,
+                                                ifelse(!is.na(Tax.RNA.135), Tax.RNA.135,
+                                                     ifelse(!is.na(Tax.DNA.135), Tax.DNA.135,
+                                                            ifelse(!is.na(Tax.RNA.150), Tax.RNA.150,
+                                                                   ifelse(!is.na(Tax.DNA.150), Tax.DNA.150,
+                                                                          ifelse(!is.na(Tax.RNA.165), Tax.RNA.165,
+                                                                                 ifelse(!is.na(Tax.DNA.165), Tax.DNA.165,
+                                                                                        ifelse(!is.na(Tax.RNA.200), Tax.RNA.200,
+                                                                                               ifelse(!is.na(Tax.DNA.200), Tax.DNA.200,
+                                              "unclassified"))))))))))))))) %>%
+                                                select(-starts_with("Tax.")) %>%
+                                                gather("Key", "Abundance", starts_with("Abund")) %>%
+                                                separate(Key, c("Key","Type","Depth_m"), by = ".") %>%
+                                                select(Depth_m, Type, Abundance, Taxonomy, Query) %>%
+                                                mutate(Depth_m = as.numeric(Depth_m)) %>%
+                                                separate(Taxonomy, into = c("Domain", "Phylum", "Class", "Order", "Family", "Genus", "Species"), sep="; ")
+                                              
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+RNA_10m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_10m["Domain"]<-RNA_10m$Taxonomy
+RNA_10m[8] <- lapply(RNA_10m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_10m_sep = separate(data=RNA_10m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_10m_sep["Depth"]<- "10_m"
+R1<-select(RNA_10m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R1["Perc"]<-R1[2]*(1/sum(R1$Abundance))
+
+
+RNA_100m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_100m["Domain"]<-RNA_100m$Taxonomy
+RNA_100m[8] <- lapply(RNA_100m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_100m_sep = separate(data=RNA_100m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_100m_sep["Depth"]<- "100_m"
+R2<-select(RNA_100m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R2["Perc"]<-R2[2]*(1/sum(R2$Abundance))
+
+RNA_120m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_120m["Domain"]<-RNA_120m$Taxonomy
+RNA_120m[8] <- lapply(RNA_120m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_120m_sep = separate(data=RNA_120m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_120m_sep["Depth"]<- "120_m"
+R3<-select(RNA_120m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R3["Perc"]<-R3[2]*(1/sum(R3$Abundance))
+
+
+RNA_135m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_135m["Domain"]<-RNA_135m$Taxonomy
+RNA_135m[8] <- lapply(RNA_135m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_135m_sep = separate(data=RNA_135m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_135m_sep["Depth"]<- "135_m"
+R4<-select(RNA_135m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R4["Perc"]<-R4[2]*(1/sum(R4$Abundance))
+
+RNA_150m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_150m["Domain"]<-RNA_150m$Taxonomy
+RNA_150m[8] <- lapply(RNA_150m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_150m_sep = separate(data=RNA_150m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_150m_sep["Depth"]<- "150_m"
+R5<-select(RNA_150m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R5["Perc"]<-R5[2]*(1/sum(R5$Abundance))
+
+RNA_165m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_165m["Domain"]<-RNA_165m$Taxonomy
+RNA_165m[8] <- lapply(RNA_165m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_165m_sep = separate(data=RNA_165m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_165m_sep["Depth"]<- "165_m"
+R6<-select(RNA_165m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R6["Perc"]<-R6[2]*(1/sum(R6$Abundance))
+
+RNA_200m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_200m["Domain"]<-RNA_200m$Taxonomy
+RNA_200m[8] <- lapply(RNA_200m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_200m_sep = separate(data=RNA_200m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_200m_sep["Depth"]<- "200_m"
+R7<-select(RNA_200m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R7["Perc"]<-R7[2]*(1/sum(R7$Abundance))
+
+
+R_all=rbind(R1, R2, R3, R4, R5, R6, R7)
+
+
+
+DNA_10m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_10m["Domain"]<-DNA_10m$Taxonomy
+DNA_10m[8] <- lapply(DNA_10m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_10m_sep = separate(data=DNA_10m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_10m_sep["Depth"]<- "10_m"
+D1<-select(DNA_10m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D1["Perc"]<-D1[2]*(1/sum(D1$Abundance))
+
+DNA_100m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_100m["Domain"]<-DNA_100m$Taxonomy
+DNA_100m[8] <- lapply(DNA_100m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_100m_sep = separate(data=DNA_100m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_100m_sep["Depth"]<- "100_m"
+D2<-select(DNA_100m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D2["Perc"]<-D2[2]*(1/sum(D2$Abundance))
+
+DNA_120m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_120m["Domain"]<-DNA_120m$Taxonomy
+DNA_120m[8] <- lapply(DNA_120m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_120m_sep = separate(data=DNA_120m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_120m_sep["Depth"]<- "120_m"
+D3<-select(DNA_120m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D3["Perc"]<-D3[2]*(1/sum(D3$Abundance))
+
+
+DNA_135m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_135m["Domain"]<-DNA_135m$Taxonomy
+DNA_135m[8] <- lapply(DNA_135m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_135m_sep = separate(data=DNA_135m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_135m_sep["Depth"]<- "135_m"
+D4<-select(DNA_135m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D4["Perc"]<-D4[2]*(1/sum(D4$Abundance))
+
+DNA_150m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_150m["Domain"]<-DNA_150m$Taxonomy
+DNA_150m[8] <- lapply(DNA_150m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_150m_sep = separate(data=DNA_150m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_150m_sep["Depth"]<- "150_m"
+D5<-select(DNA_150m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D5["Perc"]<-D5[2]*(1/sum(D5$Abundance))
+
+DNA_165m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_165m["Domain"]<-DNA_165m$Taxonomy
+DNA_165m[8] <- lapply(DNA_165m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_165m_sep = separate(data=DNA_165m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_165m_sep["Depth"]<- "165_m"
+D6<-select(DNA_165m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D6["Perc"]<-D6[2]*(1/sum(D6$Abundance))
+
+DNA_200m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_200m["Domain"]<-DNA_200m$Taxonomy
+DNA_200m[8] <- lapply(DNA_200m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_200m_sep = separate(data=DNA_200m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_200m_sep["Depth"]<- "200_m"
+D7<-select(DNA_200m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D7["Perc"]<-D7[2]*(1/sum(D7$Abundance))
+
+
+D_all=rbind(D1, D2, D3, D4, D5, D6, D7)
+```
+
+```{r}
+napA.all
+```
+
+
+The geochemical metadata associated with each depth was also used.
+
+```{r, results= "hide"}
+
+load("~/MICB425_portfolio/mothur_phyloseq.RData")
+
+metadata = data.frame(mothur@sam_data)
+
+```
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+metadata
+```
+
+#**Results**
+
+##How do the DNA and RNA abundance of napA differ with depth?
+According to Figure 1, the abundance of the napA gene increases from 100m to 150m. The abundance then decreases dramatically at about 165m, and increases in abundance again at 200m. The presence of DNA is missing at the depth of 10m. DNA abundance is greatest at the depth of approximately 150m and is the least at 100m and 160m.
+ 
+As seen in Figure 1, the RNA abundance of the napA gene is very similar to the DNA abundance. However, unlike DNA, the RNA of the gene is present at the surface of the Saanich Inlet at 10m. Similar to the DNA levels, the abundance of RNA also increases from 100m to 150m before decreasing at 160m. The RNA increases in abundance again at the depth of 200m. The RNA abundance of napA is the greatest at 150m and is the least at 100m. 
+
+```{r fig.height=4, fig.width=5, warning=FALSE}
+napA.all %>%
+  # Change NAs to "unclassified" at the level you want to plot
+  mutate(Genus = ifelse(is.na(Genus), "unclassified", Genus)) %>%
+ 
+  ggplot(aes(x = Genus, y = Depth_m)) +
+  # Use an ifelse statement to make 0 values into NAs so that they don't show up on the plot
+  # Use position_dodge to keep points from overlapping
+  geom_point(aes(size = ifelse(Abundance == 0, NA, Abundance), color = Type), position = position_dodge(0.5)) +
+  scale_y_reverse(lim=c(200,10)) +
+  labs(title = "Fig.1: Abundance of genera with napA (DNA vs. RNA)\n at different depths") +
+  theme_classic() +
+  theme(plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10))+
+        # Rename legend
+  scale_size_continuous(name = "Abundance")     
+
+```
+
+##What taxa are responsible for napA gene expression and abundance? Are they the same with depth, and with DNA versus RNA?
+
+At the genus level, as can be seen by Figure 1, None of the queries and their corresponding sequences can be confidently classified into taxonomic groups. However at a higher taxonomic level like family (Figure 2), the 16S rRNA data can be properly assigned taxonomic classification for both DNA and RNA. Figure 2 shows the relative RNA or DNA abundance for napA at each depth. It is clear from looking at the plot that the relative DNA and RNA abundance of most of the microorganisms responsible for napA changes with depth. However, the RNA abundanes seem to change more dramatically than the DNA abundances. For example, the members of the family Deferribacteraceae seem to comprise a good proportion of the bacteria (as seen by relative DNA abundance) at most depths. However, they also seem very sensitive to the geochemistry present at the different depths down the water column as the relative RNA abundance changes. Only members of the family Symbiobacteriaceae do not seem to change in their relative DNA abundance across depth, even though the relative RNA abundance does change. 
+
+
+```{r fig.height=11, fig.width=6.5, message=FALSE, warning=FALSE}
+RNA<-ggplot(data=R_all, aes(x=Depth, y= Perc, fill=Family))+
+  geom_bar(stat="identity")+
+  labs(title="napA Expression (RNA): Relative Abundance\n of Bacterial familiess across Depths", y="Relative Abundance")+
+theme(legend.position="none", plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text= element_text(size=9))
+
+
+DNA<-ggplot(data=D_all, aes(x=Depth, y= Perc, fill=Family))+
+  geom_bar(stat="identity")+
+  labs(title="napA in genome (DNA): Relative Abundance\n of Bacterial Families across Depths", y="Relative Abundance")+
+theme(legend.position="bottom",legend.text=element_text(size=8),legend.title=element_text(size=7, face="bold"), plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text= element_text(size=9))+
+  guides(fill=guide_legend(ncol=3,bycol=TRUE))
+
+plot_grid(RNA, DNA, labels=c("Fig.2A", "Fig.2B"), ncol=1, align = 'v', rel_heights = c(1,1.8)) 
+
+
+```
+ 
+Figure 3 displays the absolute DNA and RNA abundance of different families of microorganisms that are responsible for the napA gene. The families present, as seen by DNA abundance, do differ with depth, as some families are not present at certain depths while others are. For example, Ardenticatenaceae and Desulfobulbaceae are not present at depths below 150m while Cystobacterineae and Deferribacteraceae are present at depths of 165m and 200m. The abundance of DNA and RNA for the napA gene is generally similar within the different families. Figure 2 once again displays that only the RNA of the napA gene and not the DNA is present on the surface of the waters. The abundance of DNA for the gene is generally higher in the families of Candidatus Thioglobus and Symbiobacteriaceae. The abundance of RNA is high in the Candidatus Thioglobus, Deferribacteraceae, Helicobacteraceae, Therrodesulfobacteriaceae, and Thiotrichaceae families. For the most part, the abundance of DNA and RNA is similar at different depths within a family. However, in Deferribacteraceae, Therrodesulfobacteriaceae, and Thiotrichaceae families, the abundance of RNA is greater than DNA at different depths. On the other hand, for the Candidatus Thioglobus and Symbiobacteriaceae families, the abundance of DNA is greater than RNA at different depths.
+
+It is also important to note that for most families the presence of DNA and RNA for the napA gene is absent 200m below the surface of the water. Only some families have the napA gene present at the depth of 200m. After the depth of 100m, a few families have only the DNA of the napA gene present at certain depths and not the RNA of the gene. Overall, the abundance of RNA and DNA of the napA gene is similar within the taxon, however there is some clear variance as well.
+
+
+
+```{r fig.height=10, fig.width=6.5, warning=FALSE}
+
+napA.all %>%
+  # Change NAs to "unclassified" at the level you want to plot
+  mutate(Genus = ifelse(is.na(Family), "unclassified", Family)) %>%
+ 
+  ggplot(aes(x = Family, y = Depth_m)) +
+  # Use an ifelse statement to make 0 values into NAs so that they don't show up on the plot
+  # Use position_dodge to keep points from overlapping
+  geom_point(aes(x= Family, y= Depth_m, size = ifelse(Abundance == 0, NA, Abundance), color = Type), position = position_dodge(0.5)) +
+  scale_y_reverse(lim=c(200,10)) +
+  labs(title = "Fig. 3: Abundance of Family\n with napA (DNA vs. RNA) at different depths") +
+  theme_classic()+
+  theme(axis.text.x = element_text(hjust = 1), plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10))+
+  # Rename legend
+  scale_size_continuous(name = "Abundance") + coord_flip()
+```
+
+
+##How does the abundance of napA relate to nitrogen species in Saanich?
+
+Figure 4 shows how different nitrogen species and the phylum of microorganisms differs with depth. As a general trend, it can be seen that as the abundance of NO2 and NO3 decreases with depth, the presence of DNA and RNA of the napA gene increases. The presence of DNA and RNA is primarily present below the depth of 100m, which is the point where the abundance of NO2 and NO3 are decreasing. On the contrary, the presence of the napA gene across different phyla is seen when NH4 increases. It is also important to note that the abundance of RNA with increasing depth in the phylum Deferribacteres specifically correlates with the abundance with NO3. The concentration of NO3 initially increases before it begins to gradually decrease to zero. Similarly, in the phylum Deferribacteres the abundance of RNA gradually increases and then decreases with depth.
+
+```{r fig.height=6, fig.width=14, warning=FALSE}
+plot1 = napA.all %>%
+  # Change NAs to "unclassified" at the level you want to plot
+  mutate(Phylum = ifelse(is.na(Phylum), "unclassified", Phylum)) %>%
+ 
+  ggplot(aes(x = Phylum, y = Depth_m)) +
+  geom_point(aes(size = ifelse(Abundance == 0, NA, Abundance), color = Type), position = position_dodge(0.5)) +
+  scale_y_reverse(lim=c(200,10)) +
+  labs(y = "", title = "\nAbundance of Phyla\n with napA (DNA vs. RNA) down the water column") +
+  theme_classic() +
+  scale_size_continuous(name = "Abundance")+
+  theme(axis.text.x = element_text(angle = 70, hjust = 1, size=8), plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10), axis.text.y = element_text(size=8))
+
+plot2=metadata %>%
+  select (Depth_m, NO2_uM, NO3_uM, NH4_uM) %>%
+  gather("Nutrients","uM", NO2_uM:NH4_uM)%>%
+  arrange(Depth_m) %>%
+  ggplot() + geom_point(aes(y=Depth_m, x=uM)) +
+  #geom_line(aes(y=Depth_m, x=uM)) +
+  geom_path(aes(y=Depth_m, x=uM,group = 1)) +
+  scale_y_reverse(lim=c(200,10)) +
+  facet_wrap(~Nutrients, scales="free_x", nrow=1) +
+  theme(legend.position="none")+
+  labs(y = "Depth (m)", x = "Nitrogen Species", title="NO3, NO2 and NH4\n concentrations vs depth (m)")+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size=8),  plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10), axis.text.y = element_text(size=8))
+ 
+
+plot_grid(plot2, plot1, labels=c("Fig.4A", "Fig.4B"), align='h', rel_widths = c(1.5/6, 4.5/6), axis="b", label_size = 9, label_fontface="bold") 
+
+```
+
+Figures 5A and 5B show the abundance of napA in relation to NO2 and NO3 presence, respectively. In both figures, it can be seen that as the nitrogen species concentration is higher than 0 µM, the abundance of the DNA and RNA for napA increases. RNA abundance is lower than DNA at almost all depths except at the depth of 150m where a greater peak in the abundance of RNA in comparison to DNA is evident. Both RNA and DNA abundances peak at a depth of 10 m down the water column. The concentration of NO2 seems to be stable from 0m to 150m below the surface of the water before sharply decreasing. NO3, on the other hand, sharply increases in concentration before sharply declining at about 100m. Interestingly, the slope or rate of the decrease in RNA and DNA abundance after 150 m seems to mirror the slope of decrease that is seen in NO3 concentration.
+ 
+ 
+```{r fig.height=5, fig.width=8}
+Nit=metadata %>%
+  select (Depth_m, NO2_uM, NO3_uM)
+
+Sum_reads_RNA=data.frame(
+  Depth_m=c(10, 100, 120, 135, 150, 165, 200),
+  Sum_RPKM=c(sum(R1$Abundance), sum(R2$Abundance), sum(R3$Abundance), sum(R4$Abundance),sum(R5$Abundance),sum(R6$Abundance), sum(R7$Abundance)))
+N_RPKM_RNA=cbind(Sum_reads_RNA, Nit)
+
+Sum_reads_DNA=data.frame(
+  Depth_m=c(10, 100, 120, 135, 150, 165, 200),
+  Sum_RPKM=c(sum(D1$Abundance), sum(D2$Abundance), sum(D3$Abundance), sum(D4$Abundance),sum(D5$Abundance),sum(D6$Abundance), sum(D7$Abundance)))
+N_RPKM_DNA=cbind(Sum_reads_DNA, Nit)
+
+Nit=metadata %>%
+  select (Depth_m, NO2_uM, NO3_uM)
+
+# both RNA and DNA with NO2 uM
+plot7=ggplot() +
+  geom_point(data= N_RPKM_RNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM RNA")) +
+  geom_line(data= N_RPKM_RNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM RNA")) +
+  geom_point(data=N_RPKM_DNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM DNA")) +
+  geom_line(data=N_RPKM_DNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM DNA")) +
+  geom_point(data=Nit, aes(x=Depth_m, y=NO2_uM*10000, colour="NO2_uM"))+
+  geom_line(data=Nit, aes(x=Depth_m, y=NO2_uM*10000, colour="NO2_uM")) +
+  scale_y_continuous(sec.axis = sec_axis(~.*(1/10000), name = "Nitrogen Species (uM)")) +
+  labs(title="napA gene abundance and expression\n and NO2 (uM) across depth",y = "Sum RPKM" , x = "Depth (m)" , colour = "Parameter") +
+  theme(legend.position = c(0.05, 0.9), axis.text.x = element_text(angle = 90, hjust = 1, size=8),  plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=8),legend.title=element_text(size=8, face="bold"), axis.title = element_text(face="bold", size=10), axis.text.y = element_text(size=8))
+
+# both RNA and DNA with NO3 uM
+plot8=ggplot() +
+  geom_point(data= N_RPKM_RNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM RNA")) +
+  geom_line(data= N_RPKM_RNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM RNA")) +
+  geom_point(data=N_RPKM_DNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM DNA")) +
+  geom_line(data=N_RPKM_DNA, aes(x=Depth_m, y=Sum_RPKM, colour= "SUM RPKM DNA")) +
+  geom_point(data=Nit, aes(x=Depth_m, y=NO3_uM*100, colour="NO3_uM"))+
+  geom_line(data=Nit, aes(x=Depth_m, y=NO3_uM*100, colour="NO3_uM")) +
+  scale_y_continuous(sec.axis = sec_axis(~.*(1/100), name = "Nitrogen Species (uM)")) +
+  labs(title="napA gene abundance expression\n and NO3 (uM) across depth", y = "Sum RPKM" , x = "Depth (m)" , colour = "Parameter") +
+  theme(legend.position = c(0.05, 0.9),axis.text.x = element_text(angle = 90, hjust = 1, size=8),  plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=8),legend.title=element_text(size=8, face="bold"), axis.title = element_text(face="bold", size=10), axis.text.y = element_text(size=8))
+
+plot_grid(plot7, plot8, labels=c("Fig. 5A", "Fig. 5B"), rel_widths=c(1/2, 1/2), label_size=9, label_fontface="bold")
+```
+
+#**Discussion**
+
+NapA is a periplasmic nitrate reductase that catalyzes the reduction of nitrate to nitrite (4). This reduction of nitrate is the first step in the denitrification process which eventually leads to the production of nitrogen (4). As the denitrification pathway is an anaerobic process (4), the expression of napA and the other denitrification enzymes could be expected to be restricted to depths where no oxygen is present. Our results indeed show a strong increase in napA expression at the depth of 150m, which is a zone of minimal oxygen concentration. Furthermore, the expression of napA could be expected to correlate with the concentration of nitrate, the substrate of the enzyme. However, the highest concentration of nitrate was observed at 100m, 50 meters above the peak of napA expression. napA expression not matching the peak of nitrate concentration could be explained by the notably higher oxygen concentration at 100m. Therefore, at this depth, oxygen could still be used as electron acceptor, which yields much more energy because of the higher reduction potential of oxygen compared to nitrate. Another reason for the peak of napA not matching the highest nitrate concentration could be the distribution of the denitrification pathway amongst different bacterial species. The comparison of bacterial species expressing genes of the denitrification pathway showed that this process is shared amongst several distinct taxa. Therefore, for highest efficiency of the steps catalyzed by one enzyme (or one bacterial species), it is advantageous to perform this reaction at a location where also the other components of the pathway are abundant. napA can only work efficiently when the generated nitrite is not accumulated, but further processed by the downstream enzymes of the denitrification process. These downstream enzymes could be expressed in bacteria that are restricted to depths of at least 150m and therefore force the napA expression also take place in this region.
+
+A question that still remains remains to be addressed is: why is napA expressed at all measured depths? Expression of napA even at locations of high oxygen concentration does not seem to be advantageous, as oxygen could be used as more efficient electron acceptor. The explanation for this observation could be that napA also can be used for assimilation of nitrogen instead of the dissimilatory denitrification pathway. In oxic zones, nitrate is produced by chemolithotrophic bacteria that use nitrite as their electron donor and oxygen as their electron acceptor (5). The accumulated nitrate could then serve as substrate for napA (5). In a later step, nitrite can be turned into ammonia, which can be integrated into organic compounds like amino acids (5). To summarize, napA can catalyze the first step of assimilation of nitrate into organic compounds and can thus be useful at all depths of the ocean.
+
+Another interesting observation is that at 10m only RNA was observed, but no DNA. This can be explained by low abundance of the napA-containing bacteria at this depth. If only few bacteria are present in a sample, their presence might be missed on the level of DNA as each bacteria contains only one copy of the gene. DNA fragments of low abundance easily get lost during processing and sequencing. However, if these bacteria are strongly expressing the gene, many copies of the mRNA are present and therefore are still present after processing of the sample.
+
+There are many different environments on Earth, and for organisms to grow in these locations, each require a mechanism to convert nutrients from an inaccessible form, to a usable substance for life. Such an example is N2 gas, which requires transformation into ammonia (NH3) to be used by plants. Because different environments exist, we would expect environment-specific organisms to take up the niche of transforming (or recycling) nutrients, thus explaining the distribution of metabolic pathways across different species. Microbes have also been known to be "guardians of metabolism", allowing for the protection of metabolic pathways throughout Earth's history. Through horizontal gene transfer (HGT), different genes or even whole pathways may be given to different microbial species, some of which have innate characteristics to survive the harsh events on Earth (14). HGT helps explain why metabolic pathways are distributed among different species, and in combination with selective pressures, why some organisms may have genes that process only parts of a nutrient cycle.
+ 
+In general, reactions in a nutrient cycle are split into steps performed by different enzymes, and each reaction step is distributed among different species (5). This creates an interdependence between species to provide substrates, or remove products to allow for the continuation of each reaction step. But how did distribution of these genes come to be? Although HGT helped spread metabolic pathways among microbial species, selection for only some of these genes may occur as it allows an organism to adapt to the environment.
+ 
+Studies have shown that ancestral genes of known enzymes may have actually played different roles on early Earth than their current counterparts do (15). Thus, these genes may have spread and have been selected for reasons other than metabolic capability. For example, nitrogenase (which converts N2 to NH4) also has the ability to reduce other molecules such as acetylene, azide, and cyanide. It contains subunits encoded by different genes such as the nifD gene. Early forms of nifD are thought to have roles in coenzyme and metallocluster biosynthesis in the active sites of enzymes (15). Thus, ancestral nitrogenase may have originally provided adaptive traits via coenzyme synthesis, rather than its nitrogen fixing ability. This may explain why we currently see only a few reaction steps of a metabolic cycle in some species, rather than the whole metabolic cycle.  
+ 
+As well, it is possible that loss of a gene may occur in a community if the substrate for that reaction-step in the nutrient cycle is no longer present (16). This may explain why species have only some genes of a metabolic cycle. Different enzymes in a metabolic cycle may be regulated by various environmental factors, thus creating situations where expression/function of an enzyme may be constantly inhibited, making the gene irrelevant. This gene will no longer be selected for in the community and may eventually disappear in abundance. Such an example is nitrogenase which is O2-sensitive. Because of this sensitivity, oxygen-abundant environments may contain organisms that have genes for the rest of the nitrogen cycle, but lack nitrogenase genes. To prevent N2 build-up, another organism would have to take up the niche for nitrogen fixation. This organism may obtain nitrogenase genes via HGT, and may happen to have unique traits to protect the nitrogenase from oxygen, such as through the use of heterocysts (5).  
+ 
+Due to environmental regulation of different genes in a metabolic cycle, it is favorable to have different organisms specialize in different reaction steps. Specialization of a reaction step may be more efficient, as an organism does not need to spend excess energy with all steps of the metabolic cycle. Specialization also prevents different species from competing with each other for the same substrates, but facilitates cooperation and interdependency instead.  
+
+ 
+#**Future directions**
+
+Our data is based on single samples of one liter at each depth, which means these small samples might not represent the actual microbiome very well. Therefore, to confirm our results, it would be good to obtain data from more and larger samples. To confirm the hypothesis of a shared denitrification pathway, it would be interesting to follow the conversion of metabolites in vivo, for example by providing labeled substrates to a water sample. The distribution of the labeled molecules amongst the bacterial taxa could then be tracked during the process of denitrification.
+
+
+#**References**
+
+1. **Paulmier, A, Ruiz-Pino, D.** 2009. Oxygen minimum zones (OMZs) in the modern ocean. Prog. Oceanogr. **80**:113-128.
+
+2. **Walsh, DA, Zaikova, E, Howes, CG, Song, YC, Wright, JJ, Tringe, SG, Tortell, PD, Hallam, SJ.** 2009. Metagenome of a versatile chemolithoautotroph from expanding oceanic dead zones. Science. **326**:578-582.
+
+3. **Torres-Beltrán, M, Hawley, AK, Capelle, D, Zaikova, E, Walsh, DA, Mueller, A, Scofield, M, Payne, C, Pakhomova, L, Kheirandish, S.** 2017. A compendium of geochemical information from the Saanich Inlet water column. Scientific Data. **4**:170159.
+
+4. **Hawley, AK, Torres-Beltrán, M, Zaikova, E, Walsh, DA, Mueller, A, Scofield, M, Kheirandish, S, Payne, C, Pakhomova, L, Bhatia, M.** 2017. A compendium of multi-omic sequence information from the Saanich Inlet water column. Scientific Data. **4**:170160.
+
+5. **Bernhard, A.** 2010. The nitrogen cycle: processes. Players, and Human. 
+
+6. **Gruber, N.** 2008. The marine nitrogen cycle: overview and challenges. Nitrogen in the Marine Environment. **2**:1-50.
+
+7. **Stein, LY, Klotz, MG.** 2016. The nitrogen cycle. Current Biology. **26**:R98.
+
+8. **Ansett, Julia** 2018. MICB425: Microbial Ecological Genomics. Automated reconstruction of the nitrogen cycle along defined redox gradients in Saanich Inlet using the TreeSAPP pipeline [PowerPoint slides].
+
+9. **Chen, IA, Markowitz, VM, Chu, K, Palaniappan, K, Szeto, E, Pillay, M, Ratner, A, Huang, J, Andersen, E, Huntemann, M.** 2016. IMG/M: integrated genome and metagenome comparative data analysis system. Nucleic Acids Res. gkw929.
+
+10. **Konwar, KM, Hanson, NW, Bhatia, MP, Kim, D, Wu, S, Hahn, AS, Morgan-Lang, C, Cheung, HK, Hallam, SJ.** 2015. MetaPathways v2. 5: quantitative functional, taxonomic and usability improvements. Bioinformatics. **31**:3345-3347.
+
+11. Treesapp version: Beta https://github.com/hallamlab/treesapp 
+
+12. **R Core Team**. 2017. R: A language and environment for statistical computing. 3.4.3. R Foundation for Statistical Computing, Vienna, Austria.
+
+13. **Letunic, I, Bork, P.** 2016. Interactive tree of life (iTOL) v3: an online tool for the display and annotation of phylogenetic and other trees. Nucleic Acids Res. **44**:W245.
+
+14. **Falkowski, PG, Fenchel, T, Delong, EF.** 2008. The microbial engines that drive Earth's biogeochemical cycles. Science. **320**:1034-1039.
+
+15. **Dos Santos, PC, Fang, Z, Mason, SW, Setubal, JC, Dixon, R.** 2012. Distribution of nitrogen fixation and nitrogenase-like sequences amongst microbial genomes. BMC Genomics. **13**:162.
+
+16. **Maslov, S, Krishna, S, Pang, TY, Sneppen, K.** 2009. Toolbox model of evolution of prokaryotic metabolic networks and their regulation. Proceedings of the National Academy of Sciences. **106**:9743-9748.
+
+
+#**Appendix**
+
+##Code to Generate Combined Dataset Containging Taxononmy and Abundance Information for both RNA and DNA at each Depth
+```{r message=FALSE, warning=FALSE, paged.print=FALSE, results="hide"}
+RNA_10<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.10 = Confident_Taxonomy, Abund.RNA.10 = Abundance, Query)
+RNA_100<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.100 = Confident_Taxonomy, Abund.RNA.100 = Abundance, Query)
+RNA_120 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.120 = Confident_Taxonomy, Abund.RNA.120 = Abundance, Query)
+RNA_135 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.135= Confident_Taxonomy, Abund.RNA.135= Abundance, Query)
+RNA_150 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.150= Confident_Taxonomy, Abund.RNA.150= Abundance, Query)
+RNA_165 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.165= Confident_Taxonomy, Abund.RNA.165= Abundance, Query)
+RNA_200 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_RNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.RNA.200= Confident_Taxonomy, Abund.RNA.200= Abundance, Query)
+
+DNA_10<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.10 = Confident_Taxonomy, Abund.DNA.10 = Abundance, Query)
+DNA_100<-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.100 = Confident_Taxonomy, Abund.DNA.100 = Abundance, Query)
+DNA_120 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.120 = Confident_Taxonomy, Abund.DNA.120 = Abundance, Query)
+DNA_135 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.135= Confident_Taxonomy, Abund.DNA.135= Abundance, Query)
+DNA_150 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.150= Confident_Taxonomy, Abund.DNA.150= Abundance, Query)
+DNA_165 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.165= Confident_Taxonomy, Abund.DNA.165= Abundance, Query)
+DNA_200 <-read_tsv("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_DNA/final_outputs/marker_contig_map.tsv")%>%
+  select(Tax.DNA.200= Confident_Taxonomy, Abund.DNA.200= Abundance, Query)
+
+
+napA.all= DNA_10 %>%
+  full_join(RNA_10, by="Query") %>%
+  full_join(DNA_100, by="Query") %>%
+  full_join(RNA_100, by="Query") %>%
+  full_join(DNA_120, by="Query") %>%
+  full_join(RNA_120, by="Query") %>%
+  full_join(DNA_135, by="Query") %>%
+  full_join(RNA_135, by="Query") %>%
+  full_join(DNA_150, by="Query") %>%
+  full_join(RNA_150, by="Query") %>%
+  full_join(DNA_165, by="Query") %>%
+  full_join(RNA_165, by="Query") %>%
+  full_join(DNA_200, by="Query") %>%
+  full_join(RNA_200, by="Query")%>%
+
+  mutate(Taxonomy = ifelse(!is.na(Tax.RNA.10), Tax.RNA.10,
+                         ifelse(!is.na(Tax.DNA.10), Tax.DNA.10,
+                                ifelse(!is.na(Tax.RNA.100), Tax.RNA.100,
+                                       ifelse(!is.na(Tax.DNA.100), Tax.DNA.100,
+                                              ifelse(!is.na(Tax.RNA.120), Tax.RNA.120,
+                                                ifelse(!is.na(Tax.DNA.120), Tax.DNA.120,
+                                                ifelse(!is.na(Tax.RNA.135), Tax.RNA.135,
+                                                     ifelse(!is.na(Tax.DNA.135), Tax.DNA.135,
+                                                            ifelse(!is.na(Tax.RNA.150), Tax.RNA.150,
+                                                                   ifelse(!is.na(Tax.DNA.150), Tax.DNA.150,
+                                                                          ifelse(!is.na(Tax.RNA.165), Tax.RNA.165,
+                                                                                 ifelse(!is.na(Tax.DNA.165), Tax.DNA.165,
+                                                                                        ifelse(!is.na(Tax.RNA.200), Tax.RNA.200,
+                                                                                               ifelse(!is.na(Tax.DNA.200), Tax.DNA.200,
+                                              "unclassified"))))))))))))))) %>%
+                                                select(-starts_with("Tax.")) %>%
+                                                gather("Key", "Abundance", starts_with("Abund")) %>%
+                                                separate(Key, c("Key","Type","Depth_m"), by = ".") %>%
+                                                select(Depth_m, Type, Abundance, Taxonomy, Query) %>%
+                                                mutate(Depth_m = as.numeric(Depth_m)) %>%
+                                                separate(Taxonomy, into = c("Domain", "Phylum", "Class", "Order", "Family", "Genus", "Species"), sep="; ")
+                                              
+```
+
+##Code to Generate Taxonomy and Relative Abundane Dataset for both RNA and DNA at each depth
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+RNA_10m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_10m["Domain"]<-RNA_10m$Taxonomy
+RNA_10m[8] <- lapply(RNA_10m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_10m_sep = separate(data=RNA_10m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_10m_sep["Depth"]<- "10_m"
+R1<-select(RNA_10m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R1["Perc"]<-R1[2]*(1/sum(R1$Abundance))
+
+
+RNA_100m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_100m["Domain"]<-RNA_100m$Taxonomy
+RNA_100m[8] <- lapply(RNA_100m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_100m_sep = separate(data=RNA_100m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_100m_sep["Depth"]<- "100_m"
+R2<-select(RNA_100m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R2["Perc"]<-R2[2]*(1/sum(R2$Abundance))
+
+RNA_120m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_120m["Domain"]<-RNA_120m$Taxonomy
+RNA_120m[8] <- lapply(RNA_120m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_120m_sep = separate(data=RNA_120m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_120m_sep["Depth"]<- "120_m"
+R3<-select(RNA_120m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R3["Perc"]<-R3[2]*(1/sum(R3$Abundance))
+
+
+RNA_135m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_135m["Domain"]<-RNA_135m$Taxonomy
+RNA_135m[8] <- lapply(RNA_135m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_135m_sep = separate(data=RNA_135m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_135m_sep["Depth"]<- "135_m"
+R4<-select(RNA_135m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R4["Perc"]<-R4[2]*(1/sum(R4$Abundance))
+
+RNA_150m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_150m["Domain"]<-RNA_150m$Taxonomy
+RNA_150m[8] <- lapply(RNA_150m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_150m_sep = separate(data=RNA_150m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_150m_sep["Depth"]<- "150_m"
+R5<-select(RNA_150m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R5["Perc"]<-R5[2]*(1/sum(R5$Abundance))
+
+RNA_165m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_165m["Domain"]<-RNA_165m$Taxonomy
+RNA_165m[8] <- lapply(RNA_165m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_165m_sep = separate(data=RNA_165m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_165m_sep["Depth"]<- "165_m"
+R6<-select(RNA_165m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R6["Perc"]<-R6[2]*(1/sum(R6$Abundance))
+
+RNA_200m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_RNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+RNA_200m["Domain"]<-RNA_200m$Taxonomy
+RNA_200m[8] <- lapply(RNA_200m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+RNA_200m_sep = separate(data=RNA_200m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+RNA_200m_sep["Depth"]<- "200_m"
+R7<-select(RNA_200m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+R7["Perc"]<-R7[2]*(1/sum(R7$Abundance))
+
+
+R_all=rbind(R1, R2, R3, R4, R5, R6, R7)
+
+#DNA from here on out
+
+DNA_10m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/10m/10m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_10m["Domain"]<-DNA_10m$Taxonomy
+DNA_10m[8] <- lapply(DNA_10m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_10m_sep = separate(data=DNA_10m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_10m_sep["Depth"]<- "10_m"
+D1<-select(DNA_10m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D1["Perc"]<-D1[2]*(1/sum(D1$Abundance))
+
+DNA_100m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/100m/100m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_100m["Domain"]<-DNA_100m$Taxonomy
+DNA_100m[8] <- lapply(DNA_100m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_100m_sep = separate(data=DNA_100m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_100m_sep["Depth"]<- "100_m"
+D2<-select(DNA_100m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D2["Perc"]<-D2[2]*(1/sum(D2$Abundance))
+
+DNA_120m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/120m/120m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_120m["Domain"]<-DNA_120m$Taxonomy
+DNA_120m[8] <- lapply(DNA_120m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_120m_sep = separate(data=DNA_120m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_120m_sep["Depth"]<- "120_m"
+D3<-select(DNA_120m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D3["Perc"]<-D3[2]*(1/sum(D3$Abundance))
+
+
+DNA_135m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/135m/135m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_135m["Domain"]<-DNA_135m$Taxonomy
+DNA_135m[8] <- lapply(DNA_135m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_135m_sep = separate(data=DNA_135m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_135m_sep["Depth"]<- "135_m"
+D4<-select(DNA_135m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D4["Perc"]<-D4[2]*(1/sum(D4$Abundance))
+
+DNA_150m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/150m/150m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_150m["Domain"]<-DNA_150m$Taxonomy
+DNA_150m[8] <- lapply(DNA_150m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_150m_sep = separate(data=DNA_150m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_150m_sep["Depth"]<- "150_m"
+D5<-select(DNA_150m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D5["Perc"]<-D5[2]*(1/sum(D5$Abundance))
+
+DNA_165m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/165m/165m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_165m["Domain"]<-DNA_165m$Taxonomy
+DNA_165m[8] <- lapply(DNA_165m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_165m_sep = separate(data=DNA_165m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_165m_sep["Depth"]<- "165_m"
+D6<-select(DNA_165m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D6["Perc"]<-D6[2]*(1/sum(D6$Abundance))
+
+DNA_200m<-read.delim("~/MICB425_portfolio/MICB 425 Project 2/gcloud raw outputs/200m/200m_DNA/final_outputs/marker_contig_map.tsv", na.strings=c(""))
+DNA_200m["Domain"]<-DNA_200m$Taxonomy
+DNA_200m[8] <- lapply(DNA_200m[8], gsub, pattern = "Cystobacterineae;", replacement = "", fixed = TRUE)
+DNA_200m_sep = separate(data=DNA_200m, col=Domain, into=c("Domain", "Phylum",	"Class","Order","Family",	"Genus",	"Species", "Subsp."), sep="\\;", na.strings=c(""))
+DNA_200m_sep["Depth"]<- "200_m"
+D7<-select(DNA_200m_sep, Depth, Abundance, Domain, Phylum, Class, Order, Family, Genus, Species, Subsp.)
+D7["Perc"]<-D7[2]*(1/sum(D7$Abundance))
+
+
+D_all=rbind(D1, D2, D3, D4, D5, D6, D7)
+```
+
+

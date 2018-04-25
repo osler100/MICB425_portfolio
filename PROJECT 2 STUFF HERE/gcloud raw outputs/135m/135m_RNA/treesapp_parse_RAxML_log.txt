@@ -1,0 +1,1020 @@
+Parsing each gene reference tree file found in the input sequences in parallel... done.
+Wed Mar 28 19:10:21 2018
+Retrieving the reference tree for D0201... done.
+Parsing the 170 trees for D0201 in parallel... done.
+Parsing required 0.0:0.0:23.581979274749756
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00015.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00015... Wed Mar 28 19:10:45 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:45 2018	stop: Wed Mar 28 19:10:45 2018
+done.
+Finished parsing D0201_scaffold00015's RAxML output at Wed Mar 28 19:10:45 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00053.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00053... Wed Mar 28 19:10:45 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:46 2018	stop: Wed Mar 28 19:10:46 2018
+done.
+Finished parsing D0201_scaffold00053's RAxML output at Wed Mar 28 19:10:46 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00107.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00107... Wed Mar 28 19:10:46 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:46 2018	stop: Wed Mar 28 19:10:46 2018
+done.
+Finished parsing D0201_scaffold00107's RAxML output at Wed Mar 28 19:10:46 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00109.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00109... Wed Mar 28 19:10:46 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:46 2018	stop: Wed Mar 28 19:10:46 2018
+done.
+Finished parsing D0201_scaffold00109's RAxML output at Wed Mar 28 19:10:46 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00123.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00123... Wed Mar 28 19:10:46 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:47 2018	stop: Wed Mar 28 19:10:47 2018
+done.
+Finished parsing D0201_scaffold00123's RAxML output at Wed Mar 28 19:10:47 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00144.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00144... Wed Mar 28 19:10:47 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:47 2018	stop: Wed Mar 28 19:10:47 2018
+done.
+Finished parsing D0201_scaffold00144's RAxML output at Wed Mar 28 19:10:47 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00163.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00163... Wed Mar 28 19:10:47 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:48 2018	stop: Wed Mar 28 19:10:48 2018
+done.
+Finished parsing D0201_scaffold00163's RAxML output at Wed Mar 28 19:10:48 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00184.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00184... Wed Mar 28 19:10:48 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:48 2018	stop: Wed Mar 28 19:10:48 2018
+done.
+Finished parsing D0201_scaffold00184's RAxML output at Wed Mar 28 19:10:48 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00221.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00221... Wed Mar 28 19:10:48 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:48 2018	stop: Wed Mar 28 19:10:48 2018
+done.
+Finished parsing D0201_scaffold00221's RAxML output at Wed Mar 28 19:10:48 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00223.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00223... Wed Mar 28 19:10:48 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:49 2018	stop: Wed Mar 28 19:10:49 2018
+done.
+Finished parsing D0201_scaffold00223's RAxML output at Wed Mar 28 19:10:49 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00289.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00289... Wed Mar 28 19:10:49 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:49 2018	stop: Wed Mar 28 19:10:49 2018
+done.
+Finished parsing D0201_scaffold00289's RAxML output at Wed Mar 28 19:10:49 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00392.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00392... Wed Mar 28 19:10:49 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:50 2018	stop: Wed Mar 28 19:10:50 2018
+done.
+Finished parsing D0201_scaffold00392's RAxML output at Wed Mar 28 19:10:50 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00393.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00393... Wed Mar 28 19:10:50 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:50 2018	stop: Wed Mar 28 19:10:50 2018
+done.
+Finished parsing D0201_scaffold00393's RAxML output at Wed Mar 28 19:10:50 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00445.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00445... Wed Mar 28 19:10:50 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:50 2018	stop: Wed Mar 28 19:10:50 2018
+done.
+Finished parsing D0201_scaffold00445's RAxML output at Wed Mar 28 19:10:50 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00454.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00454... Wed Mar 28 19:10:50 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:51 2018	stop: Wed Mar 28 19:10:51 2018
+done.
+Finished parsing D0201_scaffold00454's RAxML output at Wed Mar 28 19:10:51 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00560.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00560... Wed Mar 28 19:10:51 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:51 2018	stop: Wed Mar 28 19:10:51 2018
+done.
+Finished parsing D0201_scaffold00560's RAxML output at Wed Mar 28 19:10:51 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00785.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00785... Wed Mar 28 19:10:51 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:52 2018	stop: Wed Mar 28 19:10:52 2018
+done.
+Finished parsing D0201_scaffold00785's RAxML output at Wed Mar 28 19:10:52 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00865.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00865... Wed Mar 28 19:10:52 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:52 2018	stop: Wed Mar 28 19:10:52 2018
+done.
+Finished parsing D0201_scaffold00865's RAxML output at Wed Mar 28 19:10:52 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00955.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00955... Wed Mar 28 19:10:52 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:52 2018	stop: Wed Mar 28 19:10:52 2018
+done.
+Finished parsing D0201_scaffold00955's RAxML output at Wed Mar 28 19:10:52 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold00958.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold00958... Wed Mar 28 19:10:52 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:53 2018	stop: Wed Mar 28 19:10:53 2018
+done.
+Finished parsing D0201_scaffold00958's RAxML output at Wed Mar 28 19:10:53 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01153.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01153... Wed Mar 28 19:10:53 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:53 2018	stop: Wed Mar 28 19:10:53 2018
+done.
+Finished parsing D0201_scaffold01153's RAxML output at Wed Mar 28 19:10:53 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01213.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01213... Wed Mar 28 19:10:53 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:54 2018	stop: Wed Mar 28 19:10:54 2018
+done.
+Finished parsing D0201_scaffold01213's RAxML output at Wed Mar 28 19:10:54 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01238.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01238... Wed Mar 28 19:10:54 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:54 2018	stop: Wed Mar 28 19:10:54 2018
+done.
+Finished parsing D0201_scaffold01238's RAxML output at Wed Mar 28 19:10:54 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01304.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01304... Wed Mar 28 19:10:54 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:54 2018	stop: Wed Mar 28 19:10:54 2018
+done.
+Finished parsing D0201_scaffold01304's RAxML output at Wed Mar 28 19:10:54 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01325.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01325... Wed Mar 28 19:10:54 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:55 2018	stop: Wed Mar 28 19:10:55 2018
+done.
+Finished parsing D0201_scaffold01325's RAxML output at Wed Mar 28 19:10:55 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01609.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01609... Wed Mar 28 19:10:55 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:55 2018	stop: Wed Mar 28 19:10:55 2018
+done.
+Finished parsing D0201_scaffold01609's RAxML output at Wed Mar 28 19:10:55 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01751.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01751... Wed Mar 28 19:10:55 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:56 2018	stop: Wed Mar 28 19:10:56 2018
+done.
+Finished parsing D0201_scaffold01751's RAxML output at Wed Mar 28 19:10:56 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01909.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01909... Wed Mar 28 19:10:56 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:56 2018	stop: Wed Mar 28 19:10:56 2018
+done.
+Finished parsing D0201_scaffold01909's RAxML output at Wed Mar 28 19:10:56 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01953.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01953... Wed Mar 28 19:10:56 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:56 2018	stop: Wed Mar 28 19:10:56 2018
+done.
+Finished parsing D0201_scaffold01953's RAxML output at Wed Mar 28 19:10:56 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold01965.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold01965... Wed Mar 28 19:10:56 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:57 2018	stop: Wed Mar 28 19:10:57 2018
+done.
+Finished parsing D0201_scaffold01965's RAxML output at Wed Mar 28 19:10:57 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02028.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02028... Wed Mar 28 19:10:57 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:57 2018	stop: Wed Mar 28 19:10:57 2018
+done.
+Finished parsing D0201_scaffold02028's RAxML output at Wed Mar 28 19:10:57 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02094.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02094... Wed Mar 28 19:10:57 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:58 2018	stop: Wed Mar 28 19:10:58 2018
+done.
+Finished parsing D0201_scaffold02094's RAxML output at Wed Mar 28 19:10:58 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02166.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02166... Wed Mar 28 19:10:58 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:58 2018	stop: Wed Mar 28 19:10:58 2018
+done.
+Finished parsing D0201_scaffold02166's RAxML output at Wed Mar 28 19:10:58 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02249.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02249... Wed Mar 28 19:10:58 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:58 2018	stop: Wed Mar 28 19:10:58 2018
+done.
+Finished parsing D0201_scaffold02249's RAxML output at Wed Mar 28 19:10:58 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02345.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02345... Wed Mar 28 19:10:58 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:59 2018	stop: Wed Mar 28 19:10:59 2018
+done.
+Finished parsing D0201_scaffold02345's RAxML output at Wed Mar 28 19:10:59 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02365.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02365... Wed Mar 28 19:10:59 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:59 2018	stop: Wed Mar 28 19:10:59 2018
+done.
+Finished parsing D0201_scaffold02365's RAxML output at Wed Mar 28 19:10:59 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02505.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02505... Wed Mar 28 19:10:59 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:10:59 2018	stop: Wed Mar 28 19:10:59 2018
+done.
+Finished parsing D0201_scaffold02505's RAxML output at Wed Mar 28 19:10:59 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold02969.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold02969... Wed Mar 28 19:11:00 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:00 2018	stop: Wed Mar 28 19:11:00 2018
+done.
+Finished parsing D0201_scaffold02969's RAxML output at Wed Mar 28 19:11:00 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold03077.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold03077... Wed Mar 28 19:11:00 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:00 2018	stop: Wed Mar 28 19:11:00 2018
+done.
+Finished parsing D0201_scaffold03077's RAxML output at Wed Mar 28 19:11:00 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold03339.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold03339... Wed Mar 28 19:11:00 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:01 2018	stop: Wed Mar 28 19:11:01 2018
+done.
+Finished parsing D0201_scaffold03339's RAxML output at Wed Mar 28 19:11:01 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold03519.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold03519... Wed Mar 28 19:11:01 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:01 2018	stop: Wed Mar 28 19:11:01 2018
+done.
+Finished parsing D0201_scaffold03519's RAxML output at Wed Mar 28 19:11:01 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold03650.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold03650... Wed Mar 28 19:11:01 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:02 2018	stop: Wed Mar 28 19:11:02 2018
+done.
+Finished parsing D0201_scaffold03650's RAxML output at Wed Mar 28 19:11:02 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold03701.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold03701... Wed Mar 28 19:11:02 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:02 2018	stop: Wed Mar 28 19:11:02 2018
+done.
+Finished parsing D0201_scaffold03701's RAxML output at Wed Mar 28 19:11:02 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold06078.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold06078... Wed Mar 28 19:11:02 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:02 2018	stop: Wed Mar 28 19:11:02 2018
+done.
+Finished parsing D0201_scaffold06078's RAxML output at Wed Mar 28 19:11:02 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold06110.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold06110... Wed Mar 28 19:11:02 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:03 2018	stop: Wed Mar 28 19:11:03 2018
+done.
+Finished parsing D0201_scaffold06110's RAxML output at Wed Mar 28 19:11:03 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold06355.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold06355... Wed Mar 28 19:11:03 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:03 2018	stop: Wed Mar 28 19:11:03 2018
+done.
+Finished parsing D0201_scaffold06355's RAxML output at Wed Mar 28 19:11:03 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold06474.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold06474... Wed Mar 28 19:11:03 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:04 2018	stop: Wed Mar 28 19:11:04 2018
+done.
+Finished parsing D0201_scaffold06474's RAxML output at Wed Mar 28 19:11:04 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold06847.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold06847... Wed Mar 28 19:11:04 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:04 2018	stop: Wed Mar 28 19:11:04 2018
+done.
+Finished parsing D0201_scaffold06847's RAxML output at Wed Mar 28 19:11:04 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold07266.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold07266... Wed Mar 28 19:11:04 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:04 2018	stop: Wed Mar 28 19:11:04 2018
+done.
+Finished parsing D0201_scaffold07266's RAxML output at Wed Mar 28 19:11:04 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold07338.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold07338... Wed Mar 28 19:11:04 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:05 2018	stop: Wed Mar 28 19:11:05 2018
+done.
+Finished parsing D0201_scaffold07338's RAxML output at Wed Mar 28 19:11:05 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold07634.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold07634... Wed Mar 28 19:11:05 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:05 2018	stop: Wed Mar 28 19:11:05 2018
+done.
+Finished parsing D0201_scaffold07634's RAxML output at Wed Mar 28 19:11:05 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold08122.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold08122... Wed Mar 28 19:11:05 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:06 2018	stop: Wed Mar 28 19:11:06 2018
+done.
+Finished parsing D0201_scaffold08122's RAxML output at Wed Mar 28 19:11:06 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold09012.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold09012... Wed Mar 28 19:11:06 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:06 2018	stop: Wed Mar 28 19:11:06 2018
+done.
+Finished parsing D0201_scaffold09012's RAxML output at Wed Mar 28 19:11:06 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold09893.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold09893... Wed Mar 28 19:11:06 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:06 2018	stop: Wed Mar 28 19:11:06 2018
+done.
+Finished parsing D0201_scaffold09893's RAxML output at Wed Mar 28 19:11:06 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold10001.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold10001... Wed Mar 28 19:11:06 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:07 2018	stop: Wed Mar 28 19:11:07 2018
+done.
+Finished parsing D0201_scaffold10001's RAxML output at Wed Mar 28 19:11:07 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold103968.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold103968... Wed Mar 28 19:11:07 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:07 2018	stop: Wed Mar 28 19:11:07 2018
+done.
+Finished parsing D0201_scaffold103968's RAxML output at Wed Mar 28 19:11:07 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold105890.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold105890... Wed Mar 28 19:11:07 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:07 2018	stop: Wed Mar 28 19:11:07 2018
+done.
+Finished parsing D0201_scaffold105890's RAxML output at Wed Mar 28 19:11:07 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold106685.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold106685... Wed Mar 28 19:11:08 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:08 2018	stop: Wed Mar 28 19:11:08 2018
+done.
+Finished parsing D0201_scaffold106685's RAxML output at Wed Mar 28 19:11:08 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold107298.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold107298... Wed Mar 28 19:11:08 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:08 2018	stop: Wed Mar 28 19:11:08 2018
+done.
+Finished parsing D0201_scaffold107298's RAxML output at Wed Mar 28 19:11:08 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold10872.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold10872... Wed Mar 28 19:11:08 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:09 2018	stop: Wed Mar 28 19:11:09 2018
+done.
+Finished parsing D0201_scaffold10872's RAxML output at Wed Mar 28 19:11:09 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold109474.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold109474... Wed Mar 28 19:11:09 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:09 2018	stop: Wed Mar 28 19:11:09 2018
+done.
+Finished parsing D0201_scaffold109474's RAxML output at Wed Mar 28 19:11:09 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold10993.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold10993... Wed Mar 28 19:11:09 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:10 2018	stop: Wed Mar 28 19:11:10 2018
+done.
+Finished parsing D0201_scaffold10993's RAxML output at Wed Mar 28 19:11:10 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold11515.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold11515... Wed Mar 28 19:11:10 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:10 2018	stop: Wed Mar 28 19:11:10 2018
+done.
+Finished parsing D0201_scaffold11515's RAxML output at Wed Mar 28 19:11:10 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold115609.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold115609... Wed Mar 28 19:11:10 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:10 2018	stop: Wed Mar 28 19:11:10 2018
+done.
+Finished parsing D0201_scaffold115609's RAxML output at Wed Mar 28 19:11:10 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold118013.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold118013... Wed Mar 28 19:11:10 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:11 2018	stop: Wed Mar 28 19:11:11 2018
+done.
+Finished parsing D0201_scaffold118013's RAxML output at Wed Mar 28 19:11:11 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold118341.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold118341... Wed Mar 28 19:11:11 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:11 2018	stop: Wed Mar 28 19:11:11 2018
+done.
+Finished parsing D0201_scaffold118341's RAxML output at Wed Mar 28 19:11:11 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold120275.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold120275... Wed Mar 28 19:11:11 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:11 2018	stop: Wed Mar 28 19:11:11 2018
+done.
+Finished parsing D0201_scaffold120275's RAxML output at Wed Mar 28 19:11:11 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold120813.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold120813... Wed Mar 28 19:11:12 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:12 2018	stop: Wed Mar 28 19:11:12 2018
+done.
+Finished parsing D0201_scaffold120813's RAxML output at Wed Mar 28 19:11:12 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold12230.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold12230... Wed Mar 28 19:11:12 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:12 2018	stop: Wed Mar 28 19:11:12 2018
+done.
+Finished parsing D0201_scaffold12230's RAxML output at Wed Mar 28 19:11:12 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold127366.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold127366... Wed Mar 28 19:11:12 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:13 2018	stop: Wed Mar 28 19:11:13 2018
+done.
+Finished parsing D0201_scaffold127366's RAxML output at Wed Mar 28 19:11:13 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold128626.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold128626... Wed Mar 28 19:11:13 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:13 2018	stop: Wed Mar 28 19:11:13 2018
+done.
+Finished parsing D0201_scaffold128626's RAxML output at Wed Mar 28 19:11:13 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold129526.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold129526... Wed Mar 28 19:11:13 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:13 2018	stop: Wed Mar 28 19:11:13 2018
+done.
+Finished parsing D0201_scaffold129526's RAxML output at Wed Mar 28 19:11:13 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold13340.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold13340... Wed Mar 28 19:11:13 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:14 2018	stop: Wed Mar 28 19:11:14 2018
+done.
+Finished parsing D0201_scaffold13340's RAxML output at Wed Mar 28 19:11:14 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold134863.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold134863... Wed Mar 28 19:11:14 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:14 2018	stop: Wed Mar 28 19:11:14 2018
+done.
+Finished parsing D0201_scaffold134863's RAxML output at Wed Mar 28 19:11:14 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold139040.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold139040... Wed Mar 28 19:11:14 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:14 2018	stop: Wed Mar 28 19:11:14 2018
+done.
+Finished parsing D0201_scaffold139040's RAxML output at Wed Mar 28 19:11:14 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold13945.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold13945... Wed Mar 28 19:11:14 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:15 2018	stop: Wed Mar 28 19:11:15 2018
+done.
+Finished parsing D0201_scaffold13945's RAxML output at Wed Mar 28 19:11:15 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold140489.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold140489... Wed Mar 28 19:11:15 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:15 2018	stop: Wed Mar 28 19:11:15 2018
+done.
+Finished parsing D0201_scaffold140489's RAxML output at Wed Mar 28 19:11:15 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold14427.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold14427... Wed Mar 28 19:11:15 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:15 2018	stop: Wed Mar 28 19:11:15 2018
+done.
+Finished parsing D0201_scaffold14427's RAxML output at Wed Mar 28 19:11:15 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold146622.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold146622... Wed Mar 28 19:11:16 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:16 2018	stop: Wed Mar 28 19:11:16 2018
+done.
+Finished parsing D0201_scaffold146622's RAxML output at Wed Mar 28 19:11:16 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold149290.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold149290... Wed Mar 28 19:11:16 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:16 2018	stop: Wed Mar 28 19:11:16 2018
+done.
+Finished parsing D0201_scaffold149290's RAxML output at Wed Mar 28 19:11:16 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold150031.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold150031... Wed Mar 28 19:11:16 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:17 2018	stop: Wed Mar 28 19:11:17 2018
+done.
+Finished parsing D0201_scaffold150031's RAxML output at Wed Mar 28 19:11:17 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold15172.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold15172... Wed Mar 28 19:11:17 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:17 2018	stop: Wed Mar 28 19:11:17 2018
+done.
+Finished parsing D0201_scaffold15172's RAxML output at Wed Mar 28 19:11:17 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold15281.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold15281... Wed Mar 28 19:11:17 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:17 2018	stop: Wed Mar 28 19:11:17 2018
+done.
+Finished parsing D0201_scaffold15281's RAxML output at Wed Mar 28 19:11:17 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold15353.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold15353... Wed Mar 28 19:11:17 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:18 2018	stop: Wed Mar 28 19:11:18 2018
+done.
+Finished parsing D0201_scaffold15353's RAxML output at Wed Mar 28 19:11:18 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold156547.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold156547... Wed Mar 28 19:11:18 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:18 2018	stop: Wed Mar 28 19:11:18 2018
+done.
+Finished parsing D0201_scaffold156547's RAxML output at Wed Mar 28 19:11:18 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold158118.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold158118... Wed Mar 28 19:11:18 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:19 2018	stop: Wed Mar 28 19:11:19 2018
+done.
+Finished parsing D0201_scaffold158118's RAxML output at Wed Mar 28 19:11:19 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold168555.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold168555... Wed Mar 28 19:11:19 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:19 2018	stop: Wed Mar 28 19:11:19 2018
+done.
+Finished parsing D0201_scaffold168555's RAxML output at Wed Mar 28 19:11:19 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold170544.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold170544... Wed Mar 28 19:11:19 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:19 2018	stop: Wed Mar 28 19:11:19 2018
+done.
+Finished parsing D0201_scaffold170544's RAxML output at Wed Mar 28 19:11:19 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold17151.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold17151... Wed Mar 28 19:11:19 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:20 2018	stop: Wed Mar 28 19:11:20 2018
+done.
+Finished parsing D0201_scaffold17151's RAxML output at Wed Mar 28 19:11:20 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold176601.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold176601... Wed Mar 28 19:11:20 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:20 2018	stop: Wed Mar 28 19:11:20 2018
+done.
+Finished parsing D0201_scaffold176601's RAxML output at Wed Mar 28 19:11:20 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold176826.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold176826... Wed Mar 28 19:11:20 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:21 2018	stop: Wed Mar 28 19:11:21 2018
+done.
+Finished parsing D0201_scaffold176826's RAxML output at Wed Mar 28 19:11:21 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold180841.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold180841... Wed Mar 28 19:11:21 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:21 2018	stop: Wed Mar 28 19:11:21 2018
+done.
+Finished parsing D0201_scaffold180841's RAxML output at Wed Mar 28 19:11:21 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold186485.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold186485... Wed Mar 28 19:11:21 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:21 2018	stop: Wed Mar 28 19:11:21 2018
+done.
+Finished parsing D0201_scaffold186485's RAxML output at Wed Mar 28 19:11:21 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold188405.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold188405... Wed Mar 28 19:11:21 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:22 2018	stop: Wed Mar 28 19:11:22 2018
+done.
+Finished parsing D0201_scaffold188405's RAxML output at Wed Mar 28 19:11:22 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold18964.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold18964... Wed Mar 28 19:11:22 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:22 2018	stop: Wed Mar 28 19:11:22 2018
+done.
+Finished parsing D0201_scaffold18964's RAxML output at Wed Mar 28 19:11:22 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold190578.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold190578... Wed Mar 28 19:11:22 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:22 2018	stop: Wed Mar 28 19:11:22 2018
+done.
+Finished parsing D0201_scaffold190578's RAxML output at Wed Mar 28 19:11:22 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold195851.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold195851... Wed Mar 28 19:11:22 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:23 2018	stop: Wed Mar 28 19:11:23 2018
+done.
+Finished parsing D0201_scaffold195851's RAxML output at Wed Mar 28 19:11:23 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold196285.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold196285... Wed Mar 28 19:11:23 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:23 2018	stop: Wed Mar 28 19:11:23 2018
+done.
+Finished parsing D0201_scaffold196285's RAxML output at Wed Mar 28 19:11:23 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold198765.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold198765... Wed Mar 28 19:11:23 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:24 2018	stop: Wed Mar 28 19:11:24 2018
+done.
+Finished parsing D0201_scaffold198765's RAxML output at Wed Mar 28 19:11:24 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold200749.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold200749... Wed Mar 28 19:11:24 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:24 2018	stop: Wed Mar 28 19:11:24 2018
+done.
+Finished parsing D0201_scaffold200749's RAxML output at Wed Mar 28 19:11:24 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold201413.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold201413... Wed Mar 28 19:11:24 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:24 2018	stop: Wed Mar 28 19:11:24 2018
+done.
+Finished parsing D0201_scaffold201413's RAxML output at Wed Mar 28 19:11:24 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold204735.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold204735... Wed Mar 28 19:11:25 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:25 2018	stop: Wed Mar 28 19:11:25 2018
+done.
+Finished parsing D0201_scaffold204735's RAxML output at Wed Mar 28 19:11:25 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold207510.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold207510... Wed Mar 28 19:11:25 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:25 2018	stop: Wed Mar 28 19:11:25 2018
+done.
+Finished parsing D0201_scaffold207510's RAxML output at Wed Mar 28 19:11:25 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold210934.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold210934... Wed Mar 28 19:11:25 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:26 2018	stop: Wed Mar 28 19:11:26 2018
+done.
+Finished parsing D0201_scaffold210934's RAxML output at Wed Mar 28 19:11:26 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold211602.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold211602... Wed Mar 28 19:11:26 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:26 2018	stop: Wed Mar 28 19:11:26 2018
+done.
+Finished parsing D0201_scaffold211602's RAxML output at Wed Mar 28 19:11:26 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold213048.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold213048... Wed Mar 28 19:11:26 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:26 2018	stop: Wed Mar 28 19:11:26 2018
+done.
+Finished parsing D0201_scaffold213048's RAxML output at Wed Mar 28 19:11:26 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold213833.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold213833... Wed Mar 28 19:11:26 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:27 2018	stop: Wed Mar 28 19:11:27 2018
+done.
+Finished parsing D0201_scaffold213833's RAxML output at Wed Mar 28 19:11:27 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold22284.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold22284... Wed Mar 28 19:11:27 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:27 2018	stop: Wed Mar 28 19:11:27 2018
+done.
+Finished parsing D0201_scaffold22284's RAxML output at Wed Mar 28 19:11:27 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold223412.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold223412... Wed Mar 28 19:11:27 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:28 2018	stop: Wed Mar 28 19:11:28 2018
+done.
+Finished parsing D0201_scaffold223412's RAxML output at Wed Mar 28 19:11:28 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold22939.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold22939... Wed Mar 28 19:11:28 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:28 2018	stop: Wed Mar 28 19:11:28 2018
+done.
+Finished parsing D0201_scaffold22939's RAxML output at Wed Mar 28 19:11:28 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold234979.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold234979... Wed Mar 28 19:11:28 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:28 2018	stop: Wed Mar 28 19:11:28 2018
+done.
+Finished parsing D0201_scaffold234979's RAxML output at Wed Mar 28 19:11:28 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold243144.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold243144... Wed Mar 28 19:11:28 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:29 2018	stop: Wed Mar 28 19:11:29 2018
+done.
+Finished parsing D0201_scaffold243144's RAxML output at Wed Mar 28 19:11:29 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold243146.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold243146... Wed Mar 28 19:11:29 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:29 2018	stop: Wed Mar 28 19:11:29 2018
+done.
+Finished parsing D0201_scaffold243146's RAxML output at Wed Mar 28 19:11:29 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold243431.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold243431... Wed Mar 28 19:11:29 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:30 2018	stop: Wed Mar 28 19:11:30 2018
+done.
+Finished parsing D0201_scaffold243431's RAxML output at Wed Mar 28 19:11:30 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold244314.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold244314... Wed Mar 28 19:11:30 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:30 2018	stop: Wed Mar 28 19:11:30 2018
+done.
+Finished parsing D0201_scaffold244314's RAxML output at Wed Mar 28 19:11:30 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold24572.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold24572... Wed Mar 28 19:11:30 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:30 2018	stop: Wed Mar 28 19:11:30 2018
+done.
+Finished parsing D0201_scaffold24572's RAxML output at Wed Mar 28 19:11:30 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold25162.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold25162... Wed Mar 28 19:11:30 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:31 2018	stop: Wed Mar 28 19:11:31 2018
+done.
+Finished parsing D0201_scaffold25162's RAxML output at Wed Mar 28 19:11:31 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold251701.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold251701... Wed Mar 28 19:11:31 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:31 2018	stop: Wed Mar 28 19:11:31 2018
+done.
+Finished parsing D0201_scaffold251701's RAxML output at Wed Mar 28 19:11:31 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold25272.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold25272... Wed Mar 28 19:11:31 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:32 2018	stop: Wed Mar 28 19:11:32 2018
+done.
+Finished parsing D0201_scaffold25272's RAxML output at Wed Mar 28 19:11:32 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold25617.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold25617... Wed Mar 28 19:11:32 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:32 2018	stop: Wed Mar 28 19:11:32 2018
+done.
+Finished parsing D0201_scaffold25617's RAxML output at Wed Mar 28 19:11:32 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold262947.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold262947... Wed Mar 28 19:11:32 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:32 2018	stop: Wed Mar 28 19:11:32 2018
+done.
+Finished parsing D0201_scaffold262947's RAxML output at Wed Mar 28 19:11:32 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold28414.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold28414... Wed Mar 28 19:11:32 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:33 2018	stop: Wed Mar 28 19:11:33 2018
+done.
+Finished parsing D0201_scaffold28414's RAxML output at Wed Mar 28 19:11:33 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold29226.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold29226... Wed Mar 28 19:11:33 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:33 2018	stop: Wed Mar 28 19:11:33 2018
+done.
+Finished parsing D0201_scaffold29226's RAxML output at Wed Mar 28 19:11:33 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold29445.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold29445... Wed Mar 28 19:11:33 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:34 2018	stop: Wed Mar 28 19:11:34 2018
+done.
+Finished parsing D0201_scaffold29445's RAxML output at Wed Mar 28 19:11:34 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold29523.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold29523... Wed Mar 28 19:11:34 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:34 2018	stop: Wed Mar 28 19:11:34 2018
+done.
+Finished parsing D0201_scaffold29523's RAxML output at Wed Mar 28 19:11:34 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold30216.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold30216... Wed Mar 28 19:11:34 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:34 2018	stop: Wed Mar 28 19:11:34 2018
+done.
+Finished parsing D0201_scaffold30216's RAxML output at Wed Mar 28 19:11:34 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold30890.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold30890... Wed Mar 28 19:11:34 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:35 2018	stop: Wed Mar 28 19:11:35 2018
+done.
+Finished parsing D0201_scaffold30890's RAxML output at Wed Mar 28 19:11:35 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold34329.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold34329... Wed Mar 28 19:11:35 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:35 2018	stop: Wed Mar 28 19:11:35 2018
+done.
+Finished parsing D0201_scaffold34329's RAxML output at Wed Mar 28 19:11:35 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold35415.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold35415... Wed Mar 28 19:11:35 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:36 2018	stop: Wed Mar 28 19:11:36 2018
+done.
+Finished parsing D0201_scaffold35415's RAxML output at Wed Mar 28 19:11:36 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold36211.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold36211... Wed Mar 28 19:11:36 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:36 2018	stop: Wed Mar 28 19:11:36 2018
+done.
+Finished parsing D0201_scaffold36211's RAxML output at Wed Mar 28 19:11:36 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold38198.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold38198... Wed Mar 28 19:11:36 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:36 2018	stop: Wed Mar 28 19:11:36 2018
+done.
+Finished parsing D0201_scaffold38198's RAxML output at Wed Mar 28 19:11:36 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold39132.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold39132... Wed Mar 28 19:11:36 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:37 2018	stop: Wed Mar 28 19:11:37 2018
+done.
+Finished parsing D0201_scaffold39132's RAxML output at Wed Mar 28 19:11:37 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold39756.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold39756... Wed Mar 28 19:11:37 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:37 2018	stop: Wed Mar 28 19:11:37 2018
+done.
+Finished parsing D0201_scaffold39756's RAxML output at Wed Mar 28 19:11:37 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold42772.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold42772... Wed Mar 28 19:11:37 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:38 2018	stop: Wed Mar 28 19:11:38 2018
+done.
+Finished parsing D0201_scaffold42772's RAxML output at Wed Mar 28 19:11:38 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold45212.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold45212... Wed Mar 28 19:11:38 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:38 2018	stop: Wed Mar 28 19:11:38 2018
+done.
+Finished parsing D0201_scaffold45212's RAxML output at Wed Mar 28 19:11:38 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold45931.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold45931... Wed Mar 28 19:11:38 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:39 2018	stop: Wed Mar 28 19:11:39 2018
+done.
+Finished parsing D0201_scaffold45931's RAxML output at Wed Mar 28 19:11:39 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold49201.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold49201... Wed Mar 28 19:11:39 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:39 2018	stop: Wed Mar 28 19:11:39 2018
+done.
+Finished parsing D0201_scaffold49201's RAxML output at Wed Mar 28 19:11:39 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold49894.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold49894... Wed Mar 28 19:11:39 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:39 2018	stop: Wed Mar 28 19:11:39 2018
+done.
+Finished parsing D0201_scaffold49894's RAxML output at Wed Mar 28 19:11:39 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold50466.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold50466... Wed Mar 28 19:11:39 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:40 2018	stop: Wed Mar 28 19:11:40 2018
+done.
+Finished parsing D0201_scaffold50466's RAxML output at Wed Mar 28 19:11:40 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold51118.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold51118... Wed Mar 28 19:11:40 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:40 2018	stop: Wed Mar 28 19:11:40 2018
+done.
+Finished parsing D0201_scaffold51118's RAxML output at Wed Mar 28 19:11:40 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold52358.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold52358... Wed Mar 28 19:11:40 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:41 2018	stop: Wed Mar 28 19:11:41 2018
+done.
+Finished parsing D0201_scaffold52358's RAxML output at Wed Mar 28 19:11:41 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold53761.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold53761... Wed Mar 28 19:11:41 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:41 2018	stop: Wed Mar 28 19:11:41 2018
+done.
+Finished parsing D0201_scaffold53761's RAxML output at Wed Mar 28 19:11:41 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold55212.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold55212... Wed Mar 28 19:11:41 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:41 2018	stop: Wed Mar 28 19:11:41 2018
+done.
+Finished parsing D0201_scaffold55212's RAxML output at Wed Mar 28 19:11:41 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold57026.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold57026... Wed Mar 28 19:11:41 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:42 2018	stop: Wed Mar 28 19:11:42 2018
+done.
+Finished parsing D0201_scaffold57026's RAxML output at Wed Mar 28 19:11:42 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold59273.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold59273... Wed Mar 28 19:11:42 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:42 2018	stop: Wed Mar 28 19:11:42 2018
+done.
+Finished parsing D0201_scaffold59273's RAxML output at Wed Mar 28 19:11:42 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold59917.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold59917... Wed Mar 28 19:11:42 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:43 2018	stop: Wed Mar 28 19:11:43 2018
+done.
+Finished parsing D0201_scaffold59917's RAxML output at Wed Mar 28 19:11:43 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold60566.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold60566... Wed Mar 28 19:11:43 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:43 2018	stop: Wed Mar 28 19:11:43 2018
+done.
+Finished parsing D0201_scaffold60566's RAxML output at Wed Mar 28 19:11:43 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold60807.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold60807... Wed Mar 28 19:11:43 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:43 2018	stop: Wed Mar 28 19:11:43 2018
+done.
+Finished parsing D0201_scaffold60807's RAxML output at Wed Mar 28 19:11:43 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold62005.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold62005... Wed Mar 28 19:11:43 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:44 2018	stop: Wed Mar 28 19:11:44 2018
+done.
+Finished parsing D0201_scaffold62005's RAxML output at Wed Mar 28 19:11:44 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold62734.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold62734... Wed Mar 28 19:11:44 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:44 2018	stop: Wed Mar 28 19:11:44 2018
+done.
+Finished parsing D0201_scaffold62734's RAxML output at Wed Mar 28 19:11:44 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold64858.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold64858... Wed Mar 28 19:11:44 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:45 2018	stop: Wed Mar 28 19:11:45 2018
+done.
+Finished parsing D0201_scaffold64858's RAxML output at Wed Mar 28 19:11:45 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold65832.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold65832... Wed Mar 28 19:11:45 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:45 2018	stop: Wed Mar 28 19:11:45 2018
+done.
+Finished parsing D0201_scaffold65832's RAxML output at Wed Mar 28 19:11:45 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold67270.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold67270... Wed Mar 28 19:11:45 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:45 2018	stop: Wed Mar 28 19:11:45 2018
+done.
+Finished parsing D0201_scaffold67270's RAxML output at Wed Mar 28 19:11:45 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold69956.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold69956... Wed Mar 28 19:11:45 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:46 2018	stop: Wed Mar 28 19:11:46 2018
+done.
+Finished parsing D0201_scaffold69956's RAxML output at Wed Mar 28 19:11:46 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold71802.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold71802... Wed Mar 28 19:11:46 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:46 2018	stop: Wed Mar 28 19:11:46 2018
+done.
+Finished parsing D0201_scaffold71802's RAxML output at Wed Mar 28 19:11:46 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold71936.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold71936... Wed Mar 28 19:11:46 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:47 2018	stop: Wed Mar 28 19:11:47 2018
+done.
+Finished parsing D0201_scaffold71936's RAxML output at Wed Mar 28 19:11:47 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold72172.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold72172... Wed Mar 28 19:11:47 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:47 2018	stop: Wed Mar 28 19:11:47 2018
+done.
+Finished parsing D0201_scaffold72172's RAxML output at Wed Mar 28 19:11:47 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold72263.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold72263... Wed Mar 28 19:11:47 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:48 2018	stop: Wed Mar 28 19:11:48 2018
+done.
+Finished parsing D0201_scaffold72263's RAxML output at Wed Mar 28 19:11:48 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold72925.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold72925... Wed Mar 28 19:11:48 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:48 2018	stop: Wed Mar 28 19:11:48 2018
+done.
+Finished parsing D0201_scaffold72925's RAxML output at Wed Mar 28 19:11:48 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold76717.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold76717... Wed Mar 28 19:11:48 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:48 2018	stop: Wed Mar 28 19:11:48 2018
+done.
+Finished parsing D0201_scaffold76717's RAxML output at Wed Mar 28 19:11:48 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold78375.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold78375... Wed Mar 28 19:11:48 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:49 2018	stop: Wed Mar 28 19:11:49 2018
+done.
+Finished parsing D0201_scaffold78375's RAxML output at Wed Mar 28 19:11:49 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold80904.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold80904... Wed Mar 28 19:11:49 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:49 2018	stop: Wed Mar 28 19:11:49 2018
+done.
+Finished parsing D0201_scaffold80904's RAxML output at Wed Mar 28 19:11:49 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold81029.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold81029... Wed Mar 28 19:11:49 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:50 2018	stop: Wed Mar 28 19:11:50 2018
+done.
+Finished parsing D0201_scaffold81029's RAxML output at Wed Mar 28 19:11:50 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold82766.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold82766... Wed Mar 28 19:11:50 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:50 2018	stop: Wed Mar 28 19:11:50 2018
+done.
+Finished parsing D0201_scaffold82766's RAxML output at Wed Mar 28 19:11:50 2018
+Identical RAxML classifications betweenD0201_scaffold82829andD0201_scaffold82766!Finished parsing D0201_scaffold82829's RAxML output at Wed Mar 28 19:11:50 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold83716.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold83716... Wed Mar 28 19:11:50 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:50 2018	stop: Wed Mar 28 19:11:50 2018
+done.
+Finished parsing D0201_scaffold83716's RAxML output at Wed Mar 28 19:11:50 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold83740.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold83740... Wed Mar 28 19:11:50 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:51 2018	stop: Wed Mar 28 19:11:51 2018
+done.
+Finished parsing D0201_scaffold83740's RAxML output at Wed Mar 28 19:11:51 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold88605.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold88605... Wed Mar 28 19:11:51 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:51 2018	stop: Wed Mar 28 19:11:51 2018
+done.
+Finished parsing D0201_scaffold88605's RAxML output at Wed Mar 28 19:11:51 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold89308.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold89308... Wed Mar 28 19:11:51 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:52 2018	stop: Wed Mar 28 19:11:52 2018
+done.
+Finished parsing D0201_scaffold89308's RAxML output at Wed Mar 28 19:11:52 2018
+Retrieving the labelled tree /home/jaspr/treesapp_out_dir_depth135RNA/various_outputs/D0201_scaffold99528.originalRAxML_labelledTree.txt... done.
+identifying the terminal children of each assignment for D0201_scaffold99528... Wed Mar 28 19:11:52 2018
+Number of subtrees = 323
+compare_terminal_children_strings	start: Wed Mar 28 19:11:52 2018	stop: Wed Mar 28 19:11:52 2018
+done.
+Finished parsing D0201_scaffold99528's RAxML output at Wed Mar 28 19:11:52 2018

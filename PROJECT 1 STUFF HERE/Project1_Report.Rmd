@@ -1,0 +1,517 @@
+---
+title: "Analysis of Candidatus scalindua data from Saanich Inlet using mothur and QIIME2"
+author: "Group2: J. Atif, L. Chang, J. Gill, J. Huggins, L. Sonderegger, P. Suresh"
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+output:
+  word_document:
+    toc: yes
+  html_document:
+    toc: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+```
+
+#**Abstract**
+
+Oxygen minimum zones have become more widespread due to climate change and this oxygen deficiency has led to decreased productivity of aerobic organisms. Saanich Inlet, a seasonally anoxic fjord, has been used to study the biogeochemical shifts in response to changing oxygen. Amplicon sequencing of the prokaryotic 16S rRNA is used to classify operational taxonomic units (OTUs) or amplicon sequence variants (ASVs). OTUs are clusters of reads differing by less than a fixed sequence dissimilarity and ASVs infer the biological sequences in the sample prior to amplification and sequencing errors. Two different pipelines, mothur (OTU) and QIIME2 (ASV), were used to analyze Saanich inlet data to determine how changing depth and oxygen concentration affects the abundance and richness of the genus *Candidatus* Scalindua. The relationship between relative taxon abundance and the variable was determined using a linear model, and an F test was used to test the significance of the linear regression model. It was found that the abundance of *Candidatus* Scalindua does not differ significantly with oxygen concentration using both mothur and QIIME2. However, abundance does correlate with depth, NH4 concentration and NO2 concentration. This is likely due to the fact that this genus is an aerotolerant organism, rather than an anaerobic organism. The results indicated little differentiation between mothur and QIIM2, possibly due to the small quantity of identified OTUs and ASVs in the sample. 
+
+#**Introduction**
+
+Oxygen minimum zones (OMZs) are areas in the ocean in which oxygen concentrations are lower than 20 µM. They are important to understand the nitrogen cycle and the role that the ocean plays with respect to atmospheric greenhouse gases (2). As a consequence of climate change and decreasing oxygen solubility, OMZs have become more widespread. Oxygen deficiency leads to decreased productivity of aerobic organisms and favours chemolithotrophs, which results in the production of several greenhouse gases (3). Saanich Inlet, located on the coast of Vancouver Island, is a seasonally anoxic fjord and is a model ecosystem for monitoring biogeochemical responses to changing oxygen levels (4). In spring and summer, a rise in primary productivity in surface waters combined with low levels of vertical mixing in the waters below results in anoxia and accumulation of methanol, ammonia, and hydrogen sulfide (47). During late summer and autumn, neap tidal flows bring in denser water from the Northeastern subarctic Pacific, which supplies the lower basin water with oxygen again. This pattern of anoxia followed by oxygen renewal is what makes Saanich Inlet a useful system in the study of biogeochemical shifts in response to changing oxygen (4).
+
+Since the rise of next-generation sequencing technologies, amplicon sequencing is widely used to identify microorganisms as well as to infer relationships between them. In this analysis, the V4-5 regions of prokaryotic 16S rRNA (the small subunit of ribosomal RNA) were used. Once sequenced, the data can be classified into operational taxonomic units (OTUs) or amplicon sequence variants (ASVs).
+
+OTUs are defined as clusters of reads that differ by less than a fixed sequence dissimilarity, which is commonly set at 3% (1). This can be done either by de-novo clustering or closed-reference assignment. In closed-reference assignment, reads that fit within a closed range similar to a reference sequence are placed into one OTU (1). A drawback of this is that some reads get "clipped" into two OTUs even though they appear to be the same species. In de-novo clustering, reads are grouped into OTUs based on how similar they are to each other, not based on a reference sequence (1). Some drawbacks to this include the fact that different species have similar 16S sequences and situations where decisions have to be made about several clusters appearing to overlap.
+
+ASVs have been recently introduced, and work by inferring the biological sequences in the sample prior to amplification and sequencing errors (1). In this case, everything that is not identical is unused in classification. A drawback of this method is that discarding data can lead to bias toward low-error sequences, which may not be the best representation of the cluster. Nevertheless, this method is gaining traction with its sensitivity and high resolution in distinguishing species (1).
+
+This analysis is done to show how using different pipelines affects the end results. Using both mothur (OTU)- and QIIME2 (ASV)-processed data, the Saanich inlet data was studied to determine how changing depth and oxygen levels impacts community structure, abundance, and richness. After analysis was complete, the answers given by the separate pipelines were compared. The taxon of interest chosen after analyzing the processed mothur and QIIME2 was *Candidatus* Scalindua. This taxon was chosen after plotting the abundances of several taxa and seeing which ones varied by depth, which would likely be due to oxygen. The genus *Candidatus* Scalindua encompasses more than 5 OTUs and ASVs, and consistently increases with increasing depth. Interestingly, they are known to be annamox bacteria that thrive in oxygen-minimum zones (5). For these reasons, this taxon was chosen to pursue further.
+
+#**Methods**
+
+##Sample Collection and Processing
+
+###Sample Processing and Sequencing
+The sequence data was derived from Saanich Inlet Cruise 72. Specific target genes are amplified and sequenced in order to study microbial communities within a community. The small subunit ribosomal RNA (SSU rRNA) is the gene of interest as it is a universally conserved marker and therefore is useful for comparing microbial communities (4), and for this analysis the V4-5 region of the 16S rRNA was used.  Samples for large volume SSU rRNA gene tags were collected from six major depths across the oxycline (4), while samples for high resolution SSU rRNA gene tag sequencing were taken from 16 depths across the oxycline. Genomic DNA was extracted from the collected samples (4). PCR amplification using 515F and 808R primers was then performed on the extracted genomic DNA to generate SSU rRNA gene libraries (4).  The samples were then sequenced using MiSeq system with Phred 33 quality scores. The Phred33 scores indicate the estimated probability of an error. The validity and quality of the SSU rRNA amplicons were determined, Gel electrophoresis was performed on SSU rRNA gene amplicons to check for molecular weight and possible degradation (4). Sequences were then processed using either mothur(6) or QIIME2(7).
+
+###Data Analysis in mothur and QIIME2
+
+The mothur software was used for further data processing. The data was cleaned up to identify potential errors and remove low quality sequences (6). Singletons were removed, as sequences that only occur once throughout the entire data set are most likely due to an error.  Sequences with less than 4 base pair differences were clustered together in order to reduce sequencing error and useless alignment data were removed (6). Then, operational taxonomic units (OTUs) were determined if clustered sequences display 97% similarity (6). The OTUs are then classified by first classifying all the sequences using the SILVA database. The taxonomies obtained from this database are then condensed for each OTU.
+
+In the QIIME2 software, the data is cleaned up and amplicon sequence variants (ASVs) are determined using the Dada2 protocol. The ASVS were then classified using the SILVA version 119 database at a 99% similarity (7).
+
+##Statistical Analysis of Relative Abundance Data
+
+###Data cleaning
+
+All statistical analysis of the data generated above was completed in R v3.4.3 (8) using the following packages:
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+library("tidyverse")
+library("magrittr")
+library("phyloseq")
+library('cowplot')
+```
+
+After loading the data into R and before further analysis, a random seed was set to ensure reproducibility of our results. The samples were then rarefied to 100,000 sequences per sample to allow the comparison of taxon relative abundance between samples.
+```{r}
+load("c:/users/Jawairia/Documents/MICB425_portfolio/mothur_phyloseq.RData")
+load("c:/users/Jawairia/Documents/MICB425_portfolio/qiime2_phyloseq.RData")
+
+set.seed(9376)
+
+#variables starting with m: correspond to mothur data
+#variables starting with q; correspond to QIIME2 data
+
+m.norm = rarefy_even_depth(mothur, sample.size=100000)
+q.norm = rarefy_even_depth(qiime2, sample.size=100000)
+```
+
+###Linear Model and F-test for testing significance of regression
+Relative abundance percentages were calculated using the rarefied counts for each sample. This data was then piped into linear models and statistical testing using the magrittr package.
+
+
+```{r}
+m.perc = transform_sample_counts(m.norm, function(x) 100 * x/sum(x))
+q.perc = transform_sample_counts(q.norm, function(x) 100 * x/sum(x))
+```
+
+For most of the analysis, the simple linear regression method was used. Briefly, a linear model was created to measure the strength of the relationship between relative taxon abundance and individual environmental variable within each sample. An F-test for testing significance of regression was then used to test the significance of the linear regression model in predicting the effect of the environmental variable on taxon relative abundance. To evaluate significance between 2 variables we used a p-value cut-off of 0.05.
+
+General example of computing the linear model:
+
+```{r eval=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, results=FALSE}
+#Summarizing the attributes of the linear model of Candidatus Scalindua relative abundance against Depth 
+m.norm %>% 
+    subset_taxa(Genus=="Candidatus_Scalindua") %>% 
+    tax_glom(taxrank = 'Genus') %>%
+    psmelt() %>%
+    
+    lm(Abundance ~ Depth_m, .) %>% 
+    summary()
+
+#Summarizing the attributes of the linear model of a specific OTU's relative abundance against Depth 
+m.norm %>% 
+  psmelt() %>% 
+  filter(OTU=="Otu0242") %>% 
+  lm(Abundance ~ Depth_m, .) %>% 
+  summary()
+```
+
+
+#**Results**
+
+
+##How does microbial community structure change with depth and oxygen concentration?
+
+In R, the Alpha-diversity and richness were calculated for the total rarefied community in each sample for both mothur and QIIME2. 
+
+```{r}
+m.alpha = estimate_richness(m.norm, measures = c("Chao1", "Shannon"))
+
+q.alpha = estimate_richness(q.norm, measures = c("Chao1", "Shannon"))
+
+# Combine richness and alpha-diversity data with geochemical data:
+m.meta.alpha = full_join(rownames_to_column(m.alpha), rownames_to_column(data.frame(m.perc@sam_data)), by = "rowname")
+
+q.meta.alpha = full_join(rownames_to_column(q.alpha), rownames_to_column(data.frame(q.perc@sam_data)), by = "rowname")
+
+
+```
+
+
+By plotting the Shannon alpha diversity and oxygen concentration against depth for both mothur and QIIME2 data, it is clear to see that the diversity of taxons present decreases further down the water column (Figure 1a, 1b). The Shannon diversity, predicted by using the QIIME2 data, is higher at all depths than the diversity calculated by using the mothur data. Going down the water column, a microbial diversity bottleneck is reached at a depth of 100m as the Shannon alpha diversity fall suddenly. 
+
+```{r fig.height=4, fig.width=8}
+#Figure 1a
+plot1=m.meta.alpha %>%  
+  ggplot() +
+  geom_point(aes(x=Depth_m, y=Shannon, colour= " Shannon Diversity")) +
+  geom_smooth(method='auto', aes(x=as.numeric(Depth_m), y=Shannon)) +
+  geom_line(aes(x=Depth_m, y=O2_uM/15, colour="O2_uM")) + 
+  geom_point(aes(x=Depth_m, y=O2_uM/15, colour="O2_uM"))+
+  scale_y_continuous(sec.axis = sec_axis(~.*(15), name = "O2 (uM)")) +
+  scale_colour_manual(values = c("blue", "red"))+
+  labs(title="\nMothur: Shannon Alpha-diversity \n and Oxygen across depth", y = "Shannon's diversity index" , x = "Depth (m)" , colour = "Parameter") +
+  theme(legend.position="none", plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10))
+
+
+#Figure 1b:
+plot2=q.meta.alpha %>%  
+   ggplot() +
+  geom_point(aes(x=Depth_m, y=Shannon, colour= " Shannon Diversity")) +
+  geom_smooth(method='auto', aes(x=as.numeric(Depth_m), y=Shannon)) +
+  geom_line(aes(x=Depth_m, y=O2_uM/15, colour="O2_uM")) + 
+  geom_point(aes(x=Depth_m, y=O2_uM/15, colour="O2_uM"))+
+  scale_y_continuous(sec.axis = sec_axis(~.*(15), name = "O2 (uM)")) +
+  scale_colour_manual(values = c("blue", "red"))+
+  labs(title="\nQiime2: Shannon Alpha-diversity \n and Oxygen across depth", y = "Shannon's diversity index" , x = "Depth (m)" , colour = "Parameter") +
+  theme(legend.position = c(0.4, 0.9), plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10))
+
+plot_grid(plot1, plot2, labels=c("FIg.1A", "Fig.1B"), rel_widths=c(1/2, 1/2))
+
+```
+
+
+By plotting alpha diversity against the corresponding oxygen concentration of each sample and applying a simple linear regression to visualize the correlation between the two variables, it is evident that despite microbial diversity decreasing with depth, the same strong trend is not seen for decreasing oxygen (Figure 1c, 1d). Regardless, there is a weak positive correlation between oxygen concentration and the corresponding alpha diversity. This pattern is similar for both the mothur and QIIME2 data.  
+
+```{r fig.height=4, fig.width=8}
+#Figure 1c:
+plot3=m.meta.alpha %>%
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Shannon)) +
+  labs(title="\nmothur: Shannon Alpha diversity by\n Oxygen concentration", y = "Shannon's diversity index" , x =" O2 (uM)" ) + theme(legend.position = "bottom", plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10))
+
+#Figure 1d:
+plot4=q.meta.alpha %>%
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Shannon)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Shannon)) +
+  labs(title="\nQIIME2: Shannon Alpha diversity by\n Oxygen concentration", y = "Shannon's diversity index" , x =" O2 (uM)" )+   theme(legend.position = "bottom", plot.title=element_text(size=12, face="bold", hjust = 0.5), legend.text=element_text(size=10),legend.title=element_text(size=10, face="bold"), axis.title = element_text(face="bold", size=10))
+
+plot_grid(plot3, plot4, labels=c("Fig.1C", "Fig.1D"), rel_widths=c(1/2, 1/2))
+
+
+```
+
+##Does the genus *Candidatus* Scalindua significantly differ in abundance with depth and oxygen concentration?
+
+The genus *Candidatus* Scalindua does differ significantly in abundance with depth, as the statistical test resulted in p values of 0.03964 and 0.03787 when using both mothur and QIIME2. On the other hand, this genus does not differ significantly in abundance with oxygen concentration using both mothur and QIIME2 as the p-values are 0.2338 and 0.2454 respectively. The linear model for abundance with depth using mothur has a positive correlation with wide 95% confidence interval bands (Figure 2a), whereas the linear model for abundance with oxygen concentration has a negative correlation with wide 95% confidence interval bands (Figure 2b). Similar to mothur, the linear model for abundance with depth using QIIME2 also has a positive correlation (Figure 2c). The linear model for the abundance of *Candidatus* Scalindua across oxygen concentration using QIIME2 has a negative correlation (Figure 2d). It is evident that analysis of the data using both mother and QIIME 2 resulted in similar trends for the linear models. However, the 95% confidence intervals seem to be narrower for the linear models that were generated using QIIME2 in comparison to the linear models that were generated using mothur.
+
+```{r fig.height=4, fig.width=8}
+#Figure 2a
+plot5=m.perc %>%
+  subset_taxa(Genus=="Candidatus_Scalindua") %>%
+  psmelt() %>%
+  group_by(Sample) %>%
+  summarize(Abundance_sum=sum(Abundance), Depth_m=mean(Depth_m)) %>%
+ 
+  ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) +
+  labs(title="\nmothur: The Abundance of genus\n Candidatus Scalindua across depth", y = "Abundance" , x = "Depth (m)" )+   theme(plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+
+#Figure 2b
+plot6=m.perc %>%
+  subset_taxa(Genus=="Candidatus_Scalindua") %>%
+  psmelt() %>%
+  group_by(Sample) %>%
+  summarize(Abundance_sum=sum(Abundance), O2_uM=mean(O2_uM)) %>%
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) +
+  labs(title="\nmothur: The Abundance of genus\n Candidatus Scalindua across Oxygen conc.", y = "Abundance" , x =" O2 (uM)" )+ theme(plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+plot_grid(plot5, plot6, labels=c("FIg.2A", "Fig.2B"), rel_widths=c(1/2, 1/2))
+
+```
+
+
+```{r fig.height=4, fig.width=8}
+#Figure 2c
+plot7=q.perc %>%
+  subset_taxa(Genus=="D_5__Candidatus Scalindua") %>%
+  psmelt() %>%
+  group_by(Sample) %>%
+  summarize(Abundance_sum=sum(Abundance), Depth_m=mean(Depth_m)) %>%
+  
+  ggplot() +
+  geom_point(aes(x=Depth_m, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(Depth_m), y=Abundance_sum)) +
+  labs(title="\nQIIME2: The Abundance of genus\n Candidatus Scalindua across Depth", y = "Abundance" , x =" Depth (m)" ) + theme(plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+#Figure 2d
+plot8=q.perc %>%
+  subset_taxa(Genus=="D_5__Candidatus Scalindua") %>%
+  psmelt() %>%
+  group_by(Sample) %>%
+  summarize(Abundance_sum=sum(Abundance), O2_uM=mean(O2_uM)) %>%
+  
+  ggplot() +
+  geom_point(aes(x=O2_uM, y=Abundance_sum)) +
+  geom_smooth(method='lm', aes(x=as.numeric(O2_uM), y=Abundance_sum)) +
+  labs(title="\nQIIME2: The Abundance of genus\n Candidatus Scalindua across Oxygen conc.", y = "Abundance" , x =" O2 (uM)")+ theme(plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+plot_grid(plot7, plot8, labels=c("Fig.2C", "Fig.2D"), rel_widths=c(1/2, 1/2))
+
+```
+
+
+##What is the richness of *Candidatus* Scalindua?
+
+Across all samples, 24 OTUs were identified within *Candidatus* Scalindua using mother. Initially 30 OTUs were identified, but after rarefying the sample, only 24 OTUs remained. When analyzing the amount of OTUs from each sample, the richness of *Candidatus* Scalindua seems to increase with depth. More OTUs are present in the sample obtained from depth 200m as opposed to 10m. A large increase in the number of OTUs is seen at depth of 165m and 200m.  On the other hand, only 5 ASVs were identified within *Candidatus* Scalindua across all samples using QIIME2. The richness of *Candidatus* Scalindua does not differ greatly with depth in comparison to OTUs. 
+
+Detailed outputs of the richness outputs in the total dataset and across samples are shown below:
+```{r}
+#Richness of Candidatus Scalindua in total dataset
+m.norm %>%
+  subset_taxa(Genus == "Candidatus_Scalindua")
+
+q.norm %>%
+  subset_taxa(Genus== "D_5__Candidatus Scalindua")
+
+#Richness of Candidatus Scalindua across samples
+m.norm %>% 
+  subset_taxa(Genus== "Candidatus_Scalindua") %>%
+  estimate_richness(measures = c("Observed"))
+
+q.norm %>%
+  subset_taxa(Genus=="D_5__Candidatus Scalindua") %>%
+  estimate_richness(measures = c("Observed"))
+
+```
+
+##Do the abundances of OTUs/ASVs within *Candidatus* Scalindua change significantly with depth and oxygen concentration?
+
+The abundance of OTUs within *Candidatus* scalindua does not differ significantly with depth when using mothur. This was determined by performing statistical tests of each OTU at all the depths which resulted in p-values greater than 0.05. The statistical analysis and p-values for each OTU or ASV's abundance across depth and oxygen are reported in the tables below:
+
+```{r}
+library(knitr)
+
+# Remove the otu_stats object so upon rerunning doesn't add to existing object
+rm(otu_stats)
+# Create new data frame to hold linear model outputs
+otu_stats = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"Pr(>|t|)"= numeric(0))
+
+m_otu=m.norm %>%
+  subset_taxa(Genus== "Candidatus_Scalindua")
+CS_otu=data.frame(m_otu@otu_table)
+names <- colnames(CS_otu)
+
+for (i in names){
+#Run a linear model of 1 OTU against depth
+    linear_fit = m.norm %>% 
+    psmelt() %>% 
+    filter(OTU==i) %>% 
+    
+    lm(Abundance ~ Depth_m, .) %>% 
+    summary()
+  otu_data = linear_fit$coefficients["Depth_m",]
+  otu_stats <- rbind(otu_stats, otu_data)
+}
+colnames(otu_stats)<- (c("Estimate", "Std. Error","t value","Pr(>|t|)"))
+row.names(otu_stats) <- colnames(CS_otu)
+
+#Print table
+kable(otu_stats,caption="Correlation data of OTUs within Genus Candidatus Scalindua across depth")
+
+```
+
+```{r}
+otu_stats2 = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"Pr(>|t|)"= numeric(0))
+for (i in names){
+#Run a linear model of 1 OTU against depth
+    linear_fit = m.norm %>% 
+    psmelt() %>% 
+    filter(OTU==i) %>% 
+    
+    lm(Abundance ~ O2_uM, .) %>% 
+    summary()
+  otu_data2 = linear_fit$coefficients["O2_uM",]
+  otu_stats2 <- rbind(otu_stats2, otu_data2)
+}
+colnames(otu_stats2)<- (c("Estimate", "Std. Error","t value","Pr(>|t|)"))
+row.names(otu_stats2) <- colnames(CS_otu)
+
+#Print table
+kable(otu_stats2,caption="mothur: Correlation data of OTUs within Genus Candidatus Scalindua across oxygen")
+```
+
+```{r}
+# Create new data frame to hold linear model outputs
+asv_stats = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"Pr(>|t|)"= numeric(0))
+
+q_asv=q.norm %>%
+  subset_taxa(Genus== "D_5__Candidatus Scalindua")
+CS_asv=data.frame(q_asv@otu_table)
+q.names <- rownames(CS_asv)
+
+for (i in q.names){
+#Run a linear model of 1 OTU against depth
+    linear_fit = q.norm %>% 
+    psmelt() %>% 
+    filter(OTU==i) %>% 
+    lm(Abundance ~ Depth_m, .) %>% 
+    summary()
+  asv_data = linear_fit$coefficients["Depth_m",]
+  asv_stats <- rbind(asv_stats, asv_data)
+}
+colnames(asv_stats)<- (c("Estimate", "Std. Error","t value","Pr(>|t|)"))
+row.names(asv_stats) <- rownames(CS_asv)
+
+#Print table
+kable(asv_stats,caption="Qiime2: Correlation data of ASVs within Genus Candidatus Scalindua across depth")
+
+```
+
+```{r}
+asv_stats2 = data.frame("Estimate" = numeric(0), "Std. Error"= numeric(0),"t value"= numeric(0),"Pr(>|t|)"= numeric(0))
+for (i in q.names){
+#Run a linear model of 1 OTU against depth
+    linear_fit = q.norm %>% 
+    psmelt() %>% 
+    filter(OTU==i) %>% 
+    
+    lm(Abundance ~ O2_uM, .) %>% 
+    summary()
+  asv_data2 = linear_fit$coefficients["O2_uM",]
+  asv_stats2 <- rbind(asv_stats2, asv_data2)
+}
+colnames(asv_stats2)<- (c("Estimate", "Std. Error","t value","Pr(>|t|)"))
+row.names(asv_stats2) <- rownames(CS_asv)
+
+#Print table
+kable(asv_stats2,caption="Qiime2: Correlation data of OTUs within Genus Candidatus Scalindua across oxygen")
+```
+
+As shown in Figure 3, it is evident that the abundance of the OTU's remains constant for almost all of the identified 24 OTUs. Only OTU 0046 seems to display a change in abundance; however the statistical test indicated that this difference is still not significant. The abundance of OTUs with oxygen concentration also does not change significantly with depth when using mothur. Similar to mothur, the abundance of ASVs does not differ significantly with depth or oxygen concentration when using QIIME2. The statistical tests performed on each of the five ASVs resulted in a p-value greater than 0.05 indicating that the difference is not significant.
+
+```{r fig.height=7, fig.width=6}
+#Figure 3
+m.perc %>%
+  subset_taxa(Genus=="Candidatus_Scalindua") %>%
+  psmelt() %>%
+ 
+  ggplot() +
+  geom_point(aes(x=Sample, y=OTU, size=Abundance, color=OTU)) +
+  scale_size_continuous(range = c(0,5)) +
+  labs(title="Fig.3: mothur:The Abundance of OTUs within\nCandidatus Scalindua across depth")+
+  theme(axis.text.x = element_text(size=9,angle = 90, hjust=0.5), legend.position="right",legend.text=element_text(size=8),legend.title=element_text(size=7, face="bold"), plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text.y= element_text(size=9))
+```
+
+```{r fig.height=6, fig.width=8}
+#Figure 4A
+gp = subset_taxa(mothur, Genus== "Candidatus_Scalindua")
+gpplot=plot_bar(gp, fill="Genus") +
+  labs(title="\nMothur: Total Abundance of OTUs\nin Candidatus Scalindua")+
+theme(legend.position="none", plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+#Figure 4B
+gp2 = subset_taxa(qiime2, Genus== "D_5__Candidatus Scalindua")
+gp2plot=plot_bar(gp2, fill="Genus")+
+    labs(title="\nQiime2: Total Abundance of OTUs\nin Candidatus Scalindua")+
+theme(legend.position="none", plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+plot_grid(gpplot, gp2plot, labels=c("Fig.4A", "Fig.4B"), rel_widths=c(1/2, 1/2))
+
+``` 
+
+Using mothur and QIIME2 resulted in different quantities at each depth as mothur displayed double the abundance of those determined by QIIME2, as seen in Figure 4. Both methods were generally able to detect the same phyla and classes in similar abundances (Figure 5 and Figure 6). Likewise, the general trend in Shannon's diversity index with depth and O2 concentration was similar between mothur and QIIME2.
+
+```{r fig.height=11, fig.width=8}
+#FIgure 5A
+mphyl=m.perc %>%
+  plot_bar(fill="Phylum") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  labs(title="\nmothur: Relative Abundance of\n Phyla across samples")+
+  theme(legend.position="right",legend.text=element_text(size=8),legend.title=element_text(size=7, face="bold"), plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text= element_text(size=9))
+
+
+#Figure 5b
+qphyl=q.perc %>%
+  plot_bar(fill="Phylum") +
+  geom_bar(aes(fill=Phylum), stat="identity") +
+  labs(title="\nQIIME2: Relative Abundance of\n Phyla across samples")+
+theme(legend.position="right",legend.text=element_text(size=8),legend.title=element_text(size=7, face="bold"), plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text= element_text(size=9))+
+  guides(fill=guide_legend(ncol=2,bycol=TRUE))
+
+plot_grid(mphyl, qphyl, labels=c("Fig.5A", "Fig.5B"), ncol=1, align = 'v', rel_heights = c(1/2,1/2)) 
+
+```
+
+```{r fig.height=11, fig.width=8}
+#FIgure 6A
+mclass=m.perc %>%
+  plot_bar(fill="Class") +
+  geom_bar(aes(fill=Class), stat="identity") +
+  labs(title="\nmothur: Relative Abundance of\n Classes across samples")+
+  theme(legend.position="right",legend.text=element_text(size=8),legend.title=element_text(size=7, face="bold"), plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text= element_text(size=9))
+
+
+#Figure 6b
+qclass=q.perc %>%
+  plot_bar(fill="Class") +
+  geom_bar(aes(fill=Class), stat="identity") +
+  labs(title="\nQIIME2: Relative Abundance of\n Classes across samples")+
+theme(legend.position="right",legend.text=element_text(size=8),legend.title=element_text(size=7, face="bold"), plot.title = element_text(size=12, face="bold", hjust=0.5), axis.title = element_text(face="bold", size=10), axis.text= element_text(size=9))+
+  guides(fill=guide_legend(ncol=2,bycol=TRUE))
+
+plot_grid(mphyl, qphyl, labels=c("Fig.6A", "Fig.6B"), ncol=1, align = 'v', rel_heights = c(1/2,1/2)) 
+
+```
+
+
+##Does abundance of *Candidatus* Scalindua change significantly with nitrogen concentration?
+
+It was found that the abundance of *Candidatus* Scalindua does change significantly with NH4 concentration as statistical tests resulted in a p value of 0.0003607. The linear model for the abundance of *Candidatus* Scalindua with NH4 concentration using mothur resulted in a positive correlation with a narrow 95% confidence interval (Figure 7).
+
+```{r fig.height=4, fig.width=4}
+#Figure 7: plot corresponding to the Abundance vs NH4 linear model
+m.perc %>%
+ subset_taxa(Genus=="Candidatus_Scalindua") %>%
+ psmelt() %>%
+ group_by(Sample) %>%
+ summarize(Abundance_sum=sum(Abundance), NH4_uM=mean(NH4_uM)) %>%
+ 
+ ggplot() +
+ geom_point(aes(x=NH4_uM, y=Abundance_sum)) +
+ geom_smooth(method='lm', aes(x=as.numeric(NH4_uM), y=Abundance_sum)) +
+ labs(title="Fig. 7:mothur: The Abundance of Genus\n Candidatus Scalindua across ammonium conc.", y = "Abundance" , x =" NH4 (uM)")+
+ theme(plot.title=element_text(size=12, face="bold", hjust = 0.5), axis.title = element_text(face="bold", size=10))
+
+```
+
+#**Discussion**
+
+At first sight, alpha diversity seems to significantly increase with higher oxygen concentrations. However, when the diversity is plotted against the actual oxygen concentrations in a linear model, no significant change can be observed anymore. This means we cannot make any conclusions about changes of alpha diversity across oxygen concentrations.
+
+The abundance of our chosen taxon *Candidatus* Scalindua does not significantly differ with decreasing oxygen concentration for either QIIME2 or mothur analyzed datsets. The abundance across depth shows a significant correlation for both mothur and QIIME2, with p-values of 0.03964 and 0.03787 respectively. However, none of the observed single OTUs or ASVs differs significantly across the two variables: oxygen and depth (using a p-cutoff of 0.05). These results are somewhat surprising, as *Candidatus* Scalindua have been shown to be anaerobic ammonium oxidizing bacteria (9). We expected the abundances of the bacteria to increase with greater depth and decreasing oxygen concentrations as the anammox process should be favored in the absence of oxygen. Gathering more sampling data and repeating the statistical analysis might be worth considering to further investigate the correlation between abundance and depth. One possible explanation for the lack of a significant change with oxygen concentrations might be that *Candidatus* Scalindua could be aerotolerant and actually does not directly rely on an anaerobic environment. Therefore, we investigated the correlation of abundance with the actual metabolites of the anammox process. Interestingly, the abundances indeed change significantly when observed across concentrations of NH4 or NO2, which are the two educts of the anammox process. The abundance of *Candidatus* Scalindua genus is tightly correlated with NH4 concentration (p= 0.0003607) as can be seen in Figure 7. This result aligns well with the annotation of *Candidatus* Scalindua as anammox-performing bacteria.
+
+The general trend in abundance for *Candidatus* Scalindua across depth determined by mothur and QIIME2 showed similar results. However these two methods differed in the numerical quantity observed at each depth, with mothur obtaining values approximately double the abundance of those determined by QIIME2 (Figure 4a). This is expected as QIIME2 produces ASVs through denoising of the data, thus producing fewer hits compared to the mothur pipeline (1). QIIME2 discards more data, potentially biasing the relative abundances towards a low error-prone sequence. Mothur on the other hand keeps more of the data, although not all of it will represent *Candidatus* Scalindua in the community sampled.
+
+Both OTU and ASV data revealed similar trends between each other when analyzing abundance of *Candidatus* Scalindua across depth and oxygen concentration. Abundance vs oxygen concentration shows a slight negative correlation; however both the abundance of OTU and ASV data do not have significant p-values against oxygen concentration, implying that O2 levels may not be a significant influential factor. Abundance and depth show a slight positive correlation but again, the two varaibles do not significantly correlate linearly implying that the correlation may not be as strong as the trend line predicts.
+ 
+The relatively small quantity of identified OTUs and ASVs for *Candidatus* Scalindua may explain why the analysis from mothur and QIIME2 do not seem to differ significantly.  However, it is argued that by using ASVs over OTUs, gene sequence analysis will become more comprehensive, reproducible,  reusable, and precise. The connection between OTUs and species are unsupported, and output numbers of OTUs are usually much larger than the actual number of strains in a community (10). Unlike OTUs, ASVs are reproducible and comprehensive fundamental units and have a biological meaning as a DNA sequence (11).
+ 
+Future directions for this project may include analysis of other taxonomic groups in the samples obtained from Saanich Inlet. Specifically, the analysis of taxonomic groups with a larger amount of OTUs and ASVs. With more data, we may then see a more significant difference between the mothur and QIIME2 analysis results compared to the minimal contrast observed with the *Candidatus* Scalindua data.
+ 
+
+#**References**
+
+
+1. **Callahan, BJ, McMurdie, PJ, Holmes, SP.** 2017. Exact sequence variants should replace operational taxonomic units in marker-gene data analysis. The ISME Journal. 11:2639.
+
+2. **Paulmier A, Ruiz-Pino D.** 2009. Oxygen minimum zones (OMZs) in the modern ocean. Progress in Oceanography. 80: 3-4.
+
+3. **Walsh DA, Zaikova E, Howes CG, Song YC, Wright JJ, Tringe SG, Tortell PD, Hallam, SJ.** 2009. Metagenome of a versatile chemolithoautotroph from Expanding Oceanic Dead Zones. Science. 326:5952.
+
+
+4. **Hawley AK, Torres-Beltrán M, Zaikova E, Walsh DA, Mueller A, Scofield M, Kheirandish S, Payne C, Pakhomova L, Bhatia M, Shevchuk O, Gies EA, Fairley D, Malfatti SA, Norbeck AD, Brewer HM, Pasa-Tolic L, del Rio TG, Suttle CA, Tringe S, Hallam SJ.** 2017. A compendium of multi-omic sequence information from the Saanich Inlet water column. Sci Data 4:170160.
+
+
+5. **Wang J and Gu JD.** 2013. Dominance of Candidatus Scalindua species in annamox community revealed in soils with different duration of rice paddy cultivation in Northeast China. Appl Microbial Biotechnol. 97:4.
+
+6. **Schloss PD, Westcott SL, Ryabin T, Hall JR, Hartmann M, Hollister EB, Lesniewski RA, Oakley BB, Parks DH, Robinson CJ, Sahl JW, Stres B, Thallinger GG, Van Horn DJ, Weber CF, Westcott SL, Ryabin T, Hall JR, Hartmann M, Hollister EB, Lesniewski RA, Oakley BB, Parks DH, Robinson CJ, Sahl JW, Stres B, Thallinger GG, Van Horn DJ, Weber CF.** 2009. Introducing mothur: open-source, platform-Independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol 75:7537-7541.
+
+
+7. **Caporaso JG, Kuczynski J, Stombaugh J, Bittinger K, Bushman FD, Costello EK, Fierer N, Peña AG, Goodrich JK, Gordon JI, Huttley GA, Kelley ST, Knights D, Koenig JE, Ley RE, Lozupone CA, McDonald D, Muegge BD, Pirrung M, Reeder J, Sevinsky JR, Turnbaugh PJ, Walters WA, Widmann J, Yatsunenko T, Zaneveld J, Knight R.** 2010. QIIME allows analysis of high-throughput community sequencing data. Nat Methods 7:335-336.
+
+
+8. **R Core Team.** 2017. R: A language and environment for statistical computing. 3.4.3. R Foundation for Statistical Computing, Vienna, Austria.
+
+9. **Schmid, M., Walsh, K. Webb, R. Rijpstra WI, van de Pas-Schoonen K., Verbruggen MJ, Hill T, Moffett B, Fuerst J, Schouten S, Sinninghe Damste JS, Harris J, Shaw P, Jetten M, Strous M.** Candidatus "Scalindua brodae", sp. nov., Candidatus "Scalindua wagneri", sp. nov., two new species of anaerobic ammonium oxidizing bacteria. Syst Appl Microbiol, 2003. 26(4): p. 529-38.
+ 
+10. **Stackebrandt E, Ebers J.** 2006. Taxonomic parameters revisited: tarnished gold standards. Microbiology Today 33: 152.
+
+
+11. **Kopylova, E, Navas-Molina, JA, Mercier, C, Xu, ZZ, Mahé, F, He, Y, Zhou, H, Rognes, T, Caporaso, JG, Knight, R.** 2016. Open-source sequence clustering methods improve the state of the art. Msystems. 1:3.
+
+
+
+
