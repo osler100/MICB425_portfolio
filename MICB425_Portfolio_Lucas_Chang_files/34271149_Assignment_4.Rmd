@@ -1,0 +1,26 @@
+Assignment 4 
+
+
+
+Excercise 1
+```{r metadata}
+library(tidyverse)
+library(phyloseq)
+metadata = read.table(file="Saanich_metadata.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+OTU = read.table(file="Saanich_OTU.txt",header=TRUE,row.names=1,sep="\t", na.strings=c("NAN", "NA", "."))
+```
+
+Excercise 2 
+```{r filter}
+library(dplyr)
+
+select(metadata, starts_with("CH4"))
+filter(metadata, CH4_nM > 100 & Temperature_C < 10) %>% select(Depth_m)
+```
+
+Excercise 3 
+```{r }
+library(dplyr)
+select(metadata, ends_with("nM")) %>% 
+  mutate(N2O_uM = N2O_nM/1000) %>% mutate(Std_N2O_uM = Std_N2O_nM/1000) %>% mutate(CH4_uM = CH4_nM/1000) %>% mutate(Std_CH4_uM = Std_CH4_nM/1000)
+```

@@ -1,6 +1,130 @@
 #MICB 425 Portfolio
+
+-------------------------------------
+
+#DATA SCIENCE
+
+-------------------------------------
+Assignment #1
+
+Figure 1.
+
+![Terminal](https://github.com/osler100/MICB425_portfolio/blob/master/Extra%20files/Figure_1.png)
+
+Figure 2.
+
+![Rstudio](https://github.com/osler100/MICB425_portfolio/blob/master/Extra%20files/Figure_2.png)
+
+Figure 3.
+
+![Github](https://github.com/osler100/MICB425_portfolio/blob/master/Extra%20files/Figure_3.png)
+----------------
+
+### Portfolio repo setup
+Detail the code you used to create, initialize, and push your portfolio repo to GitHub. This will be helpful as you will need to repeat many of these steps to update your porfolio throughout the course.
+
+
+Assignment #2
+
+git add .
+
+git commit -m
+
+git status
+
+git push
+
+### RMarkdown pretty html challenge
+Paste your code from the in-class activity of recreating the example html.
+
+Assignment #3 
+---
+title: "pretty_html"
+author: "Lucas Chang (34271149)"
+date: "January 19, 2018"
+output: 
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#R Markdown PDF Challenge
+
+
+The following assignment is an exercise for the reproduction of this .html document using the RStudio and RMarkdown tools we’ve shown you in class. Hopefully by the end of this, you won’t feel at all the way this poor PhD student does. We’re here to help, and when it comes to R, the internet is a really valuable resource. This open-source program has all kinds of tutorials online.
+
+![](http://www.phdcomics.com/comics/archive/phd011718s.gif)
+
+
+http://phdcomics.com/ Comic posted 1-17-2018
+
+##Challenge Goals
+
+
+The goal of this R Markdown html challenge is to give you an opportunity to play with a bunch of different RMarkdown formatting. Consider it a chance to flex your RMarkdown muscles. Your goal is to write your own RMarkdown that rebuilds this html document as close to the original as possible. So, yes, this means you get to copy my irreverant tone exactly in your own Markdowns. It’s a little window into my psyche. Enjoy =)
+
+**hint: go to the [PhD Comics website](http://phdcomics.com) to see if you can find the image above**
+
+*If you can’t find that exact image, just find a comparable image from the PhD Comics website and include it in your markdown*
+
+
+###Here’s a header!
+
+
+Let’s be honest, this header is a little arbitrary. But show me that you can reproduce headers with different levels please. This is a level 3 header, for your reference (you can most easily tell this from the table of contents).
+
+####Another header, now with maths
+
+Perhaps you’re already really confused by the whole markdown thing. Maybe you’re so confused that you’ve forgotton how to add. Never fear! A ~~calculator~~ R is here:
+
+```{r} 
+1231521+12341556280987
+```
+
+
+###Table Time
+
+Or maybe, after you’ve added those numbers, you feel like it’s about time for a table!
+I’m going to leave all the guts of the coding here so you can see how libraries (R packages) are loaded into R (more on that later). It’s not terribly pretty, but it hints at how R works and how you will use it in the future. The summary function used below is a nice data exploration function that you may use in the ^future^.
+
+
+```{r}
+library(knitr)
+kable(summary(cars),caption="I made this table with kable in the knitr package library")
+```
+
+And now you’ve almost finished your first RMarkdown! Feeling excited? We are! In fact, we’re so excited that maybe we need a big finale eh? Here’s ours! Include a fun gif of your choice!
+
+
+![](https://media.giphy.com/media/AHN0PfASlNy3S/giphy.gif)
+
+-------------------------------------
+
+Assignment 4 is under...
+
+MICB425_portfolio  >  MICB425_Portfolio_Lucas_Chang_files  >  34271149_Assignment_4.Rmd
+
+-------------------------------------
+
+Assignment 5 is under...
+
+MICB425_portfolio  >  MICB425_Portfolio_Lucas_Chang_files  >  ggplot_Lucas_Chang
+
+-------------------------------------
+
+#MODULE 1 
+
+-------------------------------------
+
 ## Origins and Earth Systems
+
+
 ### Evidence worksheet 01 
+
+
+
 The template for the first Evidence Worksheet has been included here. The first thing for any assignment should link(s) to any relevant literature (which should be included as full citations in a module references section below).
 
 You can copy-paste in the answers you recorded when working through the evidence worksheet into this portfolio template. 
@@ -326,8 +450,6 @@ References
 
 5.	Falkowski, P, Scholes, RJ, Boyle, E, Canadell, J, Canfield, D, Elser, J, Gruber, N, Hibbard, K, Högberg, P, Linder, S. 2000. The global carbon cycle: a test of our knowledge of earth as a system. Science. 290:291-296.
 
-
-
 -------------------
 
 ### Evidence Worksheet 3
@@ -398,8 +520,40 @@ The conclusions they made were justified, assuming that the models they used wer
 
 A few times, I found statements in this paper that were not cited, and we were made to assume that their reasoning was and evidence they used was true and that the methodology of these findings were valid as well. Possibly these statements may be considered common-sense to a student familiar with the Earth processes/systems.
 
+### Module 01 references
+Achenback J. 2012. [Spaceship Earth: A new view of environmentalism.](https://www.washingtonpost.com/national/health-science/spaceship-earth-a-new-view-of-environmentalism/2011/12/29/gIQAZhH6WP_story.html?utm_term=.4d3aeac98db8) The Washington Post.  
+
+Canfield DE, Glazer AN, and Falkowski PG. 2010. [The Evolution and Future of Earth's Nitrogen Cycle.](https://www.ncbi.nlm.nih.gov/pubmed/20929768) Science. 330(6001):192-196.  
+
+Falkowski PG, Fenchel T, and Delong EF. 2008. [The Microbial Engines That Drive Earth's Biogeochemical Cycles.](https://www.ncbi.nlm.nih.gov/pubmed/18497287) Science. 320(5879):1034-1039.  
+
+Falkowski PG *et al*. 2000. [The Global Carbon Cycle: A Test of Our Knowledge of Earth as a System.](http://science.sciencemag.org/content/290/5490/291) Science. 290(5490):291-296.
+
+Kallmeyer J *et al.*. 2012. [Global distribution of microbial abundance and biomass in subseafloor sediment.](https://www.ncbi.nlm.nih.gov/pubmed/22927371) Proc Natl Acad Sci USA. 109(40):16213-16216.   
+
+Kasting JF and Siefert JL. 2002. [Life and the Evolution of Earth's Atmosphere.](http://science.sciencemag.org/content/296/5570/1066.long) Science. 295(5570):1066-1068.  
+
+Leopold A. 1949. [The Land Ethic.](http://rintintin.colorado.edu/~vancecd/phil3140/Leopold.pdf) Location: Publisher. *A Sand County Almanac*. 
+
+Mooney C. 2016. [Scientists say humans have now brought on an entirely new geologic epoch.](https://www.washingtonpost.com/news/energy-environment/wp/2016/01/07/scientists-say-humans-have-now-brought-on-an-entirely-new-geologic-epoch/?utm_term=.fe0893313ea1) The Washington Post.  
+
+Nisbet EG and Sleep NH. 2001. [The habitat and nature of early life.](https://www.nature.com/articles/35059210) Nature. 409:1083-1091.   
+
+Schrag DP. 2012. [Geobiology of the Anthropocene](https://onlinelibrary.wiley.com/doi/10.1002/9781118280874.ch22). Wiley Online Library.  
+
+Rockstrom J *et al.* 2009. [A safe operating space for humanity.](https://www.nature.com/articles/461472a) Nature. 461:472-475.  
+
+Waters CN *et al.* 2016. [The Anthropocene is functionally and stratigraphically distinct from the Holocene](http://science.sciencemag.org/content/351/6269/aad2622). Science. 351(6269):aad2622.  
+
+Whitman WB, Coleman DC, and Wiebe WJ. 1998. Prokaryotes: The unseen majority. Proc Natl Acad Sci USA. 95(12):6578-6583.  [PMC33863](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33863/)  
+
+
 -------------------
-Module 2)
+
+
+#MODULE 2
+
+
 -------------------
 
 ### Evidence Worksheet 4
@@ -513,9 +667,25 @@ Another alternative is RT-qPCR, which has high sensitivity and can run multiple 
 
 3rd generation sequencing is another technique that may be used as an alternative to shotgun sequencing. It does not require shearing or amplification and can work with long sequences. This method can reduce binning errors because cells are sequenced separately and sequence fragments can be traced down to their origin. However, 3rd generation sequencing is stil devloping, and still has a relatively high error rate with low levels of genome completeness.
 
+
+### Module 02 references
+Madsen EL. 2005. [Identifying microorganisms responsible for ecologically significant biogeochemical processes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1838496/). Nature Reviews Microbiology. 104(13):5590-5595.
+
+Martinwz A, Bradley AS, Waldbauer JR, Summons RE, and DeLong EF. 2007. [Proteorhodopsin photosystem gene expression enables photophosphorylation in a heterologous host](https://www.nature.com/articles/nrmicro1151). Proc Natl Acad Sci USA. 3:439-446.  
+
+Taupp M, Mewis K, and Hallam SJ. [The art and design of functional metagenomic screens](https://www.ncbi.nlm.nih.gov/pubmed/21440432). Curr Opin Biotechnol. 22(3):465-472.
+
+Wooley JC, Godzik A, and Friedberg I. 2010. [A Primer on Metagenomics](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000667). PLoS Computational Biology. 6(2).
+
+
 -------------------
-MODULE 3
+
+
+#MODULE 3
+
+
 -------------------
+
 
 ###Evidence Worksheet 05
 #### General questions
@@ -883,18 +1053,47 @@ From phenotypic observations to nucleotide sequencing, each method to classify s
 
 Reference List
 
-1.	Fraser, C, Alm, EJ, Polz, MF, Spratt, BG, Hanage, WP. 2009. The bacterial species challenge: making sense of genetic and ecological diversity. Science. 323:741-746.
+1.	Fraser, C, Alm, EJ, Polz, MF, Spratt, BG, Hanage, WP. 2009. [The bacterial species challenge: making sense of genetic and ecological diversity.](http://science.sciencemag.org/content/323/5915/741) Science. 323:741-746.
 
-2.	Hayashi, T, Makino, K, Ohnishi, M, Kurokawa, K, Ishii, K, Yokoyama, K, Han, C, Ohtsubo, E, Nakayama, K, Murata, T. 2001. Complete genome sequence of enterohemorrhagic Eschelichia coli O157: H7 and genomic comparison with a laboratory strain K-12. DNA Research. 8:11-22.
+2.	Hayashi, T, Makino, K, Ohnishi, M, Kurokawa, K, Ishii, K, Yokoyama, K, Han, C, Ohtsubo, E, Nakayama, K, Murata, T. 2001. [Complete genome sequence of enterohemorrhagic Eschelichia coli O157: H7 and genomic comparison with a laboratory strain K-12.](https://academic.oup.com/dnaresearch/article/8/1/11/466363) DNA Research. 8:11-22.
 
-3.	Achtman, M, Wagner, M. 2008. Microbial diversity and the genetic nature of microbial species. Nature Reviews Microbiology. 6:431.
+3.	Achtman, M, Wagner, M. 2008. [Microbial diversity and the genetic nature of microbial species. Nature Reviews Microbiology.](https://www.nature.com/articles/nrmicro1872) 6:431.
 
-4.	Konstantinidis, KT, Tiedje, JM. 2005. Genomic insights that advance the species definition for prokaryotes. Proc. Natl. Acad. Sci. U. S. A. 102:2567-2572.
+4.	Konstantinidis, KT, Tiedje, JM. 2005. [Genomic insights that advance the species definition for prokaryotes.](http://www.pnas.org/content/102/7/2567.short) Proc. Natl. Acad. Sci. U. S. A. 102:2567-2572.
 
-5.	Rosselló-Móra, R, Amann, R. 2015. Past and future species definitions for Bacteria and Archaea. Syst. Appl. Microbiol. 38:209-216.
+5.	Rosselló-Móra, R, Amann, R. 2015. [Past and future species definitions for Bacteria and Archaea.](https://www.sciencedirect.com/science/article/pii/S0723202015000223) Syst. Appl. Microbiol. 38:209-216.
 
-6.	Falkowski, PG, Fenchel, T, Delong, EF. 2008. The microbial engines that drive Earth's biogeochemical cycles. Science. 320:1034-1039.
+6.	Falkowski, PG, Fenchel, T, Delong, EF. 2008. [The microbial engines that drive Earth's biogeochemical cycles.](The microbial engines that drive Earth's biogeochemical cycles.) Science. 320:1034-1039.
 
-7.	Callahan, BJ, McMurdie, PJ, Holmes, SP. 2017. Exact sequence variants should replace operational taxonomic units in marker-gene data analysis. The ISME Journal. 11:2639.
+7.	Callahan, BJ, McMurdie, PJ, Holmes, SP. 2017. [Exact sequence variants should replace operational taxonomic units in marker-gene data analysis.](https://www.nature.com/articles/ismej2017119) The ISME Journal. 11:2639.
 
+----------------------
+
+
+### Module 03 references
+Callahan BJ, McMurdie PJ, and Holmes SP. 2017. [Exact sequence variants should replace operational taxonomic units in marker-gene data analysis](https://www.ncbi.nlm.nih.gov/pubmed/28731476). ISME J. 11(12):2639-2643.  
+
+Codero OX *et al.* 2012. [Public good dynamics drive evolution of iron acquisition strategies in natural bacterioplankton populations.](https://www.ncbi.nlm.nih.gov/pubmed/23169633) Proc Natl Acad Sci USA. 109(49):20059-20064.  
+
+Gaudet AD, Ramer LM, Nakonechny J, Cragg JJ, and Ramer MS. 2010. [Small-Group Learning in an Upper-Level University Biology Class Enhances Academic Performance and Student Attitudes Toward Group Work](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015821). PLoS.   
+
+Giovannoni SJ. 2012. [Vitamins in the sea.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3435215/) Proc Natl Acad Sci USA. 109(35):13888-13889.  
+
+Hallam SJ, Torres-Beltran M, and Hawley AK. 2017. [Monitoring microbial responses to ocean deoxygenation in a model oxygen minimum zone](https://www.nature.com/articles/sdata2017158). Scientific Data. 4(170158).
+
+Hawley AK *et al*. 2017. [A compendium of multi-omic sequence information from the Saanich Inlet water column](https://www.nature.com/articles/sdata2017160). Scientific Data. 4(170160).  
+
+Kunin V *et al*. 2010. [Wrinkles in the rare biosphere: pyrosequencing errors can lead to artificial inflation of diversity estimates.](https://www.ncbi.nlm.nih.gov/pubmed/19725865) Environmental Microbiology. 12(1):118-123.  
+
+Lundin D *et al*. 2012. [Which sequencing depth is sufficient to describe patterns in bacterial alpha- and beta-diversity?](https://www.ncbi.nlm.nih.gov/pubmed/23760801) Environmental Microbiology Rep. 4(3):367-372.   
+
+Morris JJ, Lenski RE, and Zinser ER. 2012. [The Black Queen Hypothesis: Evolution of Dependencies through Adaptive Gene Loss](http://mbio.asm.org/content/3/2/e00036-12.abstract). mBio. 3(2).  
+
+Sogin ML *et al.* 2006. [Microbial diversity in the deep sea and the underexplored "rare biosphere".](https://www.ncbi.nlm.nih.gov/pubmed/16880384) Proc Natl Acad Sci USA. 103(32):12115-12120.   
+
+Thompson JR *et al.* 2005. [Genotypic diversity within a natural coastal bacterioplankton population.](https://www.ncbi.nlm.nih.gov/pubmed/15731455) Science. 307(5713):1311-1313.  
+
+Torres-Beltran M *et al.* 2017. [A compendium of geochemical information from the Saanich Inlet water column.](https://www.nature.com/articles/sdata2017159) Scientific Data. 4(170159).
+
+Welch RA *et al.* 2002. [Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli](https://www.ncbi.nlm.nih.gov/pubmed/12471157). Proc Natl Acad Sci USA. 99(26):17020-17024.  
 
